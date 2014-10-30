@@ -1,0 +1,2095 @@
+@prefix :        <http://www.srdc.com.tr/ontmalizer/instance#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dtype:   <http://www.srdc.com.tr/ontmalizer#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns2:     <http://www.adapt4ee.eu/2012/schema/cim/#> .
+
+:INS5150874_tConcentrationOfGasValue_14
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "78.0"^^xsd:float .
+
+:INS5150874_tIlluminanceValue_6
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "10.0"^^xsd:float .
+
+:INS5150874_tUnitlessValue_6
+      a       ns2:tUnitlessValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "40.0"^^xsd:float .
+
+:INS5150874_tVelocityValue_21
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "0.0"^^xsd:float .
+
+:INS5150874_tSpace_12
+      a       ns2:tSpace ;
+      ns2:equipments :INS5150874_Anon_9_12 ;
+      ns2:id  "DIAGNOSTIC_ROOM_C"^^xsd:string ;
+      ns2:lightings :INS5150874_Anon_10_12 ;
+      ns2:type "ExamOrTreatmentHospitalOrHealthcare"^^ns2:spaceTypeEnumDatatype .
+
+:INS5150874_tVelocityValue_9
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "0.0"^^xsd:float .
+
+:INS5150874_Anon_10_20
+      a       ns2:Anon_10 .
+
+:INS5150874_Anon_10_8
+      a       ns2:Anon_10 .
+
+:INS5150874_Anon_46_3
+      a       ns2:Anon_46 ;
+      ns2:likelihood "1.0"^^xsd:double ;
+      ns2:textContent "195891"^^xsd:string .
+
+:INS5150874_Anon_44_9
+      a       ns2:Anon_44 ;
+      ns2:averageNumberOfPersons
+              "6.0"^^xsd:float ;
+      ns2:clothing :INS5150874_tPeopleClothingValue_9 ;
+      ns2:occupantWorkIntensity
+              :INS5150874_tPeopleHeatGainValue_9 ;
+      ns2:roleRef "Nurse"^^xsd:string .
+
+:INS5150874_tRelativeHumidityValue_26
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_Anon_45_6
+      a       ns2:Anon_45 ;
+      ns2:likelihood "0.4"^^xsd:double ;
+      ns2:textContent "195894"^^xsd:string .
+
+:INS5150874_tRelativeHumidityValue_14
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_tIlluminanceValue_18
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "10.0"^^xsd:float .
+
+:INS5150874_tConcentrationOfGasValue_26
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "78.0"^^xsd:float .
+
+:INS5150874_Anon_9_16
+      a       ns2:Anon_9 .
+
+:INS5150874_tConcentrationOfGasValue_9
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_tSpace_5
+      a       ns2:tSpace ;
+      ns2:equipments :INS5150874_Anon_9_5 ;
+      ns2:id  "GENERAL_PRACTICE_A"^^xsd:string ;
+      ns2:lightings :INS5150874_Anon_10_5 ;
+      ns2:type "ExamOrTreatmentHospitalOrHealthcare"^^ns2:spaceTypeEnumDatatype .
+
+:INS5150874_Anon_46_12
+      a       ns2:Anon_46 ;
+      ns2:likelihood "0.3"^^xsd:double ;
+      ns2:textContent "195918"^^xsd:string .
+
+:INS5150874_tTemperatureValue_17
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "23.0"^^xsd:float .
+
+:INS5150874_tFrequencyValue_2
+      a       ns2:tFrequencyValue ;
+      ns2:duration "PT43S"^^xsd:duration ;
+      ns2:iterations "0"^^xsd:int .
+
+:INS5150874_tTemperatureValue_5
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "23.0"^^xsd:float .
+
+:INS5150874_tPeopleHeatGainValue_7
+      a       ns2:tPeopleHeatGainValue ;
+      ns2:unit "WattPerPerson"^^ns2:peopleHeatGainUnitEnumDatatype ;
+      ns2:value "1.8"^^xsd:float .
+
+:INS5150874_tSpace_13
+      a       ns2:tSpace ;
+      ns2:equipments :INS5150874_Anon_9_13 ;
+      ns2:id  "ENTRANCE"^^xsd:string ;
+      ns2:lightings :INS5150874_Anon_10_13 ;
+      ns2:type "Lobby"^^ns2:spaceTypeEnumDatatype .
+
+:INS5150874_tVelocityValue_8
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "1.0"^^xsd:float .
+
+:INS5150874_tVelocityValue_20
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "1.0"^^xsd:float .
+
+:INS5150874_tUnitlessValue_7
+      a       ns2:tUnitlessValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "40.0"^^xsd:float .
+
+:INS5150874_Anon_46_4
+      a       ns2:Anon_46 ;
+      ns2:likelihood "1.0"^^xsd:double ;
+      ns2:textContent "195885"^^xsd:string .
+
+:INS5150874_tIlluminanceValue_5
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "4.0"^^xsd:float .
+
+:INS5150874_tRelativeHumidityValue_27
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_Anon_10_7
+      a       ns2:Anon_10 .
+
+:INS5150874_tRelativeHumidityValue_15
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_Anon_45_7
+      a       ns2:Anon_45 ;
+      ns2:likelihood "0.6"^^xsd:double ;
+      ns2:textContent "195891"^^xsd:string .
+
+:INS5150874_tIlluminanceValue_17
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "4.0"^^xsd:float .
+
+:INS5150874_tConcentrationOfGasValue_27
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_tConcentrationOfGasValue_15
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_tRelativeHumidityValue_1
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_Anon_9_15
+      a       ns2:Anon_9 .
+
+:INS5150874_tConcentrationOfGasValue_8
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "78.0"^^xsd:float .
+
+:INS5150874_Anon_53_1
+      a       ns2:Anon_53 ;
+      ns2:process :INS5150874_tProcessType_1 .
+
+:INS5150874_tFrequencyValue_3
+      a       ns2:tFrequencyValue ;
+      ns2:duration "PT36S"^^xsd:duration ;
+      ns2:iterations "0"^^xsd:int .
+
+:INS5150874_tTemperatureValue_16
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_tTemperatureValue_28
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_tSpace_6
+      a       ns2:tSpace ;
+      ns2:equipments :INS5150874_Anon_9_6 ;
+      ns2:id  "DIAGNOSTIC_ROOM_D"^^xsd:string ;
+      ns2:lightings :INS5150874_Anon_10_6 ;
+      ns2:type "ExamOrTreatmentHospitalOrHealthcare"^^ns2:spaceTypeEnumDatatype .
+
+:INS5150874_Anon_46_11
+      a       ns2:Anon_46 ;
+      ns2:likelihood "0.7"^^xsd:double ;
+      ns2:textContent "195906"^^xsd:string .
+
+:INS5150874_tTemperatureValue_6
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_tPeopleHeatGainValue_8
+      a       ns2:tPeopleHeatGainValue ;
+      ns2:unit "WattPerPerson"^^ns2:peopleHeatGainUnitEnumDatatype ;
+      ns2:value "1.8"^^xsd:float .
+
+:INS5150874_tConcentrationOfGasValue_24
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "78.0"^^xsd:float .
+
+:INS5150874_tConcentrationOfGasValue_12
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "78.0"^^xsd:float .
+
+:INS5150874_Anon_17_1
+      a       ns2:Anon_17 .
+
+:INS5150874_tIlluminanceValue_4
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "10.0"^^xsd:float .
+
+:INS5150874_tUnitlessValue_8
+      a       ns2:tUnitlessValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "40.0"^^xsd:float .
+
+:INS5150874_tSpace_10
+      a       ns2:tSpace ;
+      ns2:equipments :INS5150874_Anon_9_10 ;
+      ns2:id  "STAIRCASE_A"^^xsd:string ;
+      ns2:lightings :INS5150874_Anon_10_10 ;
+      ns2:type "Stairway"^^ns2:spaceTypeEnumDatatype .
+
+:INS5150874_Anon_45_8
+      a       ns2:Anon_45 ;
+      ns2:likelihood "1.0"^^xsd:double ;
+      ns2:textContent "195900"^^xsd:string .
+
+:INS5150874_tRelativeHumidityValue_16
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_Anon_10_6
+      a       ns2:Anon_10 .
+
+:INS5150874_Anon_46_5
+      a       ns2:Anon_46 ;
+      ns2:likelihood "0.6"^^xsd:double ;
+      ns2:textContent "195900"^^xsd:string .
+
+:INS5150874_tIlluminanceValue_28
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "10.0"^^xsd:float .
+
+:INS5150874_Anon_9_2
+      a       ns2:Anon_9 .
+
+:INS5150874_Anon_45_10
+      a       ns2:Anon_45 ;
+      ns2:likelihood "0.7"^^xsd:double ;
+      ns2:textContent "195903"^^xsd:string .
+
+:INS5150874_tRelativeHumidityValue_28
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_tIlluminanceValue_16
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "10.0"^^xsd:float .
+
+:INS5150874_Anon_9_14
+      a       ns2:Anon_9 .
+
+:INS5150874_tPeopleHeatGainValue_5
+      a       ns2:tPeopleHeatGainValue ;
+      ns2:unit "WattPerPerson"^^ns2:peopleHeatGainUnitEnumDatatype ;
+      ns2:value "1.8"^^xsd:float .
+
+:INS5150874_tConcentrationOfGasValue_7
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_Anon_46_14
+      a       ns2:Anon_46 ;
+      ns2:likelihood "1.0"^^xsd:double ;
+      ns2:textContent "195918"^^xsd:string .
+
+:INS5150874_tFrequencyValue_4
+      a       ns2:tFrequencyValue ;
+      ns2:duration "PT43S"^^xsd:duration ;
+      ns2:iterations "0"^^xsd:int .
+
+:INS5150874_tSpace_7
+      a       ns2:tSpace ;
+      ns2:equipments :INS5150874_Anon_9_7 ;
+      ns2:id  "STAIRCASE_B"^^xsd:string ;
+      ns2:lightings :INS5150874_Anon_10_7 ;
+      ns2:type "Stairway"^^ns2:spaceTypeEnumDatatype .
+
+:INS5150874_tTemperatureValue_27
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "23.0"^^xsd:float .
+
+:INS5150874_tTemperatureValue_15
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "23.0"^^xsd:float .
+
+:INS5150874_tTemperatureValue_7
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "23.0"^^xsd:float .
+
+:INS5150874_tConcentrationOfGasValue_25
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_tConcentrationOfGasValue_13
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_tSpace_11
+      a       ns2:tSpace ;
+      ns2:equipments :INS5150874_Anon_9_11 ;
+      ns2:id  "CORRIDOR_A"^^xsd:string ;
+      ns2:lightings :INS5150874_Anon_10_11 ;
+      ns2:type "CorridorsWithPatientWaitingExamHospitalOrHealthcare"^^ns2:spaceTypeEnumDatatype .
+
+:INS5150874_tIlluminanceValue_3
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "4.0"^^xsd:float .
+
+:INS5150874_Anon_46_6
+      a       ns2:Anon_46 ;
+      ns2:likelihood "0.4"^^xsd:double ;
+      ns2:textContent "195918"^^xsd:string .
+
+:INS5150874_Anon_45_9
+      a       ns2:Anon_45 ;
+      ns2:likelihood "0.4"^^xsd:double ;
+      ns2:textContent "195894"^^xsd:string .
+
+:INS5150874_Anon_10_5
+      a       ns2:Anon_10 .
+
+:INS5150874_tIlluminanceValue_15
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "4.0"^^xsd:float .
+
+:INS5150874_Anon_9_1
+      a       ns2:Anon_9 .
+
+:INS5150874_tRelativeHumidityValue_17
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_tIlluminanceValue_27
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "4.0"^^xsd:float .
+
+:INS5150874_tConcentrationOfGasValue_6
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "78.0"^^xsd:float .
+
+:INS5150874_tPeopleHeatGainValue_6
+      a       ns2:tPeopleHeatGainValue ;
+      ns2:unit "WattPerPerson"^^ns2:peopleHeatGainUnitEnumDatatype ;
+      ns2:value "1.8"^^xsd:float .
+
+:INS5150874_Anon_9_13
+      a       ns2:Anon_9 .
+
+:INS5150874_Anon_46_13
+      a       ns2:Anon_46 ;
+      ns2:likelihood "1.0"^^xsd:double ;
+      ns2:textContent "195915"^^xsd:string .
+
+:INS5150874_tTemperatureValue_14
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_tSpace_8
+      a       ns2:tSpace ;
+      ns2:equipments :INS5150874_Anon_9_8 ;
+      ns2:id  "CORRIDOR_B"^^xsd:string ;
+      ns2:lightings :INS5150874_Anon_10_8 ;
+      ns2:type "CorridorsWithPatientWaitingExamHospitalOrHealthcare"^^ns2:spaceTypeEnumDatatype .
+
+:INS5150874_tTemperatureValue_26
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_tFrequencyValue_5
+      a       ns2:tFrequencyValue ;
+      ns2:duration "PT48S"^^xsd:duration ;
+      ns2:iterations "0"^^xsd:int .
+
+:INS5150874_tTemperatureValue_8
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_tSpace_16
+      a       ns2:tSpace ;
+      ns2:equipments :INS5150874_Anon_9_16 ;
+      ns2:id  "EXAMINATION_ROOM_B"^^xsd:string ;
+      ns2:lightings :INS5150874_Anon_10_16 ;
+      ns2:type "ExamOrTreatmentHospitalOrHealthcare"^^ns2:spaceTypeEnumDatatype .
+
+:INS5150874_tVelocityValue_25
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "0.0"^^xsd:float .
+
+:INS5150874_tVelocityValue_13
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "0.0"^^xsd:float .
+
+:INS5150874_tEnvironmentComfortValues_6
+      a       ns2:tEnvironmentComfortValues ;
+      ns2:maxAirflow :INS5150874_tVelocityValue_12 ;
+      ns2:maxCO2 :INS5150874_tConcentrationOfGasValue_12 ;
+      ns2:maxHumidity :INS5150874_tRelativeHumidityValue_12 ;
+      ns2:maxLuminance :INS5150874_tIlluminanceValue_12 ;
+      ns2:maxTemperature :INS5150874_tTemperatureValue_12 ;
+      ns2:minAirflow :INS5150874_tVelocityValue_11 ;
+      ns2:minCO2 :INS5150874_tConcentrationOfGasValue_11 ;
+      ns2:minHumidity :INS5150874_tRelativeHumidityValue_11 ;
+      ns2:minLuminance :INS5150874_tIlluminanceValue_11 ;
+      ns2:minTemperature :INS5150874_tTemperatureValue_11 .
+
+:INS5150874_tSkeletonActivityType_6
+      a       ns2:tSkeletonActivityType ;
+      ns2:RoleInvolved :INS5150874_Anon_44_6 ;
+      ns2:executionTime "PT2M"^^xsd:duration ;
+      ns2:frequency :INS5150874_tFrequencyValue_6 ;
+      ns2:id  "195900"^^xsd:string ;
+      ns2:interruptable "true"^^xsd:boolean ;
+      ns2:isBusinessActivity
+              "true"^^xsd:boolean ;
+      ns2:name "Take Patient to the Examination Waiting Area"^^xsd:string ;
+      ns2:nextActivityRef :INS5150874_Anon_46_10 ;
+      ns2:previousActivityRef
+              :INS5150874_Anon_45_6 , :INS5150874_Anon_45_7 ;
+      ns2:requiredEnvironment
+              :INS5150874_tEnvironmentComfortValues_6 ;
+      ns2:transportTime "P0Y"^^xsd:duration ;
+      ns2:usedSpaceType "CorridorsWithPatientWaitingExamHospitalOrHealthcare"^^ns2:spaceTypeEnumDatatype ;
+      ns2:waitingTime "P0Y"^^xsd:duration .
+
+:INS5150874_tIlluminanceValue_2
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "10.0"^^xsd:float .
+
+:INS5150874_Anon_10_12
+      a       ns2:Anon_10 .
+
+:INS5150874_tUnitlessValue_2
+      a       ns2:tUnitlessValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "40.0"^^xsd:float .
+
+:INS5150874_tPeopleClothingValue_10
+      a       ns2:tPeopleClothingValue ;
+      ns2:unit "Clo"^^ns2:clothingUnitEnumDatatype ;
+      ns2:value "2.9"^^xsd:float .
+
+:INS5150874_tVelocityValue_5
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "0.0"^^xsd:float .
+
+:INS5150874_Anon_10_4
+      a       ns2:Anon_10 .
+
+:INS5150874_Anon_46_7
+      a       ns2:Anon_46 ;
+      ns2:likelihood "0.2"^^xsd:double ;
+      ns2:textContent "195885"^^xsd:string .
+
+:INS5150874_tConcentrationOfGasValue_18
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "78.0"^^xsd:float .
+
+:INS5150874_tTemperatureValue_9
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "23.0"^^xsd:float .
+
+:INS5150874_tFrequencyValue_14
+      a       ns2:tFrequencyValue ;
+      ns2:duration "PT1M"^^xsd:duration ;
+      ns2:iterations "0"^^xsd:int .
+
+:INS5150874_tSpace_1
+      a       ns2:tSpace ;
+      ns2:equipments :INS5150874_Anon_9_1 ;
+      ns2:id  "EXAMINATION_ROOM_A"^^xsd:string ;
+      ns2:lightings :INS5150874_Anon_10_1 ;
+      ns2:type "ExamOrTreatmentHospitalOrHealthcare"^^ns2:spaceTypeEnumDatatype .
+
+:INS5150874_tRelativeHumidityValue_22
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_Anon_54_1
+      a       ns2:Anon_54 .
+
+:INS5150874_tRelativeHumidityValue_4
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_tRelativeHumidityValue_10
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_tPeopleClothingValue_2
+      a       ns2:tPeopleClothingValue ;
+      ns2:unit "Clo"^^ns2:clothingUnitEnumDatatype ;
+      ns2:value "2.9"^^xsd:float .
+
+:INS5150874_Anon_10_13
+      a       ns2:Anon_10 .
+
+:INS5150874_tTemperatureValue_25
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "23.0"^^xsd:float .
+
+:INS5150874_tSpace_17
+      a       ns2:tSpace ;
+      ns2:equipments :INS5150874_Anon_9_17 ;
+      ns2:id  "DIAGNOSTIC_ROOM_B"^^xsd:string ;
+      ns2:lightings :INS5150874_Anon_10_17 ;
+      ns2:type "ExamOrTreatmentHospitalOrHealthcare"^^ns2:spaceTypeEnumDatatype .
+
+:INS5150874_tFrequencyValue_6
+      a       ns2:tFrequencyValue ;
+      ns2:duration "PT1M4S"^^xsd:duration ;
+      ns2:iterations "0"^^xsd:int .
+
+:INS5150874_tTemperatureValue_13
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "23.0"^^xsd:float .
+
+:INS5150874_tTemperatureValue_11
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "23.0"^^xsd:float .
+
+:INS5150874_tVelocityValue_24
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "1.0"^^xsd:float .
+
+:INS5150874_Anon_43_1
+      a       ns2:Anon_43 ;
+      ns2:equipmentIntensityMode
+              :INS5150874_tUnitlessValue_1 ;
+      ns2:equipmentTypeRef
+              "Computer"^^ns2:intEquipTypeEnumDatatype ;
+      ns2:numberOf "1"^^xsd:int ;
+      ns2:numberOfUses "1"^^xsd:int ;
+      ns2:timeOfUse "PT3M"^^xsd:duration .
+
+:INS5150874_tVelocityValue_12
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "1.0"^^xsd:float .
+
+:INS5150874_tEnvironmentComfortValues_7
+      a       ns2:tEnvironmentComfortValues ;
+      ns2:maxAirflow :INS5150874_tVelocityValue_14 ;
+      ns2:maxCO2 :INS5150874_tConcentrationOfGasValue_14 ;
+      ns2:maxHumidity :INS5150874_tRelativeHumidityValue_14 ;
+      ns2:maxLuminance :INS5150874_tIlluminanceValue_14 ;
+      ns2:maxTemperature :INS5150874_tTemperatureValue_14 ;
+      ns2:minAirflow :INS5150874_tVelocityValue_13 ;
+      ns2:minCO2 :INS5150874_tConcentrationOfGasValue_13 ;
+      ns2:minHumidity :INS5150874_tRelativeHumidityValue_13 ;
+      ns2:minLuminance :INS5150874_tIlluminanceValue_13 ;
+      ns2:minTemperature :INS5150874_tTemperatureValue_13 .
+
+:INS5150874_tSkeletonActivityType_7
+      a       ns2:tSkeletonActivityType ;
+      ns2:RoleInvolved :INS5150874_Anon_44_7 ;
+      ns2:executionTime "PT2M"^^xsd:duration ;
+      ns2:frequency :INS5150874_tFrequencyValue_7 ;
+      ns2:id  "195903"^^xsd:string ;
+      ns2:interruptable "true"^^xsd:boolean ;
+      ns2:isBusinessActivity
+              "true"^^xsd:boolean ;
+      ns2:name "Take patient to Examination Room"^^xsd:string ;
+      ns2:nextActivityRef :INS5150874_Anon_46_12 , :INS5150874_Anon_46_11 ;
+      ns2:previousActivityRef
+              :INS5150874_Anon_45_8 ;
+      ns2:requiredEnvironment
+              :INS5150874_tEnvironmentComfortValues_7 ;
+      ns2:transportTime "P0Y"^^xsd:duration ;
+      ns2:usedSpaceType "CorridorsWithPatientWaitingExamHospitalOrHealthcare"^^ns2:spaceTypeEnumDatatype ;
+      ns2:waitingTime "PT15M"^^xsd:duration .
+
+:INS5150874_tVelocityValue_4
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "1.0"^^xsd:float .
+
+:INS5150874_tUnitlessValue_3
+      a       ns2:tUnitlessValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "40.0"^^xsd:float .
+
+:INS5150874_Anon_46_8
+      a       ns2:Anon_46 ;
+      ns2:likelihood "0.4"^^xsd:double ;
+      ns2:textContent "195900"^^xsd:string .
+
+:INS5150874_Anon_16_1
+      a       ns2:Anon_16 .
+
+:INS5150874_tConcentrationOfGasValue_19
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_Anon_10_3
+      a       ns2:Anon_10 .
+
+:INS5150874_tPeopleHeatGainValue_14
+      a       ns2:tPeopleHeatGainValue ;
+      ns2:unit "WattPerPerson"^^ns2:peopleHeatGainUnitEnumDatatype ;
+      ns2:value "1.8"^^xsd:float .
+
+:INS5150874_tFrequencyValue_13
+      a       ns2:tFrequencyValue ;
+      ns2:duration "PT2M"^^xsd:duration ;
+      ns2:iterations "1"^^xsd:int .
+
+:INS5150874_tRelativeHumidityValue_23
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_tRelativeHumidityValue_5
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_tRelativeHumidityValue_11
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_tSpace_2
+      a       ns2:tSpace ;
+      ns2:equipments :INS5150874_Anon_9_2 ;
+      ns2:id  "SURGERY_&_DOCTORS_ROOMS"^^xsd:string ;
+      ns2:lightings :INS5150874_Anon_10_2 .
+
+:INS5150874_Anon_9_19
+      a       ns2:Anon_9 .
+
+:INS5150874_Anon_10_14
+      a       ns2:Anon_10 .
+
+:INS5150874_tIlluminanceValue_1
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "4.0"^^xsd:float .
+
+:INS5150874_tPeopleClothingValue_1
+      a       ns2:tPeopleClothingValue ;
+      ns2:unit "Clo"^^ns2:clothingUnitEnumDatatype ;
+      ns2:value "2.9"^^xsd:float .
+
+:INS5150874_tFrequencyValue_7
+      a       ns2:tFrequencyValue ;
+      ns2:duration "PT1M4S"^^xsd:duration ;
+      ns2:iterations "0"^^xsd:int .
+
+:INS5150874_tSpace_18
+      a       ns2:tSpace ;
+      ns2:equipments :INS5150874_Anon_9_18 ;
+      ns2:id  "EXAMINATION_ROOM_C"^^xsd:string ;
+      ns2:lightings :INS5150874_Anon_10_18 ;
+      ns2:type "ExamOrTreatmentHospitalOrHealthcare"^^ns2:spaceTypeEnumDatatype .
+
+:INS5150874_tTemperatureValue_12
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_tTemperatureValue_24
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_tTemperatureValue_10
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_tTemperatureValue_22
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_Anon_43_2
+      a       ns2:Anon_43 ;
+      ns2:equipmentIntensityMode
+              :INS5150874_tUnitlessValue_2 ;
+      ns2:equipmentTypeRef
+              "Computer"^^ns2:intEquipTypeEnumDatatype ;
+      ns2:numberOf "1"^^xsd:int ;
+      ns2:numberOfUses "0"^^xsd:int ;
+      ns2:timeOfUse "PT36S"^^xsd:duration .
+
+:INS5150874_tVelocityValue_23
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "0.0"^^xsd:float .
+
+:INS5150874_tSpace_14
+      a       ns2:tSpace ;
+      ns2:equipments :INS5150874_Anon_9_14 ;
+      ns2:id  "TOILETS"^^xsd:string ;
+      ns2:lightings :INS5150874_Anon_10_14 .
+
+:INS5150874_tVelocityValue_11
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "0.0"^^xsd:float .
+
+:INS5150874_tEnvironmentComfortValues_8
+      a       ns2:tEnvironmentComfortValues ;
+      ns2:maxAirflow :INS5150874_tVelocityValue_16 ;
+      ns2:maxCO2 :INS5150874_tConcentrationOfGasValue_16 ;
+      ns2:maxHumidity :INS5150874_tRelativeHumidityValue_16 ;
+      ns2:maxLuminance :INS5150874_tIlluminanceValue_16 ;
+      ns2:maxTemperature :INS5150874_tTemperatureValue_16 ;
+      ns2:minAirflow :INS5150874_tVelocityValue_15 ;
+      ns2:minCO2 :INS5150874_tConcentrationOfGasValue_15 ;
+      ns2:minHumidity :INS5150874_tRelativeHumidityValue_15 ;
+      ns2:minLuminance :INS5150874_tIlluminanceValue_15 ;
+      ns2:minTemperature :INS5150874_tTemperatureValue_15 .
+
+:INS5150874_tVelocityValue_7
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "0.0"^^xsd:float .
+
+:INS5150874_Anon_10_10
+      a       ns2:Anon_10 .
+
+:INS5150874_tUnitlessValue_4
+      a       ns2:tUnitlessValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "40.0"^^xsd:float .
+
+:INS5150874_tRelativeHumidityValue_24
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_Anon_10_2
+      a       ns2:Anon_10 .
+
+:INS5150874_tConcentrationOfGasValue_28
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "78.0"^^xsd:float .
+
+:INS5150874_Anon_46_9
+      a       ns2:Anon_46 ;
+      ns2:likelihood "0.4"^^xsd:double ;
+      ns2:textContent "195906"^^xsd:string .
+
+:INS5150874_tConcentrationOfGasValue_16
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "78.0"^^xsd:float .
+
+:INS5150874_tPeopleHeatGainValue_13
+      a       ns2:tPeopleHeatGainValue ;
+      ns2:unit "WattPerPerson"^^ns2:peopleHeatGainUnitEnumDatatype ;
+      ns2:value "1.8"^^xsd:float .
+
+:INS5150874_tRelativeHumidityValue_2
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_tRelativeHumidityValue_12
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_Anon_9_18
+      a       ns2:Anon_9 .
+
+:INS5150874_tSpace_3
+      a       ns2:tSpace ;
+      ns2:equipments :INS5150874_Anon_9_3 ;
+      ns2:id  "WAITING_ROOM_A"^^xsd:string ;
+      ns2:lightings :INS5150874_Anon_10_3 ;
+      ns2:type "ReceptionOrWaitingTransportation"^^ns2:spaceTypeEnumDatatype .
+
+:INS5150874_tSkeletonActivityType_8
+      a       ns2:tSkeletonActivityType ;
+      ns2:RoleInvolved :INS5150874_Anon_44_8 ;
+      ns2:executionTime "PT3M"^^xsd:duration ;
+      ns2:frequency :INS5150874_tFrequencyValue_8 ;
+      ns2:id  "195906"^^xsd:string ;
+      ns2:interruptable "true"^^xsd:boolean ;
+      ns2:isBusinessActivity
+              "true"^^xsd:boolean ;
+      ns2:name "Take Patient to Optician Waiting Area"^^xsd:string ;
+      ns2:nextActivityRef :INS5150874_Anon_46_13 ;
+      ns2:previousActivityRef
+              :INS5150874_Anon_45_9 , :INS5150874_Anon_45_10 ;
+      ns2:requiredEnvironment
+              :INS5150874_tEnvironmentComfortValues_8 ;
+      ns2:transportTime "P0Y"^^xsd:duration ;
+      ns2:usedSpaceType "CorridorsWithPatientWaitingExamHospitalOrHealthcare"^^ns2:spaceTypeEnumDatatype ;
+      ns2:waitingTime "P0Y"^^xsd:duration .
+
+:INS5150874_tPeopleHeatGainValue_9
+      a       ns2:tPeopleHeatGainValue ;
+      ns2:unit "WattPerPerson"^^ns2:peopleHeatGainUnitEnumDatatype ;
+      ns2:value "1.8"^^xsd:float .
+
+:INS5150874_tFrequencyValue_8
+      a       ns2:tFrequencyValue ;
+      ns2:duration "PT2M5S"^^xsd:duration ;
+      ns2:iterations "0"^^xsd:int .
+
+:INS5150874_Anon_46_10
+      a       ns2:Anon_46 ;
+      ns2:likelihood "1.0"^^xsd:double ;
+      ns2:textContent "195903"^^xsd:string .
+
+:INS5150874_tTemperatureValue_23
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "23.0"^^xsd:float .
+
+:INS5150874_tPeopleClothingValue_4
+      a       ns2:tPeopleClothingValue ;
+      ns2:unit "Clo"^^ns2:clothingUnitEnumDatatype ;
+      ns2:value "2.9"^^xsd:float .
+
+:INS5150874_tTemperatureValue_21
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "23.0"^^xsd:float .
+
+:INS5150874_Anon_43_3
+      a       ns2:Anon_43 ;
+      ns2:equipmentIntensityMode
+              :INS5150874_tUnitlessValue_3 ;
+      ns2:equipmentTypeRef
+              "Computer"^^ns2:intEquipTypeEnumDatatype ;
+      ns2:numberOf "1"^^xsd:int ;
+      ns2:numberOfUses "0"^^xsd:int ;
+      ns2:timeOfUse "PT48S"^^xsd:duration .
+
+:INS5150874_tSpace_15
+      a       ns2:tSpace ;
+      ns2:equipments :INS5150874_Anon_9_15 ;
+      ns2:id  "MEETING_ROOM"^^xsd:string ;
+      ns2:lightings :INS5150874_Anon_10_15 ;
+      ns2:type "ConferenceMeetingOrMultipurpose"^^ns2:spaceTypeEnumDatatype .
+
+:INS5150874_tIlluminanceValue_19
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "4.0"^^xsd:float .
+
+:INS5150874_tFrequencyValue_9
+      a       ns2:tFrequencyValue ;
+      ns2:duration "PT1M23S"^^xsd:duration ;
+      ns2:iterations "0"^^xsd:int .
+
+:INS5150874_tVelocityValue_22
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "1.0"^^xsd:float .
+
+:INS5150874_tVelocityValue_10
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "1.0"^^xsd:float .
+
+:INS5150874_Anon_10_11
+      a       ns2:Anon_10 .
+
+:INS5150874_tEnvironmentComfortValues_9
+      a       ns2:tEnvironmentComfortValues ;
+      ns2:maxAirflow :INS5150874_tVelocityValue_18 ;
+      ns2:maxCO2 :INS5150874_tConcentrationOfGasValue_18 ;
+      ns2:maxHumidity :INS5150874_tRelativeHumidityValue_18 ;
+      ns2:maxLuminance :INS5150874_tIlluminanceValue_18 ;
+      ns2:maxTemperature :INS5150874_tTemperatureValue_18 ;
+      ns2:minAirflow :INS5150874_tVelocityValue_17 ;
+      ns2:minCO2 :INS5150874_tConcentrationOfGasValue_17 ;
+      ns2:minHumidity :INS5150874_tRelativeHumidityValue_17 ;
+      ns2:minLuminance :INS5150874_tIlluminanceValue_17 ;
+      ns2:minTemperature :INS5150874_tTemperatureValue_17 .
+
+:INS5150874_tVelocityValue_6
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "1.0"^^xsd:float .
+
+:INS5150874_tRelativeHumidityValue_25
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_tRelativeHumidityValue_13
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_tUnitlessValue_5
+      a       ns2:tUnitlessValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "40.0"^^xsd:float .
+
+:INS5150874_tConcentrationOfGasValue_17
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_Anon_10_1
+      a       ns2:Anon_10 .
+
+:INS5150874_tPeopleHeatGainValue_12
+      a       ns2:tPeopleHeatGainValue ;
+      ns2:unit "WattPerPerson"^^ns2:peopleHeatGainUnitEnumDatatype ;
+      ns2:value "1.8"^^xsd:float .
+
+:INS5150874_tRelativeHumidityValue_3
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_Anon_9_17
+      a       ns2:Anon_9 .
+
+:INS5150874_tPeopleClothingValue_3
+      a       ns2:tPeopleClothingValue ;
+      ns2:unit "Clo"^^ns2:clothingUnitEnumDatatype ;
+      ns2:value "2.9"^^xsd:float .
+
+:INS5150874_tSpace_4
+      a       ns2:tSpace ;
+      ns2:equipments :INS5150874_Anon_9_4 ;
+      ns2:id  "ELEVATOR"^^xsd:string ;
+      ns2:lightings :INS5150874_Anon_10_4 ;
+      ns2:type "ElevatorLobbies"^^ns2:spaceTypeEnumDatatype .
+
+:INS5150874_tSkeletonActivityType_9
+      a       ns2:tSkeletonActivityType ;
+      ns2:RoleInvolved :INS5150874_Anon_44_9 ;
+      ns2:executionTime "PT2M"^^xsd:duration ;
+      ns2:frequency :INS5150874_tFrequencyValue_9 ;
+      ns2:id  "195915"^^xsd:string ;
+      ns2:interruptable "true"^^xsd:boolean ;
+      ns2:isBusinessActivity
+              "true"^^xsd:boolean ;
+      ns2:name "Take Patient To See Optician"^^xsd:string ;
+      ns2:nextActivityRef :INS5150874_Anon_46_14 ;
+      ns2:previousActivityRef
+              :INS5150874_Anon_45_11 ;
+      ns2:requiredEnvironment
+              :INS5150874_tEnvironmentComfortValues_9 ;
+      ns2:transportTime "P0Y"^^xsd:duration ;
+      ns2:usedSpaceType "CorridorsWithPatientWaitingExamHospitalOrHealthcare"^^ns2:spaceTypeEnumDatatype ;
+      ns2:waitingTime "P0Y"^^xsd:duration .
+
+:INS5150874_tSkeletonActivityType_2
+      a       ns2:tSkeletonActivityType ;
+      ns2:RoleInvolved :INS5150874_Anon_44_2 ;
+      ns2:executionTime "PT2M"^^xsd:duration ;
+      ns2:frequency :INS5150874_tFrequencyValue_2 ;
+      ns2:id  "195885"^^xsd:string ;
+      ns2:interruptable "true"^^xsd:boolean ;
+      ns2:isBusinessActivity
+              "true"^^xsd:boolean ;
+      ns2:name "Take Patient to Consulation Waiting Area"^^xsd:string ;
+      ns2:nextActivityRef :INS5150874_Anon_46_3 ;
+      ns2:previousActivityRef
+              :INS5150874_Anon_45_1 , :INS5150874_Anon_45_2 ;
+      ns2:requiredEnvironment
+              :INS5150874_tEnvironmentComfortValues_2 ;
+      ns2:transportTime "P0Y"^^xsd:duration ;
+      ns2:usedSpaceType "CorridorsWithPatientWaitingExamHospitalOrHealthcare"^^ns2:spaceTypeEnumDatatype ;
+      ns2:waitingTime "P0Y"^^xsd:duration .
+
+:INS5150874_Anon_44_1
+      a       ns2:Anon_44 ;
+      ns2:averageNumberOfPersons
+              "6.0"^^xsd:float ;
+      ns2:clothing :INS5150874_tPeopleClothingValue_1 ;
+      ns2:occupantWorkIntensity
+              :INS5150874_tPeopleHeatGainValue_1 ;
+      ns2:roleRef "Nurse"^^xsd:string .
+
+:INS5150874_tSkeletonActivityType_10
+      a       ns2:tSkeletonActivityType ;
+      ns2:RoleInvolved :INS5150874_Anon_44_10 ;
+      ns2:executionTime "PT3M"^^xsd:duration ;
+      ns2:frequency :INS5150874_tFrequencyValue_10 ;
+      ns2:id  "195918"^^xsd:string ;
+      ns2:interruptable "true"^^xsd:boolean ;
+      ns2:isBusinessActivity
+              "true"^^xsd:boolean ;
+      ns2:name "Take Patient to Payment desk"^^xsd:string ;
+      ns2:nextActivityRef :INS5150874_Anon_46_15 ;
+      ns2:previousActivityRef
+              :INS5150874_Anon_45_12 , :INS5150874_Anon_45_14 , :INS5150874_Anon_45_13 ;
+      ns2:requiredEnvironment
+              :INS5150874_tEnvironmentComfortValues_10 ;
+      ns2:transportTime "P0Y"^^xsd:duration ;
+      ns2:usedSpaceType "CorridorsWithPatientWaitingExamHospitalOrHealthcare"^^ns2:spaceTypeEnumDatatype ;
+      ns2:waitingTime "P0Y"^^xsd:duration .
+
+:INS5150874_tTemperatureValue_20
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_tPeopleClothingValue_14
+      a       ns2:tPeopleClothingValue ;
+      ns2:unit "Clo"^^ns2:clothingUnitEnumDatatype ;
+      ns2:value "2.9"^^xsd:float .
+
+:INS5150874_Anon_43_4
+      a       ns2:Anon_43 ;
+      ns2:equipmentIntensityMode
+              :INS5150874_tUnitlessValue_4 ;
+      ns2:equipmentTypeRef
+              "Computer"^^ns2:intEquipTypeEnumDatatype ;
+      ns2:numberOf "1"^^xsd:int ;
+      ns2:numberOfUses "1"^^xsd:int ;
+      ns2:timeOfUse "PT10M"^^xsd:duration .
+
+:INS5150874_tConcentrationOfGasValue_1
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_tIlluminanceValue_22
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "10.0"^^xsd:float .
+
+:INS5150874_tProcessType_1
+      a       ns2:tProcessType ;
+      ns2:activity :INS5150874_tSkeletonActivityType_2 , :INS5150874_tSkeletonActivityType_3 , :INS5150874_tSkeletonActivityType_10 , :INS5150874_tSkeletonActivityType_11 , :INS5150874_tSkeletonActivityType_1 , :INS5150874_tSkeletonActivityType_12 , :INS5150874_tSkeletonActivityType_6 , :INS5150874_tSkeletonActivityType_7 , :INS5150874_tSkeletonActivityType_4 , :INS5150874_tSkeletonActivityType_5 , :INS5150874_tSkeletonActivityType_13 , :INS5150874_tSkeletonActivityType_14 , :INS5150874_tSkeletonActivityType_8 , :INS5150874_tSkeletonActivityType_9 ;
+      ns2:id  "195875"^^xsd:string ;
+      ns2:name "BP LEITE- Patient Flow  (BPMN 2.0) CIM"^^xsd:string .
+
+:INS5150874_tVelocityValue_1
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "0.0"^^xsd:float .
+
+:INS5150874_tPeopleHeatGainValue_11
+      a       ns2:tPeopleHeatGainValue ;
+      ns2:unit "WattPerPerson"^^ns2:peopleHeatGainUnitEnumDatatype ;
+      ns2:value "1.8"^^xsd:float .
+
+:INS5150874_tIlluminanceValue_21
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "4.0"^^xsd:float .
+
+:INS5150874_Anon_9_8
+      a       ns2:Anon_9 .
+
+:INS5150874_Anon_45_17
+      a       ns2:Anon_45 ;
+      ns2:likelihood "1.0"^^xsd:double ;
+      ns2:textContent "195924"^^xsd:string .
+
+:INS5150874_tRelativeHumidityValue_8
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_tPeopleClothingValue_6
+      a       ns2:tPeopleClothingValue ;
+      ns2:unit "Clo"^^ns2:clothingUnitEnumDatatype ;
+      ns2:value "2.9"^^xsd:float .
+
+:INS5150874_tVelocityValue_17
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "0.0"^^xsd:float .
+
+:INS5150874_Anon_9_20
+      a       ns2:Anon_9 .
+
+:INS5150874_tFrequencyValue_10
+      a       ns2:tFrequencyValue ;
+      ns2:duration "PT3M"^^xsd:duration ;
+      ns2:iterations "1"^^xsd:int .
+
+:INS5150874_Anon_44_11
+      a       ns2:Anon_44 ;
+      ns2:averageNumberOfPersons
+              "6.0"^^xsd:float ;
+      ns2:clothing :INS5150874_tPeopleClothingValue_11 ;
+      ns2:occupantWorkIntensity
+              :INS5150874_tPeopleHeatGainValue_11 ;
+      ns2:roleRef "Nurse"^^xsd:string .
+
+:INS5150874_Anon_10_17
+      a       ns2:Anon_10 .
+
+:INS5150874_tEnvironmentComfortValues_2
+      a       ns2:tEnvironmentComfortValues ;
+      ns2:maxAirflow :INS5150874_tVelocityValue_4 ;
+      ns2:maxCO2 :INS5150874_tConcentrationOfGasValue_4 ;
+      ns2:maxHumidity :INS5150874_tRelativeHumidityValue_4 ;
+      ns2:maxLuminance :INS5150874_tIlluminanceValue_4 ;
+      ns2:maxTemperature :INS5150874_tTemperatureValue_4 ;
+      ns2:minAirflow :INS5150874_tVelocityValue_3 ;
+      ns2:minCO2 :INS5150874_tConcentrationOfGasValue_3 ;
+      ns2:minHumidity :INS5150874_tRelativeHumidityValue_3 ;
+      ns2:minLuminance :INS5150874_tIlluminanceValue_3 ;
+      ns2:minTemperature :INS5150874_tTemperatureValue_3 .
+
+:INS5150874_tEnvironmentComfortValues_3
+      a       ns2:tEnvironmentComfortValues ;
+      ns2:maxAirflow :INS5150874_tVelocityValue_6 ;
+      ns2:maxCO2 :INS5150874_tConcentrationOfGasValue_6 ;
+      ns2:maxHumidity :INS5150874_tRelativeHumidityValue_6 ;
+      ns2:maxLuminance :INS5150874_tIlluminanceValue_6 ;
+      ns2:maxTemperature :INS5150874_tTemperatureValue_6 ;
+      ns2:minAirflow :INS5150874_tVelocityValue_5 ;
+      ns2:minCO2 :INS5150874_tConcentrationOfGasValue_5 ;
+      ns2:minHumidity :INS5150874_tRelativeHumidityValue_5 ;
+      ns2:minLuminance :INS5150874_tIlluminanceValue_5 ;
+      ns2:minTemperature :INS5150874_tTemperatureValue_5 .
+
+:INS5150874_tEnvironmentComfortValues_10
+      a       ns2:tEnvironmentComfortValues ;
+      ns2:maxAirflow :INS5150874_tVelocityValue_20 ;
+      ns2:maxCO2 :INS5150874_tConcentrationOfGasValue_20 ;
+      ns2:maxHumidity :INS5150874_tRelativeHumidityValue_20 ;
+      ns2:maxLuminance :INS5150874_tIlluminanceValue_20 ;
+      ns2:maxTemperature :INS5150874_tTemperatureValue_20 ;
+      ns2:minAirflow :INS5150874_tVelocityValue_19 ;
+      ns2:minCO2 :INS5150874_tConcentrationOfGasValue_19 ;
+      ns2:minHumidity :INS5150874_tRelativeHumidityValue_19 ;
+      ns2:minLuminance :INS5150874_tIlluminanceValue_19 ;
+      ns2:minTemperature :INS5150874_tTemperatureValue_19 .
+
+:INS5150874_tSkeletonActivityType_3
+      a       ns2:tSkeletonActivityType ;
+      ns2:RoleInvolved :INS5150874_Anon_44_3 ;
+      ns2:executionTime "PT3M"^^xsd:duration ;
+      ns2:frequency :INS5150874_tFrequencyValue_3 ;
+      ns2:id  "195888"^^xsd:string ;
+      ns2:interruptable "true"^^xsd:boolean ;
+      ns2:isBusinessActivity
+              "true"^^xsd:boolean ;
+      ns2:name "Register New Patient On System"^^xsd:string ;
+      ns2:nextActivityRef :INS5150874_Anon_46_4 ;
+      ns2:previousActivityRef
+              :INS5150874_Anon_45_3 ;
+      ns2:requiredEnvironment
+              :INS5150874_tEnvironmentComfortValues_3 ;
+      ns2:transportTime "P0Y"^^xsd:duration ;
+      ns2:usedEquipment :INS5150874_Anon_43_2 ;
+      ns2:usedSpaceType "ReceptionOrWaitingTransportation"^^ns2:spaceTypeEnumDatatype ;
+      ns2:waitingTime "P0Y"^^xsd:duration .
+
+:INS5150874_Anon_44_2
+      a       ns2:Anon_44 ;
+      ns2:averageNumberOfPersons
+              "6.0"^^xsd:float ;
+      ns2:clothing :INS5150874_tPeopleClothingValue_2 ;
+      ns2:occupantWorkIntensity
+              :INS5150874_tPeopleHeatGainValue_2 ;
+      ns2:roleRef "Nurse"^^xsd:string .
+
+:INS5150874_tSkeletonActivityType_11
+      a       ns2:tSkeletonActivityType ;
+      ns2:RoleInvolved :INS5150874_Anon_44_11 ;
+      ns2:executionTime "PT10M"^^xsd:duration ;
+      ns2:frequency :INS5150874_tFrequencyValue_11 ;
+      ns2:id  "195921"^^xsd:string ;
+      ns2:interruptable "true"^^xsd:boolean ;
+      ns2:isBusinessActivity
+              "true"^^xsd:boolean ;
+      ns2:name "Process Payment"^^xsd:string ;
+      ns2:nextActivityRef :INS5150874_Anon_46_16 ;
+      ns2:previousActivityRef
+              :INS5150874_Anon_45_15 ;
+      ns2:requiredEnvironment
+              :INS5150874_tEnvironmentComfortValues_11 ;
+      ns2:transportTime "P0Y"^^xsd:duration ;
+      ns2:usedEquipment :INS5150874_Anon_43_4 ;
+      ns2:usedSpaceType "OfficeOpenPlan"^^ns2:spaceTypeEnumDatatype ;
+      ns2:waitingTime "P0Y"^^xsd:duration .
+
+:INS5150874_tPeopleClothingValue_13
+      a       ns2:tPeopleClothingValue ;
+      ns2:unit "Clo"^^ns2:clothingUnitEnumDatatype ;
+      ns2:value "2.9"^^xsd:float .
+
+:INS5150874_Anon_43_5
+      a       ns2:Anon_43 ;
+      ns2:equipmentIntensityMode
+              :INS5150874_tUnitlessValue_5 ;
+      ns2:equipmentTypeRef
+              "Computer"^^ns2:intEquipTypeEnumDatatype ;
+      ns2:numberOf "1"^^xsd:int ;
+      ns2:numberOfUses "1"^^xsd:int ;
+      ns2:timeOfUse "PT4M"^^xsd:duration .
+
+:INS5150874_Anon_9_7
+      a       ns2:Anon_9 .
+
+:INS5150874_tPeopleHeatGainValue_10
+      a       ns2:tPeopleHeatGainValue ;
+      ns2:unit "WattPerPerson"^^ns2:peopleHeatGainUnitEnumDatatype ;
+      ns2:value "1.8"^^xsd:float .
+
+:INS5150874_tIlluminanceValue_20
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "10.0"^^xsd:float .
+
+:INS5150874_Anon_45_16
+      a       ns2:Anon_45 ;
+      ns2:likelihood "1.0"^^xsd:double ;
+      ns2:textContent "195921"^^xsd:string .
+
+:INS5150874_tRelativeHumidityValue_9
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_Anon_44_12
+      a       ns2:Anon_44 ;
+      ns2:averageNumberOfPersons
+              "6.0"^^xsd:float ;
+      ns2:clothing :INS5150874_tPeopleClothingValue_12 ;
+      ns2:occupantWorkIntensity
+              :INS5150874_tPeopleHeatGainValue_12 ;
+      ns2:roleRef "Nurse"^^xsd:string .
+
+:INS5150874_tVelocityValue_28
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "1.0"^^xsd:float .
+
+:INS5150874_tVelocityValue_16
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "1.0"^^xsd:float .
+
+:INS5150874_tPeopleClothingValue_5
+      a       ns2:tPeopleClothingValue ;
+      ns2:unit "Clo"^^ns2:clothingUnitEnumDatatype ;
+      ns2:value "2.9"^^xsd:float .
+
+:INS5150874_Anon_10_18
+      a       ns2:Anon_10 .
+
+:INS5150874_tEnvironmentComfortValues_4
+      a       ns2:tEnvironmentComfortValues ;
+      ns2:maxAirflow :INS5150874_tVelocityValue_8 ;
+      ns2:maxCO2 :INS5150874_tConcentrationOfGasValue_8 ;
+      ns2:maxHumidity :INS5150874_tRelativeHumidityValue_8 ;
+      ns2:maxLuminance :INS5150874_tIlluminanceValue_8 ;
+      ns2:maxTemperature :INS5150874_tTemperatureValue_8 ;
+      ns2:minAirflow :INS5150874_tVelocityValue_7 ;
+      ns2:minCO2 :INS5150874_tConcentrationOfGasValue_7 ;
+      ns2:minHumidity :INS5150874_tRelativeHumidityValue_7 ;
+      ns2:minLuminance :INS5150874_tIlluminanceValue_7 ;
+      ns2:minTemperature :INS5150874_tTemperatureValue_7 .
+
+:INS5150874_tPeopleClothingValue_8
+      a       ns2:tPeopleClothingValue ;
+      ns2:unit "Clo"^^ns2:clothingUnitEnumDatatype ;
+      ns2:value "2.9"^^xsd:float .
+
+:INS5150874_tSkeletonActivityType_12
+      a       ns2:tSkeletonActivityType ;
+      ns2:RoleInvolved :INS5150874_Anon_44_12 ;
+      ns2:executionTime "PT4M"^^xsd:duration ;
+      ns2:frequency :INS5150874_tFrequencyValue_12 ;
+      ns2:id  "195924"^^xsd:string ;
+      ns2:interruptable "true"^^xsd:boolean ;
+      ns2:isBusinessActivity
+              "true"^^xsd:boolean ;
+      ns2:name "Schedule Next Appoinment"^^xsd:string ;
+      ns2:nextActivityRef :INS5150874_Anon_46_17 ;
+      ns2:previousActivityRef
+              :INS5150874_Anon_45_16 ;
+      ns2:requiredEnvironment
+              :INS5150874_tEnvironmentComfortValues_12 ;
+      ns2:transportTime "P0Y"^^xsd:duration ;
+      ns2:usedEquipment :INS5150874_Anon_43_5 ;
+      ns2:usedSpaceType "OfficeOpenPlan"^^ns2:spaceTypeEnumDatatype ;
+      ns2:waitingTime "P0Y"^^xsd:duration .
+
+:INS5150874_Anon_44_14
+      a       ns2:Anon_44 ;
+      ns2:averageNumberOfPersons
+              "6.0"^^xsd:float ;
+      ns2:clothing :INS5150874_tPeopleClothingValue_14 ;
+      ns2:occupantWorkIntensity
+              :INS5150874_tPeopleHeatGainValue_14 ;
+      ns2:roleRef "Nurse"^^xsd:string .
+
+:INS5150874_Anon_43_6
+      a       ns2:Anon_43 ;
+      ns2:equipmentIntensityMode
+              :INS5150874_tUnitlessValue_6 ;
+      ns2:equipmentTypeRef
+              "Computer"^^ns2:intEquipTypeEnumDatatype ;
+      ns2:numberOf "1"^^xsd:int ;
+      ns2:numberOfUses "1"^^xsd:int ;
+      ns2:timeOfUse "PT2M"^^xsd:duration .
+
+:INS5150874_tSkeletonActivityType_4
+      a       ns2:tSkeletonActivityType ;
+      ns2:RoleInvolved :INS5150874_Anon_44_4 ;
+      ns2:executionTime "PT2M"^^xsd:duration ;
+      ns2:frequency :INS5150874_tFrequencyValue_4 ;
+      ns2:id  "195891"^^xsd:string ;
+      ns2:interruptable "true"^^xsd:boolean ;
+      ns2:isBusinessActivity
+              "true"^^xsd:boolean ;
+      ns2:name "Take patient to consultation room"^^xsd:string ;
+      ns2:nextActivityRef :INS5150874_Anon_46_6 , :INS5150874_Anon_46_5 ;
+      ns2:previousActivityRef
+              :INS5150874_Anon_45_4 ;
+      ns2:requiredEnvironment
+              :INS5150874_tEnvironmentComfortValues_4 ;
+      ns2:transportTime "P0Y"^^xsd:duration ;
+      ns2:usedSpaceType "CorridorsWithPatientWaitingExamHospitalOrHealthcare"^^ns2:spaceTypeEnumDatatype ;
+      ns2:waitingTime "PT10M"^^xsd:duration .
+
+:INS5150874_Anon_44_3
+      a       ns2:Anon_44 ;
+      ns2:averageNumberOfPersons
+              "6.0"^^xsd:float ;
+      ns2:clothing :INS5150874_tPeopleClothingValue_3 ;
+      ns2:occupantWorkIntensity
+              :INS5150874_tPeopleHeatGainValue_3 ;
+      ns2:roleRef "Nurse"^^xsd:string .
+
+:INS5150874_tPeopleClothingValue_12
+      a       ns2:tPeopleClothingValue ;
+      ns2:unit "Clo"^^ns2:clothingUnitEnumDatatype ;
+      ns2:value "2.9"^^xsd:float .
+
+:INS5150874_tVelocityValue_3
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "0.0"^^xsd:float .
+
+:INS5150874_tFrequencyValue_12
+      a       ns2:tFrequencyValue ;
+      ns2:duration "PT4M"^^xsd:duration ;
+      ns2:iterations "1"^^xsd:int .
+
+:INS5150874_tRelativeHumidityValue_20
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_tRelativeHumidityValue_6
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_Anon_10_15
+      a       ns2:Anon_10 .
+
+:INS5150874_Anon_44_13
+      a       ns2:Anon_44 ;
+      ns2:averageNumberOfPersons
+              "6.0"^^xsd:float ;
+      ns2:clothing :INS5150874_tPeopleClothingValue_13 ;
+      ns2:occupantWorkIntensity
+              :INS5150874_tPeopleHeatGainValue_13 ;
+      ns2:roleRef "Nurse"^^xsd:string .
+
+:INS5150874_tSpace_19
+      a       ns2:tSpace ;
+      ns2:equipments :INS5150874_Anon_9_19 ;
+      ns2:id  "DIAGNOSTIC_ROOM_A"^^xsd:string ;
+      ns2:lightings :INS5150874_Anon_10_19 ;
+      ns2:type "ExamOrTreatmentHospitalOrHealthcare"^^ns2:spaceTypeEnumDatatype .
+
+:INS5150874_tVelocityValue_27
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "0.0"^^xsd:float .
+
+:INS5150874_tVelocityValue_15
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "0.0"^^xsd:float .
+
+:INS5150874_tVelocityValue_14
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "1.0"^^xsd:float .
+
+:INS5150874_Anon_45_1
+      a       ns2:Anon_45 ;
+      ns2:likelihood "1.0"^^xsd:double ;
+      ns2:textContent "195888"^^xsd:string .
+
+:INS5150874_tEnvironmentComfortValues_5
+      a       ns2:tEnvironmentComfortValues ;
+      ns2:maxAirflow :INS5150874_tVelocityValue_10 ;
+      ns2:maxCO2 :INS5150874_tConcentrationOfGasValue_10 ;
+      ns2:maxHumidity :INS5150874_tRelativeHumidityValue_10 ;
+      ns2:maxLuminance :INS5150874_tIlluminanceValue_10 ;
+      ns2:maxTemperature :INS5150874_tTemperatureValue_10 ;
+      ns2:minAirflow :INS5150874_tVelocityValue_9 ;
+      ns2:minCO2 :INS5150874_tConcentrationOfGasValue_9 ;
+      ns2:minHumidity :INS5150874_tRelativeHumidityValue_9 ;
+      ns2:minLuminance :INS5150874_tIlluminanceValue_9 ;
+      ns2:minTemperature :INS5150874_tTemperatureValue_9 .
+
+:INS5150874_Anon_43_7
+      a       ns2:Anon_43 ;
+      ns2:equipmentIntensityMode
+              :INS5150874_tUnitlessValue_7 ;
+      ns2:equipmentTypeRef
+              "Printer"^^ns2:intEquipTypeEnumDatatype ;
+      ns2:numberOf "1"^^xsd:int ;
+      ns2:numberOfUses "1"^^xsd:int ;
+      ns2:timeOfUse "PT2M"^^xsd:duration .
+
+:INS5150874_tSkeletonActivityType_5
+      a       ns2:tSkeletonActivityType ;
+      ns2:RoleInvolved :INS5150874_Anon_44_5 ;
+      ns2:executionTime "PT1M"^^xsd:duration ;
+      ns2:frequency :INS5150874_tFrequencyValue_5 ;
+      ns2:id  "195894"^^xsd:string ;
+      ns2:interruptable "true"^^xsd:boolean ;
+      ns2:isBusinessActivity
+              "true"^^xsd:boolean ;
+      ns2:name "Check the reason for patient visit"^^xsd:string ;
+      ns2:nextActivityRef :INS5150874_Anon_46_8 , :INS5150874_Anon_46_7 , :INS5150874_Anon_46_9 ;
+      ns2:previousActivityRef
+              :INS5150874_Anon_45_5 ;
+      ns2:requiredEnvironment
+              :INS5150874_tEnvironmentComfortValues_5 ;
+      ns2:transportTime "P0Y"^^xsd:duration ;
+      ns2:usedEquipment :INS5150874_Anon_43_3 ;
+      ns2:usedSpaceType "ReceptionOrWaitingTransportation"^^ns2:spaceTypeEnumDatatype ;
+      ns2:waitingTime "P0Y"^^xsd:duration .
+
+:INS5150874_Anon_44_4
+      a       ns2:Anon_44 ;
+      ns2:averageNumberOfPersons
+              "6.0"^^xsd:float ;
+      ns2:clothing :INS5150874_tPeopleClothingValue_4 ;
+      ns2:occupantWorkIntensity
+              :INS5150874_tPeopleHeatGainValue_4 ;
+      ns2:roleRef "Nurse"^^xsd:string .
+
+:INS5150874_tVelocityValue_2
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "1.0"^^xsd:float .
+
+:INS5150874_tPeopleClothingValue_11
+      a       ns2:tPeopleClothingValue ;
+      ns2:unit "Clo"^^ns2:clothingUnitEnumDatatype ;
+      ns2:value "2.9"^^xsd:float .
+
+:INS5150874_Anon_51_1
+      a       ns2:Anon_51 .
+
+:INS5150874_tSkeletonActivityType_13
+      a       ns2:tSkeletonActivityType ;
+      ns2:RoleInvolved :INS5150874_Anon_44_13 ;
+      ns2:executionTime "PT2M"^^xsd:duration ;
+      ns2:frequency :INS5150874_tFrequencyValue_13 ;
+      ns2:id  "195927"^^xsd:string ;
+      ns2:interruptable "true"^^xsd:boolean ;
+      ns2:isBusinessActivity
+              "true"^^xsd:boolean ;
+      ns2:name "Print Receipt"^^xsd:string ;
+      ns2:previousActivityRef
+              :INS5150874_Anon_45_17 ;
+      ns2:requiredEnvironment
+              :INS5150874_tEnvironmentComfortValues_13 ;
+      ns2:transportTime "P0Y"^^xsd:duration ;
+      ns2:usedEquipment :INS5150874_Anon_43_7 , :INS5150874_Anon_43_6 ;
+      ns2:usedSpaceType "OfficeOpenPlan"^^ns2:spaceTypeEnumDatatype ;
+      ns2:waitingTime "P0Y"^^xsd:duration .
+
+:INS5150874_tUnitlessValue_1
+      a       ns2:tUnitlessValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "40.0"^^xsd:float .
+
+:INS5150874_tRelativeHumidityValue_7
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_Anon_9_9
+      a       ns2:Anon_9 .
+
+:INS5150874_Anon_45_18
+      a       ns2:Anon_45 ;
+      ns2:likelihood "0.2"^^xsd:double ;
+      ns2:textContent "195879"^^xsd:string .
+
+:INS5150874_tRelativeHumidityValue_21
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_Anon_10_16
+      a       ns2:Anon_10 .
+
+:INS5150874_tPeopleClothingValue_7
+      a       ns2:tPeopleClothingValue ;
+      ns2:unit "Clo"^^ns2:clothingUnitEnumDatatype ;
+      ns2:value "2.9"^^xsd:float .
+
+:INS5150874_tVelocityValue_26
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "1.0"^^xsd:float .
+
+:INS5150874_tFrequencyValue_11
+      a       ns2:tFrequencyValue ;
+      ns2:duration "PT10M"^^xsd:duration ;
+      ns2:iterations "1"^^xsd:int .
+
+:INS5150874_tEnvironmentComfortValues_13
+      a       ns2:tEnvironmentComfortValues ;
+      ns2:maxAirflow :INS5150874_tVelocityValue_26 ;
+      ns2:maxCO2 :INS5150874_tConcentrationOfGasValue_26 ;
+      ns2:maxHumidity :INS5150874_tRelativeHumidityValue_26 ;
+      ns2:maxLuminance :INS5150874_tIlluminanceValue_26 ;
+      ns2:maxTemperature :INS5150874_tTemperatureValue_26 ;
+      ns2:minAirflow :INS5150874_tVelocityValue_25 ;
+      ns2:minCO2 :INS5150874_tConcentrationOfGasValue_25 ;
+      ns2:minHumidity :INS5150874_tRelativeHumidityValue_25 ;
+      ns2:minLuminance :INS5150874_tIlluminanceValue_25 ;
+      ns2:minTemperature :INS5150874_tTemperatureValue_25 .
+
+:INS5150874_tConcentrationOfGasValue_22
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "78.0"^^xsd:float .
+
+:INS5150874_tConcentrationOfGasValue_10
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "78.0"^^xsd:float .
+
+:INS5150874_Anon_44_5
+      a       ns2:Anon_44 ;
+      ns2:averageNumberOfPersons
+              "6.0"^^xsd:float ;
+      ns2:clothing :INS5150874_tPeopleClothingValue_5 ;
+      ns2:occupantWorkIntensity
+              :INS5150874_tPeopleHeatGainValue_5 ;
+      ns2:roleRef "Nurse"^^xsd:string .
+
+:INS5150874_Anon_46_17
+      a       ns2:Anon_46 ;
+      ns2:likelihood "1.0"^^xsd:double ;
+      ns2:textContent "195927"^^xsd:string .
+
+:INS5150874_Anon_45_2
+      a       ns2:Anon_45 ;
+      ns2:likelihood "0.2"^^xsd:double ;
+      ns2:textContent "195894"^^xsd:string .
+
+:INS5150874_tSpace_20
+      a       ns2:tSpace ;
+      ns2:equipments :INS5150874_Anon_9_20 ;
+      ns2:id  "GENERAL_PRACTICE_B"^^xsd:string ;
+      ns2:lightings :INS5150874_Anon_10_20 ;
+      ns2:type "ExamOrTreatmentHospitalOrHealthcare"^^ns2:spaceTypeEnumDatatype .
+
+:INS5150874_Anon_45_12
+      a       ns2:Anon_45 ;
+      ns2:likelihood "0.4"^^xsd:double ;
+      ns2:textContent "195891"^^xsd:string .
+
+:INS5150874_tIlluminanceValue_14
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "10.0"^^xsd:float .
+
+:INS5150874_Anon_9_4
+      a       ns2:Anon_9 .
+
+:INS5150874_Anon_43_8
+      a       ns2:Anon_43 ;
+      ns2:equipmentIntensityMode
+              :INS5150874_tUnitlessValue_8 ;
+      ns2:equipmentTypeRef
+              "Computer"^^ns2:intEquipTypeEnumDatatype ;
+      ns2:numberOf "1"^^xsd:int ;
+      ns2:numberOfUses "0"^^xsd:int ;
+      ns2:timeOfUse "PT1M"^^xsd:duration .
+
+:INS5150874_tSkeletonActivityType_14
+      a       ns2:tSkeletonActivityType ;
+      ns2:RoleInvolved :INS5150874_Anon_44_14 ;
+      ns2:executionTime "PT5M"^^xsd:duration ;
+      ns2:frequency :INS5150874_tFrequencyValue_14 ;
+      ns2:id  "195942"^^xsd:string ;
+      ns2:interruptable "true"^^xsd:boolean ;
+      ns2:isBusinessActivity
+              "true"^^xsd:boolean ;
+      ns2:name "Gather patient background and information"^^xsd:string ;
+      ns2:nextActivityRef :INS5150874_Anon_46_18 ;
+      ns2:previousActivityRef
+              :INS5150874_Anon_45_18 ;
+      ns2:requiredEnvironment
+              :INS5150874_tEnvironmentComfortValues_14 ;
+      ns2:transportTime "P0Y"^^xsd:duration ;
+      ns2:usedEquipment :INS5150874_Anon_43_8 ;
+      ns2:usedSpaceType "ReceptionOrWaitingTransportation"^^ns2:spaceTypeEnumDatatype ;
+      ns2:waitingTime "P0Y"^^xsd:duration .
+
+:INS5150874_tConcentrationOfGasValue_5
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_tIlluminanceValue_26
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "10.0"^^xsd:float .
+
+:INS5150874_tRelativeHumidityValue_18
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_tPeopleHeatGainValue_3
+      a       ns2:tPeopleHeatGainValue ;
+      ns2:unit "WattPerPerson"^^ns2:peopleHeatGainUnitEnumDatatype ;
+      ns2:value "1.8"^^xsd:float .
+
+:INS5150874_tTemperatureValue_1
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "23.0"^^xsd:float .
+
+:INS5150874_tSpace_9
+      a       ns2:tSpace ;
+      ns2:equipments :INS5150874_Anon_9_9 ;
+      ns2:id  "WAITING_ROOM_B"^^xsd:string ;
+      ns2:lightings :INS5150874_Anon_10_9 ;
+      ns2:type "ReceptionOrWaitingTransportation"^^ns2:spaceTypeEnumDatatype .
+
+:INS5150874_Anon_9_12
+      a       ns2:Anon_9 .
+
+:INS5150874_tConcentrationOfGasValue_23
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_tIlluminanceValue_9
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "4.0"^^xsd:float .
+
+:INS5150874_tPeopleClothingValue_9
+      a       ns2:tPeopleClothingValue ;
+      ns2:unit "Clo"^^ns2:clothingUnitEnumDatatype ;
+      ns2:value "2.9"^^xsd:float .
+
+:INS5150874_tConcentrationOfGasValue_11
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_Anon_44_6
+      a       ns2:Anon_44 ;
+      ns2:averageNumberOfPersons
+              "6.0"^^xsd:float ;
+      ns2:clothing :INS5150874_tPeopleClothingValue_6 ;
+      ns2:occupantWorkIntensity
+              :INS5150874_tPeopleHeatGainValue_6 ;
+      ns2:roleRef "Nurse"^^xsd:string .
+
+:INS5150874_tEnvironmentComfortValues_14
+      a       ns2:tEnvironmentComfortValues ;
+      ns2:maxAirflow :INS5150874_tVelocityValue_28 ;
+      ns2:maxCO2 :INS5150874_tConcentrationOfGasValue_28 ;
+      ns2:maxHumidity :INS5150874_tRelativeHumidityValue_28 ;
+      ns2:maxLuminance :INS5150874_tIlluminanceValue_28 ;
+      ns2:maxTemperature :INS5150874_tTemperatureValue_28 ;
+      ns2:minAirflow :INS5150874_tVelocityValue_27 ;
+      ns2:minCO2 :INS5150874_tConcentrationOfGasValue_27 ;
+      ns2:minHumidity :INS5150874_tRelativeHumidityValue_27 ;
+      ns2:minLuminance :INS5150874_tIlluminanceValue_27 ;
+      ns2:minTemperature :INS5150874_tTemperatureValue_27 .
+
+:INS5150874_Anon_45_3
+      a       ns2:Anon_45 ;
+      ns2:likelihood "1.0"^^xsd:double ;
+      ns2:textContent "195942"^^xsd:string .
+
+:INS5150874_Anon_46_16
+      a       ns2:Anon_46 ;
+      ns2:likelihood "1.0"^^xsd:double ;
+      ns2:textContent "195924"^^xsd:string .
+
+:INS5150874_tIlluminanceValue_13
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "4.0"^^xsd:float .
+
+:INS5150874_tIlluminanceValue_25
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "4.0"^^xsd:float .
+
+:INS5150874_Anon_45_11
+      a       ns2:Anon_45 ;
+      ns2:likelihood "1.0"^^xsd:double ;
+      ns2:textContent "195906"^^xsd:string .
+
+:INS5150874_Anon_9_3
+      a       ns2:Anon_9 .
+
+:INS5150874_tRelativeHumidityValue_19
+      a       ns2:tRelativeHumidityValue ;
+      ns2:unit "Percent"^^ns2:unitlessUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_tConcentrationOfGasValue_4
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "78.0"^^xsd:float .
+
+:INS5150874_tPeopleHeatGainValue_4
+      a       ns2:tPeopleHeatGainValue ;
+      ns2:unit "WattPerPerson"^^ns2:peopleHeatGainUnitEnumDatatype ;
+      ns2:value "1.8"^^xsd:float .
+
+:INS5150874_MeasurementFile_1
+      a       ns2:MeasurementFile ;
+      ns2:building :INS5150874_tBuilding_1 ;
+      ns2:events :INS5150874_Anon_51_1 ;
+      ns2:id  "EYE_CLINIC"^^xsd:string ;
+      ns2:measurements :INS5150874_Anon_52_1 ;
+      ns2:processes :INS5150874_Anon_53_1 ;
+      ns2:roles :INS5150874_Anon_54_1 .
+
+:INS5150874_Anon_46_15
+      a       ns2:Anon_46 ;
+      ns2:likelihood "1.0"^^xsd:double ;
+      ns2:textContent "195921"^^xsd:string .
+
+:INS5150874_tTemperatureValue_2
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_tBuilding_1
+      a       ns2:tBuilding ;
+      ns2:HVACs :INS5150874_Anon_17_1 ;
+      ns2:buildingType "HospitalOrHealthcare"^^ns2:buildingTypeEnumDatatype ;
+      ns2:equipmentTypes :INS5150874_Anon_16_1 ;
+      ns2:id  "EYE_CLINIC"^^xsd:string ;
+      ns2:space :INS5150874_tSpace_16 , :INS5150874_tSpace_15 , :INS5150874_tSpace_14 , :INS5150874_tSpace_13 , :INS5150874_tSpace_12 , :INS5150874_tSpace_11 , :INS5150874_tSpace_10 , :INS5150874_tSpace_20 , :INS5150874_tSpace_1 , :INS5150874_tSpace_3 , :INS5150874_tSpace_2 , :INS5150874_tSpace_5 , :INS5150874_tSpace_4 , :INS5150874_tSpace_7 , :INS5150874_tSpace_6 , :INS5150874_tSpace_9 , :INS5150874_tSpace_19 , :INS5150874_tSpace_8 , :INS5150874_tSpace_18 , :INS5150874_tSpace_17 .
+
+:INS5150874_Anon_9_11
+      a       ns2:Anon_9 .
+
+:INS5150874_tEnvironmentComfortValues_11
+      a       ns2:tEnvironmentComfortValues ;
+      ns2:maxAirflow :INS5150874_tVelocityValue_22 ;
+      ns2:maxCO2 :INS5150874_tConcentrationOfGasValue_22 ;
+      ns2:maxHumidity :INS5150874_tRelativeHumidityValue_22 ;
+      ns2:maxLuminance :INS5150874_tIlluminanceValue_22 ;
+      ns2:maxTemperature :INS5150874_tTemperatureValue_22 ;
+      ns2:minAirflow :INS5150874_tVelocityValue_21 ;
+      ns2:minCO2 :INS5150874_tConcentrationOfGasValue_21 ;
+      ns2:minHumidity :INS5150874_tRelativeHumidityValue_21 ;
+      ns2:minLuminance :INS5150874_tIlluminanceValue_21 ;
+      ns2:minTemperature :INS5150874_tTemperatureValue_21 .
+
+:INS5150874_tIlluminanceValue_8
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "10.0"^^xsd:float .
+
+:INS5150874_Anon_45_4
+      a       ns2:Anon_45 ;
+      ns2:likelihood "1.0"^^xsd:double ;
+      ns2:textContent "195885"^^xsd:string .
+
+:INS5150874_tConcentrationOfGasValue_20
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "78.0"^^xsd:float .
+
+:INS5150874_Anon_46_1
+      a       ns2:Anon_46 ;
+      ns2:likelihood "0.2"^^xsd:double ;
+      ns2:textContent "195942"^^xsd:string .
+
+:INS5150874_tIlluminanceValue_24
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "10.0"^^xsd:float .
+
+:INS5150874_Anon_9_6
+      a       ns2:Anon_9 .
+
+:INS5150874_Anon_44_7
+      a       ns2:Anon_44 ;
+      ns2:averageNumberOfPersons
+              "6.0"^^xsd:float ;
+      ns2:clothing :INS5150874_tPeopleClothingValue_7 ;
+      ns2:occupantWorkIntensity
+              :INS5150874_tPeopleHeatGainValue_7 ;
+      ns2:roleRef "Nurse"^^xsd:string .
+
+:INS5150874_Anon_45_14
+      a       ns2:Anon_45 ;
+      ns2:likelihood "1.0"^^xsd:double ;
+      ns2:textContent "195915"^^xsd:string .
+
+:INS5150874_Anon_52_1
+      a       ns2:Anon_52 .
+
+:INS5150874_tIlluminanceValue_12
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "10.0"^^xsd:float .
+
+:INS5150874_tConcentrationOfGasValue_3
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_tPeopleHeatGainValue_1
+      a       ns2:tPeopleHeatGainValue ;
+      ns2:unit "WattPerPerson"^^ns2:peopleHeatGainUnitEnumDatatype ;
+      ns2:value "1.8"^^xsd:float .
+
+:INS5150874_Anon_45_15
+      a       ns2:Anon_45 ;
+      ns2:likelihood "1.0"^^xsd:double ;
+      ns2:textContent "195918"^^xsd:string .
+
+:INS5150874_tTemperatureValue_19
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "23.0"^^xsd:float .
+
+:INS5150874_tTemperatureValue_3
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "23.0"^^xsd:float .
+
+:INS5150874_tVelocityValue_19
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "0.0"^^xsd:float .
+
+:INS5150874_Anon_9_10
+      a       ns2:Anon_9 .
+
+:INS5150874_Anon_10_19
+      a       ns2:Anon_10 .
+
+:INS5150874_tIlluminanceValue_7
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "4.0"^^xsd:float .
+
+:INS5150874_tEnvironmentComfortValues_12
+      a       ns2:tEnvironmentComfortValues ;
+      ns2:maxAirflow :INS5150874_tVelocityValue_24 ;
+      ns2:maxCO2 :INS5150874_tConcentrationOfGasValue_24 ;
+      ns2:maxHumidity :INS5150874_tRelativeHumidityValue_24 ;
+      ns2:maxLuminance :INS5150874_tIlluminanceValue_24 ;
+      ns2:maxTemperature :INS5150874_tTemperatureValue_24 ;
+      ns2:minAirflow :INS5150874_tVelocityValue_23 ;
+      ns2:minCO2 :INS5150874_tConcentrationOfGasValue_23 ;
+      ns2:minHumidity :INS5150874_tRelativeHumidityValue_23 ;
+      ns2:minLuminance :INS5150874_tIlluminanceValue_23 ;
+      ns2:minTemperature :INS5150874_tTemperatureValue_23 .
+
+:INS5150874_tSkeletonActivityType_1
+      a       ns2:tSkeletonActivityType ;
+      ns2:RoleInvolved :INS5150874_Anon_44_1 ;
+      ns2:executionTime "PT3M"^^xsd:duration ;
+      ns2:frequency :INS5150874_tFrequencyValue_1 ;
+      ns2:id  "195879"^^xsd:string ;
+      ns2:interruptable "true"^^xsd:boolean ;
+      ns2:isBusinessActivity
+              "true"^^xsd:boolean ;
+      ns2:name "Check patient details"^^xsd:string ;
+      ns2:nextActivityRef :INS5150874_Anon_46_2 , :INS5150874_Anon_46_1 ;
+      ns2:requiredEnvironment
+              :INS5150874_tEnvironmentComfortValues_1 ;
+      ns2:transportTime "P0Y"^^xsd:duration ;
+      ns2:usedEquipment :INS5150874_Anon_43_1 ;
+      ns2:usedSpaceType "ReceptionOrWaitingTransportation"^^ns2:spaceTypeEnumDatatype ;
+      ns2:waitingTime "P0Y"^^xsd:duration .
+
+:INS5150874_tConcentrationOfGasValue_21
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "56.0"^^xsd:float .
+
+:INS5150874_Anon_46_2
+      a       ns2:Anon_46 ;
+      ns2:likelihood "0.8"^^xsd:double ;
+      ns2:textContent "195894"^^xsd:string .
+
+:INS5150874_Anon_46_18
+      a       ns2:Anon_46 ;
+      ns2:likelihood "1.0"^^xsd:double ;
+      ns2:textContent "195888"^^xsd:string .
+
+:INS5150874_Anon_45_5
+      a       ns2:Anon_45 ;
+      ns2:likelihood "0.8"^^xsd:double ;
+      ns2:textContent "195879"^^xsd:string .
+
+:INS5150874_Anon_10_9
+      a       ns2:Anon_10 .
+
+:INS5150874_tIlluminanceValue_11
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "4.0"^^xsd:float .
+
+:INS5150874_Anon_9_5
+      a       ns2:Anon_9 .
+
+:INS5150874_Anon_44_8
+      a       ns2:Anon_44 ;
+      ns2:averageNumberOfPersons
+              "6.0"^^xsd:float ;
+      ns2:clothing :INS5150874_tPeopleClothingValue_8 ;
+      ns2:occupantWorkIntensity
+              :INS5150874_tPeopleHeatGainValue_8 ;
+      ns2:roleRef "Nurse"^^xsd:string .
+
+:INS5150874_Anon_45_13
+      a       ns2:Anon_45 ;
+      ns2:likelihood "0.3"^^xsd:double ;
+      ns2:textContent "195903"^^xsd:string .
+
+:INS5150874_tIlluminanceValue_23
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "4.0"^^xsd:float .
+
+:INS5150874_tConcentrationOfGasValue_2
+      a       ns2:tConcentrationOfGasValue ;
+      ns2:unit "PartsPerMillion"^^ns2:concentrationOfGasUnitEnumDatatype ;
+      ns2:value "78.0"^^xsd:float .
+
+:INS5150874_tIlluminanceValue_10
+      a       ns2:tIlluminanceValue ;
+      ns2:unit "Footcandles"^^ns2:illuminanceUnitEnumDatatype ;
+      ns2:value "10.0"^^xsd:float .
+
+:INS5150874_tPeopleHeatGainValue_2
+      a       ns2:tPeopleHeatGainValue ;
+      ns2:unit "WattPerPerson"^^ns2:peopleHeatGainUnitEnumDatatype ;
+      ns2:value "1.8"^^xsd:float .
+
+:INS5150874_tTemperatureValue_18
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_tFrequencyValue_1
+      a       ns2:tFrequencyValue ;
+      ns2:duration "PT3M"^^xsd:duration ;
+      ns2:iterations "1"^^xsd:int .
+
+:INS5150874_tTemperatureValue_4
+      a       ns2:tTemperatureValue ;
+      ns2:unit "F"^^ns2:temperatureUnitEnumDatatype ;
+      ns2:value "45.0"^^xsd:float .
+
+:INS5150874_tVelocityValue_18
+      a       ns2:tVelocityValue ;
+      ns2:unit "MetersPerSecond"^^ns2:velocityUnitEnumDatatype ;
+      ns2:value "1.0"^^xsd:float .
+
+:INS5150874_tEnvironmentComfortValues_1
+      a       ns2:tEnvironmentComfortValues ;
+      ns2:maxAirflow :INS5150874_tVelocityValue_2 ;
+      ns2:maxCO2 :INS5150874_tConcentrationOfGasValue_2 ;
+      ns2:maxHumidity :INS5150874_tRelativeHumidityValue_2 ;
+      ns2:maxLuminance :INS5150874_tIlluminanceValue_2 ;
+      ns2:maxTemperature :INS5150874_tTemperatureValue_2 ;
+      ns2:minAirflow :INS5150874_tVelocityValue_1 ;
+      ns2:minCO2 :INS5150874_tConcentrationOfGasValue_1 ;
+      ns2:minHumidity :INS5150874_tRelativeHumidityValue_1 ;
+      ns2:minLuminance :INS5150874_tIlluminanceValue_1 ;
+      ns2:minTemperature :INS5150874_tTemperatureValue_1 .
+
+:INS5150874_Anon_44_10
+      a       ns2:Anon_44 ;
+      ns2:averageNumberOfPersons
+              "6.0"^^xsd:float ;
+      ns2:clothing :INS5150874_tPeopleClothingValue_10 ;
+      ns2:occupantWorkIntensity
+              :INS5150874_tPeopleHeatGainValue_10 ;
+      ns2:roleRef "Nurse"^^xsd:string .

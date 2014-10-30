@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.adapt4ee.eu/2012/schema/kpi/"
+	xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:a4eekpi="http://www.adapt4ee.eu/2012/schema/kpi/"
+	xmlns:a4eeuni="http://www.adapt4ee.eu/2012/schema/units/" xmlns:a4eebpm="http://www.adapt4ee.eu/2012/schema/bpm/">
+
+
+	<import schemaLocation="adapt4eeUnits.xsd"
+		namespace="http://www.adapt4ee.eu/2012/schema/units/">
+	</import>
+	<import schemaLocation="adapt4eeBPM.xsd" namespace="http://www.adapt4ee.eu/2012/schema/bpm/"></import>
+	<complexType name="tKeyPerformanceIndicator">
+		<annotation>
+	 		<documentation>
+				TODO to the same for Lighting and HVAC emissions
+			</documentation>
+		</annotation>
+		<sequence>
+      <element name="EmissionsFactor" type="a4eeuni:tOtherValue" minOccurs="0" maxOccurs="1"/>
+			<element name="equipmentEmissionsPerTime" type="string"
+				minOccurs="0" maxOccurs="unbounded" />
+			<element name="energyKPI" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>
+						TODO split KPIs into Energy, Business Cost,
+						Comfort KPIs
+					</documentation>
+				</annotation>
+				<complexType>
+					<sequence>
+						<element name="TotalEnergyConsumption"
+							type="a4eeuni:tEnergyValue" minOccurs="0" maxOccurs="1" />
+						<element name="TotalEquipmentEnergyConsumption"
+							type="a4eeuni:tEnergyValue" minOccurs="0" maxOccurs="1" />
+						<element name="TotalLightingEnergyConsumption"
+							type="a4eeuni:tEnergyValue" minOccurs="0" maxOccurs="1" />
+						<element name="TotalHVACEnergyConsumption"
+							type="a4eeuni:tEnergyValue" minOccurs="0" maxOccurs="1" />
+						<element name="TotalEmissions"
+							type="a4eeuni:tEmissionValue" minOccurs="0" maxOccurs="1" />
+						<element name="TotalEquipmentEmissions"
+							type="a4eeuni:tEmissionValue" minOccurs="0" maxOccurs="1" />
+						<element name="TotalAnnualLightingEmissions"
+							type="a4eeuni:tEmissionValue" minOccurs="0" maxOccurs="1" />
+						<element name="TotalLightingEmissions"
+							type="a4eeuni:tEmissionValue" maxOccurs="1" minOccurs="0">
+						</element>
+						<element name="TotalAnnualHVACEmissions"
+							type="a4eeuni:tEmissionValue" minOccurs="0" maxOccurs="1" />
+						<element name="BuildingOperationalPerformance"
+							type="a4eeuni:tUnitlessValue" minOccurs="0" maxOccurs="1" />
+						<element name="TotalEnergyConsumptionPerArea"
+							type="a4eeuni:tEnergyPerAreaValue" maxOccurs="1" minOccurs="0">
+						</element>
+						<element name="TotalAnnualEnergyEmissions"
+							type="a4eeuni:tEmissionValue" maxOccurs="1" minOccurs="0">
+						</element>
+						<element name="TotalHVACEmissions"
+							type="a4eeuni:tEmissionValue" maxOccurs="1" minOccurs="0">
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+			<element name="businessKPI" minOccurs="1" maxOccurs="1">
+				<complexType>
+					<sequence>
+						<element name="AverageWorkEfficiency"
+							minOccurs="0" maxOccurs="1" type="a4eeuni:tUnitlessValue" />
+						<element name="AverageBuildingUsage"
+							type="a4eeuni:tUnitlessValue" minOccurs="1" maxOccurs="1" />
+						<element name="AverageEquipmentUsage"
+							type="a4eeuni:tUnitlessValue" minOccurs="1" maxOccurs="1" />
+						<element
+							name="AverageBusinessProcessUtilisation" minOccurs="0"
+							maxOccurs="unbounded" type="a4eeuni:tUnitlessValue" />
+						<element name="AverageRoleUtilisation"
+							minOccurs="0" maxOccurs="1" type="a4eeuni:tUnitlessValue" />
+						<element name="AverageProcessCycleTime"
+							minOccurs="0" maxOccurs="1" type="a4eeuni:tDurationValue" />
+						<element name="AverageWorkEfficiencyPerOccupant"
+							maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="workEfficiency"
+										type="a4eeuni:tUnitlessValue" maxOccurs="1" minOccurs="1">
+									</element>
+									<element name="occupantRef"
+										type="string" maxOccurs="1" minOccurs="1">
+									</element>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+			<element name="comfortKPI" minOccurs="1" maxOccurs="1">
+				<complexType>
+					<sequence>
+						<element name="AverageOvercrowdingFactor" minOccurs="0"
+							maxOccurs="1" type="a4eeuni:tUnitlessValue" />
+						<element name="AveragePMV" type="a4eeuni:tUnitlessValue"  minOccurs="0" maxOccurs="1" />
+						<element
+							name="AveragePPD"
+							type="a4eeuni:tUnitlessValue" minOccurs="1" maxOccurs="1" />
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="tSimulatorStatistics">
+		<sequence>
+			<element name="EquipmentArtifactUsageTimeSeries"
+				minOccurs="0" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="equipmentRef" type="string"
+							minOccurs="1" maxOccurs="1" />
+						<element name="timeSeriesPercentages"
+							type="a4eeuni:tTimeSeriesOfPercentagesValue" minOccurs="1"
+							maxOccurs="1" />
+					</sequence>
+				</complexType>
+			</element>
+			<element name="HVACUsageTimeSeries" minOccurs="0"
+				maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="HVACRef" type="string"
+							minOccurs="1" maxOccurs="1" />
+						<element name="zoneRef" type="string"
+							maxOccurs="1" minOccurs="1">
+						</element>
+						<element name="timeSeriesPercentages"
+							type="a4eeuni:tTimeSeriesOfPercentagesValue" minOccurs="1"
+							maxOccurs="1" />
+					</sequence>
+				</complexType>
+			</element>
+			<element name="PMV" minOccurs="0" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="spaceRef" type="string"
+							minOccurs="1" maxOccurs="1" />
+						<element name="timeSeriesNumbers"
+							type="a4eeuni:tTimeSeriesOfNumbersValue" minOccurs="1"
+							maxOccurs="1" />
+					</sequence>
+				</complexType>
+			</element>
+			<element name="LightingUsageTimeSeries" minOccurs="0"
+				maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="spaceRef" type="string"
+							minOccurs="1" maxOccurs="1" />
+						<element name="timeSeriesPercentages"
+							type="a4eeuni:tTimeSeriesOfPercentagesValue" minOccurs="1"
+							maxOccurs="1" />
+					</sequence>
+				</complexType>
+			</element>
+			<element name="OccupantBusinessActivityTimeSeries"
+				minOccurs="0" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="occupantRef" type="string"
+							minOccurs="1" maxOccurs="1" />
+						<element name="activityRef" type="string"
+							maxOccurs="1" minOccurs="1">
+						</element>
+						<element name="timeSeriesPercentages"
+							type="a4eeuni:tTimeSeriesOfPercentagesValue" minOccurs="1"
+							maxOccurs="1" />
+						<element name="processRef" type="string"
+							maxOccurs="1" minOccurs="0">
+						</element>
+						<element name="processInstanceRef" type="string"
+							maxOccurs="1" minOccurs="0">
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+			<!--this will be used as a business performace indicator -->
+			<element name="OccupantBuildingElementOccupationTimeSeries"
+				minOccurs="0" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="occupantRef" type="string"
+							minOccurs="1" maxOccurs="1" />
+						<element name="spaceRef" type="string"
+							minOccurs="1" maxOccurs="1" />
+						<element name="timeSeriesPercentages"
+							type="a4eeuni:tTimeSeriesOfPercentagesValue" minOccurs="1"
+							maxOccurs="1" />
+					</sequence>
+				</complexType>
+			</element>
+			<element name="BuildingElementUsageTimeSeries" minOccurs="0"
+				maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="spaceRef" type="string"
+							minOccurs="1" maxOccurs="1" />
+						<element name="timeSeriesPercentages"
+							type="a4eeuni:tTimeSeriesOfPercentagesValue" minOccurs="1"
+							maxOccurs="1" />
+					</sequence>
+				</complexType>
+			</element>
+			<element name="BuildingElementOccupancyTimeSeries"
+				minOccurs="0" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="spaceRef" type="string"
+							minOccurs="1" maxOccurs="1" />
+						<element name="timeSeriesNumbers"
+							type="a4eeuni:tTimeSeriesOfNumbersValue" minOccurs="1"
+							maxOccurs="1" />
+					</sequence>
+				</complexType>
+			</element>
+			<element name="simulationStartTime" type="dateTime"
+				maxOccurs="1" minOccurs="0">
+			</element>
+			<element name="simulationDuration" type="duration"
+				maxOccurs="1" minOccurs="0">
+			</element>
+			<element name="OutdoorAirTemperatureTimeSeries"
+				maxOccurs="1" minOccurs="0">
+				<complexType>
+					<sequence>
+						<element name="temperatureSerie"
+							type="a4eeuni:tTimeSerieTemperatureValue" maxOccurs="unbounded"
+							minOccurs="0">
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+			<element name="IndoorAirTemperatureTimeSeries" maxOccurs="1"
+				minOccurs="0">
+				<complexType>
+					<sequence>
+						<element name="internalTemperatureValue"
+							maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="buildingElementRef"
+										type="string" maxOccurs="1" minOccurs="1">
+									</element>
+									<element name="temperatureSerie"
+										type="a4eeuni:tTimeSerieTemperatureValue"
+										maxOccurs="unbounded" minOccurs="1">
+									</element>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+
+
+			<element name="OutdoorAirHumidityTimeSeries" maxOccurs="1"
+				minOccurs="0">
+				<complexType>
+					<sequence>
+						<element name="humiditySerie"
+							type="a4eeuni:tTimeSeriePercentageValue" maxOccurs="unbounded"
+							minOccurs="0">
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+			<element name="IndoorAirHumidityTimeSeries" maxOccurs="1"
+				minOccurs="0">
+				<complexType>
+					<sequence>
+						<element name="internalHumidityValue"
+							maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="buildingElementRef"
+										type="string" maxOccurs="1" minOccurs="1">
+									</element>
+									<element name="humiditySerie"
+										type="a4eeuni:tTimeSeriePercentageValue" maxOccurs="unbounded"
+										minOccurs="1">
+									</element>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+
+
+			<element name="OutdoorIlluminanceTimeSeries" maxOccurs="1"
+				minOccurs="0">
+				<complexType>
+					<sequence>
+						<element name="illuminnaceSerie"
+							type="a4eeuni:tTimeSerieIlluminanceValue" maxOccurs="unbounded"
+							minOccurs="0">
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+			<element name="IndoorIlluminanceTimeSeries" maxOccurs="1"
+				minOccurs="0">
+				<complexType>
+					<sequence>
+						<element name="internalIlluminanceValue"
+							maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="buildingElementRef"
+										type="string" maxOccurs="1" minOccurs="1">
+									</element>
+									<element name="illuminanceSerie"
+										type="a4eeuni:tTimeSerieIlluminanceValue"
+										maxOccurs="unbounded" minOccurs="1">
+									</element>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+
+
+
+			<element name="IndoorCO2TimeSeries" maxOccurs="1"
+				minOccurs="0">
+				<complexType>
+					<sequence>
+						<element name="internalCO2Value"
+							maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="buildingElementRef"
+										type="string" maxOccurs="1" minOccurs="1">
+									</element>
+									<element name="CO2ValueSerie"
+										type="a4eeuni:tTimeSeriePercentageValue" maxOccurs="unbounded"
+										minOccurs="1">
+									</element>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+
+			<element name="BusinessProcessActivityTimeSeries"
+				maxOccurs="1" minOccurs="0">
+				<complexType>
+					<sequence>
+						<element name="businessProcessActivityTime"
+							maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="businessProcessRef"
+										type="string" maxOccurs="1" minOccurs="0">
+									</element>
+									<element name="businessActivityRef"
+										type="string" maxOccurs="1" minOccurs="1">
+									</element>
+									<element name="startTime"
+										type="dateTime" maxOccurs="1" minOccurs="1">
+									</element>
+									<element name="endTime"
+										type="dateTime" maxOccurs="1" minOccurs="1">
+									</element>
+									<element name="processInstanceRef"
+										type="string" maxOccurs="1" minOccurs="0">
+									</element>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+
+
+			<element name="ProcessLogs" maxOccurs="1" minOccurs="0">
+				<complexType>
+					<sequence>
+						<element name="processLog" maxOccurs="unbounded"
+							minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="businessProcessRef"
+										type="string" maxOccurs="1" minOccurs="0">
+									</element>
+									<element
+										name="businessProcessInstanceRef" type="string" maxOccurs="1" minOccurs="0">
+									</element>
+									<element name="startTime"
+										type="dateTime" maxOccurs="1" minOccurs="0">
+									</element>
+									<element name="endTime"
+										type="dateTime" maxOccurs="1" minOccurs="0">
+									</element>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="tAgentBasedSimulationModuleOutput">
+		<sequence>
+			<element name="simulationID" type="string" minOccurs="1"
+				maxOccurs="1" />
+			<element name="keyPerformanceIndicator"
+				type="a4eekpi:tKeyPerformanceIndicator" minOccurs="1" maxOccurs="1" />
+			<element name="simulatorStatistics"
+				type="a4eekpi:tSimulatorStatistics" minOccurs="1" maxOccurs="1" />
+			<element name="eventTrace" type="a4eekpi:tEventTrace"
+				minOccurs="1" maxOccurs="1" />
+		</sequence>
+	</complexType>
+	<complexType name="tEventTrace">
+		<sequence>
+			<element name="eventRecord" minOccurs="0"
+				maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="timeStamp" type="dateTime"
+							minOccurs="1" maxOccurs="1" />
+						<element name="occupantRef" type="string"
+							minOccurs="1" maxOccurs="1" />
+						<element name="occupantGroupRef" type="string"
+							minOccurs="1" maxOccurs="1" />
+						<element name="spaceRef" type="string"
+							minOccurs="1" maxOccurs="1" />
+						<element name="equipmentRef" type="string"
+							minOccurs="0" maxOccurs="1" />
+						<element name="activityType"
+							type="a4eekpi:ActivityEnumerator" maxOccurs="1" minOccurs="0" />
+						<element name="processRef" type="string" maxOccurs="1" minOccurs="0"></element>
+						<element name="processInstanceRef"
+							type="string" maxOccurs="1" minOccurs="0">
+						</element>
+						<element name="activityRef" type="string" maxOccurs="1" minOccurs="0"></element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+	<simpleType name="ActivityEnumerator">
+		<restriction base="string">
+			<enumeration
+				value="Occupant enters Building Element (BE corresponds to BE in Event Record)" />
+			<enumeration
+				value="Occupant leaves Building Element (BE corresponds to BE in Event Record)" />
+			<enumeration
+				value="Occupant starts using Equipment Artifact (EA corresponds to EA in Event Record)" />
+			<enumeration
+				value="Occupants stops using Equipment Artifact (EA corresponds to EA in Event Record)" />
+			<enumeration
+				value="Occupant starts executing some Business Activity" />
+			<enumeration
+				value="Occupant stops executing some Business Activity" />
+			<enumeration
+				value="Occupant turns on Lighting within Building Element" />
+			<enumeration
+				value="Occupant turns off Lighting within Building Element" />
+			<enumeration value="Business process started"></enumeration>
+			<enumeration value="Business proces ended"></enumeration>
+		</restriction>
+	</simpleType>
+</schema>

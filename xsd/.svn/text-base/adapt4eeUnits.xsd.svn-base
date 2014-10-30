@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.adapt4ee.eu/2012/schema/units/" 
+elementFormDefault="unqualified" attributeFormDefault="unqualified" 
+xmlns="http://www.w3.org/2001/XMLSchema" 
+xmlns:a4eeuni="http://www.adapt4ee.eu/2012/schema/units/">
+	<complexType name="tPeopleClothingValue">
+		<sequence>
+			<element name="value" type="float"/>
+			<element name="unit" type="a4eeuni:clothingUnitEnum"/>
+		</sequence>
+	</complexType>
+	<complexType name="tNoiseValue">
+		<sequence>
+			<element name="value" type="float"/>
+			<element name="unit" type="a4eeuni:noiseUnitEnum"/>
+ 		</sequence>
+	</complexType>
+	<complexType name="tVelocityValue">
+		<sequence>
+			<element name="value" type="float"/>
+			<element name="unit" type="a4eeuni:velocityUnitEnum"/>
+		</sequence>
+	</complexType>
+	<complexType name="tAreaValue">
+		<sequence>
+			<element name="value" type="float"/>
+			<element name="unit" type="a4eeuni:areaUnitEnum"/>
+		</sequence>
+	</complexType>
+	
+	<simpleType name="resourceTypeEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="Electricity"/>
+			<enumeration value="Luminance"/>
+			<enumeration value="NaturalGas"/>
+			<enumeration value="Propane"/>
+			<enumeration value="FuelOil1"/>
+			<enumeration value="FuelOil2"/>
+			<enumeration value="FuelOil4"/>
+			<enumeration value="Water"/>
+			<enumeration value="ChilledWater"/>
+			<enumeration value="HotWater"/>
+			<enumeration value="Steam"/>
+			<enumeration value="Occupancy"/>
+			<enumeration value="ActiveEnergy"/>
+			<enumeration value="Voltage"/>
+			<enumeration value="Current"/>
+			<enumeration value="Temperature"/>
+			<enumeration value="RelativeHumidity"/>
+			<enumeration value="CO2"/>
+		</restriction>
+	</simpleType>
+	
+	<complexType name="tVolumeValue">
+		<sequence>
+			<element name="value" type="float"/>
+			<element name="unit" type="a4eeuni:volumeUnitEnum"/>
+		</sequence>
+	</complexType>
+	<complexType name="tIlluminanceValue">
+		<sequence>
+			<element name="value" type="float"/>
+			<element name="unit" type="a4eeuni:illuminanceUnitEnum"/>
+		</sequence>
+	</complexType>
+	<complexType name="tTemperatureValue">
+		<sequence>
+			<element name="value" type="float" minOccurs="1" maxOccurs="1"/>
+			<element name="unit" type="a4eeuni:temperatureUnitEnum" minOccurs="1" maxOccurs="1"/>
+		</sequence>
+	</complexType>
+	<complexType name="tRelativeHumidityValue">
+		<sequence>
+			<element name="value" type="float" minOccurs="1" maxOccurs="1"/>
+			<element name="unit" type="a4eeuni:unitlessUnitEnum" minOccurs="1" maxOccurs="1"/>
+		</sequence>
+	</complexType>
+	<complexType name="tEnergyValue">
+		<sequence>
+			<element name="value" type="float"/>
+			<element name="unit" type="a4eeuni:energyUnitEnum"/>
+		</sequence>
+	</complexType>
+	<simpleType name="peopleNumberUnitEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="NumberOfPeople"/>
+			<enumeration value="SquareFtPerPerson"/>
+			<enumeration value="SquareMPerPerson"/>
+		</restriction>
+	</simpleType>
+	<complexType name="tPeopleNumberValue">
+		<sequence>
+			<element name="value" type="float"/>
+			<element name="unit" type="a4eeuni:peopleNumberUnitEnum"/>
+		</sequence>
+	</complexType>
+	<complexType name="tEmissionValue">
+		<sequence>
+			<element name="value" type="float"/>
+			<element name="unit" type="a4eeuni:emissionUnitEnum"/>
+		</sequence>
+	</complexType>
+	<complexType name="tEfficiencyValue">
+		<sequence>
+			<element name="value" type="float"/>
+			<element name="unit" type="a4eeuni:efficiencyTypeEnum"/>
+		</sequence>
+	</complexType>
+	<complexType name="tOtherValue">
+		<sequence>
+			<element name="value" type="float"/>
+			<element name="unit" type="string"/>
+		</sequence>
+	</complexType>
+	<simpleType name="unitlessUnitEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="Percent"/>
+			<enumeration value="Fraction"/>
+		</restriction>
+	</simpleType>
+	
+   	<complexType name="tConcentrationOfGasValue">
+		<sequence>
+			<element name="value" type="float"/>
+			<element name="unit" type="a4eeuni:concentrationOfGasUnitEnum"/>
+		</sequence>
+	</complexType>
+	
+    <simpleType name="concentrationOfGasUnitEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="PartsPerMillion"/>
+		</restriction>
+	</simpleType>
+	
+	<simpleType name="intEquipTypeEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="GeneralPlugload"/>
+			<enumeration value="Computer"/>
+			<enumeration value="Copier"/>
+			<enumeration value="Refrigerator"/>
+			<enumeration value="Stove"/>
+			<enumeration value="Cooktop"/>
+			<enumeration value="Fryer"/>
+			<enumeration value="Freezer"/>
+			<enumeration value="ClothesDryer"/>
+			<enumeration value="ClothesWasher"/>
+			<enumeration value="Dishwasher"/>
+			<enumeration value="TV"/>
+			<enumeration value="VCR"/>
+			<enumeration value="Microwave"/>
+			<enumeration value="Fan"/>
+			<enumeration value="AudioEquip"/>
+			<enumeration value="MiscEquip"/>
+			<enumeration value="Toilet"/>
+			<enumeration value="Urinal"/>
+			<enumeration value="Shower"/>
+			<enumeration value="Sink"/>
+			<enumeration value="Pool"/>
+			<enumeration value="HotTub"/>
+			<enumeration value="Sauna"/>
+			<enumeration value="BatteryCharger"/>
+			<enumeration value="Furnace"/>
+			<enumeration value="IndustrialEquip"/>
+			<enumeration value="Printer"/>
+			<enumeration value="Vending"/>
+			<enumeration value="Elevator"/>
+			<enumeration value="Escalator"/>
+			<enumeration value="GeneralLaundryEquip"/>
+			<enumeration value="GeneralKitchenEquip"/>
+			<enumeration value="GeneralMedicalEquip"/>
+			<enumeration value="GeneralOfficeEquip"/>
+			<enumeration value="GeneralEntertainmentEquip"/>
+			<enumeration value="GeneralRefrigerationEquip"/>
+			<enumeration value="GeneralFitnessEquip"/>
+			<enumeration value="GeneralVideoEquip"/>
+			<enumeration value="GeneralToilet"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="noiseUnitEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="dB"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="temperatureUnitEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="F"/>
+			<enumeration value="C"/>
+			<enumeration value="K"/>
+			<enumeration value="R"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="efficiencyTypeEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="COP">
+				<annotation>
+					<documentation>Coefficient of Performance</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="EER">
+				<annotation>
+					<documentation>Energy Efficiency Ratio</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="SEER">
+				<annotation>
+					<documentation>Seasonal Energy Efficiency Ratio</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="AFUE">
+				<annotation>
+					<documentation>Annual Fuel Utilization Efficiency</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="HSPF">
+				<annotation>
+					<documentation>Heating Seasonal Performance Factor</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="effectiveness"/>
+			<enumeration value="EnergyFactor"/>
+			<enumeration value="ThermalEff">
+				<annotation>
+					<documentation>Thermal Efficiency</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="MotorEff">
+				<annotation>
+					<documentation>Motor Efficiency</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="FanEff">
+				<annotation>
+					<documentation>Fan Efficiency</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="MechanicalEff">
+				<annotation>
+					<documentation>Mechanical Efficiency</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="BoilerEff">
+				<annotation>
+					<documentation>Boiler Efficiency</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="kWPerTon"/>
+			<enumeration value="kWPerkW"/>
+			<enumeration value="BTUPerHourPerF"/>
+			<enumeration value="kWPerC"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="energyUnitEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="KilowattHours"/>
+			<enumeration value="Joules"/>
+			<enumeration value="BTU"/>
+			<enumeration value="Therms"/>
+		</restriction>
+	</simpleType>
+		<simpleType name="energyPerAreaUnitEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="KilowattHoursPerSquareMeter"/>
+			<enumeration value="JoulesPerSquareMeter"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="emissionUnitEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="PoundsPerHour"/>
+			<enumeration value="KilogramsPerHour"/>
+			<enumeration value="GramsPerHour"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="illuminanceUnitEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="Footcandles"/>
+			<enumeration value="Lux"/>
+			<enumeration value="Phot"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="spaceTypeEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="ActiveStorage"/>
+			<enumeration value="ActiveStorageHospitalOrHealthcare"/>
+			<enumeration value="AirOrTrainOrBusBaggageArea"/>
+			<enumeration value="AirportConcourse"/>
+			<enumeration value="AtriumEachAdditionalFloor"/>
+			<enumeration value="AtriumFirstThreeFloors"/>
+			<enumeration value="AudienceOrSeatingAreaPenitentiary"/>
+			<enumeration value="AudienceOrSeatingAreaExerciseCenter"/>
+			<enumeration value="AudienceOrSeatingAreaGymnasium"/>
+			<enumeration value="AudienceOrSeatingAreaSportsArena"/>
+			<enumeration value="AudienceOrSeatingAreaConventionCenter"/>
+			<enumeration value="AudienceOrSeatingAreaMotionPictureTheatre"/>
+			<enumeration value="AudienceOrSeatingAreaPerformingArtsTheatre"/>
+			<enumeration value="AudienceOrSeatingAreaReligious"/>
+			<enumeration value="AudienceOrSeatingAreaPoliceOrFireStations"/>
+			<enumeration value="AudienceOrSeatingAreaCourtHouse"/>
+			<enumeration value="AudienceOrSeatingAreaAuditorium"/>
+			<enumeration value="BankCustomerArea"/>
+			<enumeration value="BankingActivityAreaOffice"/>
+			<enumeration value="BarberAndBeautyParlor"/>
+			<enumeration value="CardFileAndCataloguingLibrary"/>
+			<enumeration value="ClassroomOrLectureOrTrainingPenitentiary"/>
+			<enumeration value="ClassroomOrLectureOrTraining"/>
+			<enumeration value="ConfinementCellsPenitentiary"/>
+			<enumeration value="ConfinementCellsCourtHouse"/>
+			<enumeration value="ConferenceMeetingOrMultipurpose"/>
+			<enumeration value="CorridorOrTransition"/>
+			<enumeration value="CorridorOrTransitionManufacturingFacility"/>
+			<enumeration value="CorridorsWithPatientWaitingExamHospitalOrHealthcare"/>
+			<enumeration value="CourtSportsAreaSportsArena"/>
+			<enumeration value="CourtroomCourtHouse"/>
+			<enumeration value="DepartmentStoreSalesAreaRetail"/>
+			<enumeration value="DetailedManufacturingFacility"/>
+			<enumeration value="DiningArea"/>
+			<enumeration value="DiningAreaHotel"/>
+			<enumeration value="DiningAreaFamilyDining"/>
+			<enumeration value="DiningAreaLoungeOrLeisureDining"/>
+			<enumeration value="DiningAreaMotel"/>
+			<enumeration value="DiningAreaTransportation"/>
+			<enumeration value="DiningAreaPenitentiary"/>
+			<enumeration value="DiningAreaCivilServices"/>
+			<enumeration value="DormitoryBedroom"/>
+			<enumeration value="DormitoryStudyHall"/>
+			<enumeration value="DressingOrLockerOrFittingRoomGymnasium"/>
+			<enumeration value="DressingOrLockerOrFittingRoomCourtHouse"/>
+			<enumeration value="DressingOrLockerOrFittingRoomPerformingArtsTheatre"/>
+			<enumeration value="DressingOrLockerOrFittingRoomAuditorium"/>
+			<enumeration value="DressingOrLockerOrFittingRoomExerciseCenter"/>
+			<enumeration value="ElectricalOrMechanical"/>
+			<enumeration value="ElevatorLobbies"/>
+			<enumeration value="EmergencyHospitalOrHealthcare"/>
+			<enumeration value="EquipmentRoomManufacturingFacility"/>
+			<enumeration value="ExamOrTreatmentHospitalOrHealthcare"/>
+			<enumeration value="ExcerciseAreaExerciseCenter"/>
+			<enumeration value="ExcerciseAreaGymnasium"/>
+			<enumeration value="ExhibitSpaceConventionCenter"/>
+			<enumeration value="FellowshipHallReligiousBuildings"/>
+			<enumeration value="FineMaterialWarehouse"/>
+			<enumeration value="FineMerchandiseSalesAreaRetail"/>
+			<enumeration value="FireStationEngineRoomPoliceOrFireStation"/>
+			<enumeration value="FoodPreparation"/>
+			<enumeration value="GarageServiceOrRepairAutomotiveFacility"/>
+			<enumeration value="GeneralHighBayManufacturingFacility"/>
+			<enumeration value="GeneralLowBayManufacturingFacility"/>
+			<enumeration value="GeneralExhibitionMuseum"/>
+			<enumeration value="HospitalNurseryHospitalOrHealthcare"/>
+			<enumeration value="HospitalOrMedicalSuppliesHospitalOrHealthcare"/>
+			<enumeration value="HospitalOrRadiologyHospitalOrHealthcare"/>
+			<enumeration value="HotelOrConferenceCenterConferenceOrMeeting"/>
+			<enumeration value="InactiveStorage"/>
+			<enumeration value="JudgesChambersCourtHouse"/>
+			<enumeration value="LaboratoryOffice"/>
+			<enumeration value="LaundryIroningAndSorting"/>
+			<enumeration value="LaundryWashingHospitalOrHealthcare"/>
+			<enumeration value="LibraryAudioVisualLibraryAudioVisual"/>
+			<enumeration value="LivingQuartersDormitory"/>
+			<enumeration value="LivingQuartersMotel"/>
+			<enumeration value="LivingQuartersHotel"/>
+			<enumeration value="Lobby"/>
+			<enumeration value="LobbyReligiousBuildings"/>
+			<enumeration value="LobbyMotionPictureTheatre"/>
+			<enumeration value="LobbyAuditorium"/>
+			<enumeration value="LobbyPerformingArtsTheatre"/>
+			<enumeration value="LobbyPostOffice"/>
+			<enumeration value="LobbyHotel"/>
+			<enumeration value="LoungeOrRecreation"/>
+			<enumeration value="MallConcourseSalesAreaRetail"/>
+			<enumeration value="MassMerchandisingSalesAreaRetail"/>
+			<enumeration value="MediumOrBulkyMaterialWarehouse"/>
+			<enumeration value="MerchandisingSalesAreaRetail"/>
+			<enumeration value="MuseumAndGalleryStorage"/>
+			<enumeration value="NurseStationHospitalOrHealthcare"/>
+			<enumeration value="OfficeEnclosed"/>
+			<enumeration value="OfficeOpenPlan"/>
+			<enumeration value="OfficeCommonActivityAreasInactiveStorage"/>
+			<enumeration value="OperatingRoomHospitalOrHealthcare"/>
+			<enumeration value="OtherTelevisedPlayingAreaSportsArena"/>
+			<enumeration value="ParkingAreaAttendantOnlyParkingGarage"/>
+			<enumeration value="ParkingAreaPedestrianParkingGarage"/>
+			<enumeration value="PatientRoomHospitalOrHealthcare"/>
+			<enumeration value="PersonalServicesSalesAreaRetail"/>
+			<enumeration value="PharmacyHospitalOrHealthcare"/>
+			<enumeration value="PhysicalTherapyHospitalOrHealthcare"/>
+			<enumeration value="PlayingAreaGymnasium"/>
+			<enumeration value="Plenum"/>
+			<enumeration value="PoliceStationLaboratoryPoliceOrFireStations"/>
+			<enumeration value="PublicAndStaffLoungeHospitalOrHealthcare"/>
+			<enumeration value="ReadingAreaLibrary"/>
+			<enumeration value="ReceptionOrWaitingTransportation"/>
+			<enumeration value="ReceptionOrWaitingMotel"/>
+			<enumeration value="ReceptionOrWaitingHotel"/>
+			<enumeration value="RecoveryHospitalOrHealthcare"/>
+			<enumeration value="RestorationMuseum"/>
+			<enumeration value="Restrooms"/>
+			<enumeration value="RingSportsAreaSportsArena"/>
+			<enumeration value="ServerRoom"/>
+			<enumeration value="SleepingQuartersPoliceOrFireStation"/>
+			<enumeration value="SortingAreaPostOffice"/>
+			<enumeration value="SpecialtyStoreSalesAreaRetail"/>
+			<enumeration value="StacksLibrary"/>
+			<enumeration value="StairsInactive"/>
+			<enumeration value="Stairway"/>
+			<enumeration value="SupermarketSalesAreaRetail"/>
+			<enumeration value="TerminalTicketCounterTransportation"/>
+			<enumeration value="WorkshopWorkshop"/>
+			<enumeration value="WorshipPulpitChoirReligious"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="clothingUnitEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="Clo"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="volumeUnitEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="CubicKilometers"/>
+			<enumeration value="CubicMeters"/>
+			<enumeration value="CubicCentimeters"/>
+			<enumeration value="CubicMillimeters"/>
+			<enumeration value="CubicMiles"/>
+			<enumeration value="CubicYards"/>
+			<enumeration value="CubicFeet"/>
+			<enumeration value="CubicInches"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="peopleHeatGainUnitEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="WattPerPerson"/>
+			<enumeration value="BtuPerHourPerson"/>
+			<enumeration value="WattPerSquareMeter"/>
+			<enumeration value="Met"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="areaUnitEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="SquareKilometers"/>
+			<enumeration value="SquareMeters"/>
+			<enumeration value="SquareCentimeters"/>
+			<enumeration value="SquareMillimeters"/>
+			<enumeration value="SquareMiles"/>
+			<enumeration value="SquareYards"/>
+			<enumeration value="SquareFeet"/>
+			<enumeration value="SquareInches"/>
+		</restriction>
+	</simpleType>
+  <simpleType name="timeUnitEnum">
+    <restriction base="NMTOKEN">
+      <enumeration value="MilliSeconds"/>
+      <enumeration value="Seconds"/>
+      <enumeration value="Minutes"/>
+      <enumeration value="Hours"/>
+      <enumeration value="Days"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="velocityUnitEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="MetersPerSecond"/>
+			<enumeration value="MilesPerHour"/>
+			<enumeration value="Knots"/>
+		</restriction>
+	</simpleType>
+	<complexType name="tTimeSeriePercentageValue">
+		<sequence>
+			<element name="timeStart" type="dateTime"/>
+			<element name="timeEnd" type="dateTime"/>
+			<element name="value" type="a4eeuni:tUnitlessValue"/>
+		</sequence>
+	</complexType>
+	
+	<complexType name="tTimeSerieTemperatureValue">
+		<sequence>
+			<element name="timeStart" type="dateTime"/>
+			<element name="timeEnd" type="dateTime"/>
+			<element name="value" type="a4eeuni:tTemperatureValue"/>
+		</sequence>
+	</complexType>
+	
+	<complexType name="tTimeSerieIlluminanceValue">
+		<sequence>
+			<element name="timeStart" type="dateTime"/>
+			<element name="timeEnd" type="dateTime"/>
+			<element name="value" type="a4eeuni:tIlluminanceValue"/>
+		</sequence>
+	</complexType>
+	
+	<complexType name="tTimeSeriesOfPercentagesValue">
+		<sequence>
+            <element name="timeSeriesValue" type="a4eeuni:tTimeSeriePercentageValue" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+	</complexType>
+	<complexType name="tTimeSerieNumberValue">
+		<sequence>
+			<element name="timeStart" type="dateTime"/>
+			<element name="timeEnd" type="dateTime"/>
+			<element name="value" type="int"/>
+		</sequence>
+	</complexType>
+	<complexType name="tTimeSeriesOfNumbersValue">
+		<sequence>
+			<element name="timeSeriesValue" type="a4eeuni:tTimeSerieNumberValue" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="tUnitlessValue">
+		<sequence>
+			<element name="value" type="float" minOccurs="1" maxOccurs="1"/>
+			<element name="unit" type="a4eeuni:unitlessUnitEnum" minOccurs="1" maxOccurs="1"/>
+		</sequence>
+	</complexType>
+  <complexType name="tDurationValue">
+    <sequence>
+      <element name="value" type="float" minOccurs="1" maxOccurs="1"/>
+      <element name="unit" type="a4eeuni:timeUnitEnum" minOccurs="1" maxOccurs="1"/>
+    </sequence>
+  </complexType>
+  <complexType name="tPeopleHeatGainValue">
+		<sequence>
+			<element name="value" type="float"/>
+			<element name="unit" type="a4eeuni:peopleHeatGainUnitEnum"/>
+		</sequence>
+	</complexType>
+	<complexType name="tEnvironmentComfortValues">
+		<sequence>
+			<element name="minTemperature"
+				type="a4eeuni:tTemperatureValue" minOccurs="0" maxOccurs="1" />
+			<element name="maxTemperature"
+				type="a4eeuni:tTemperatureValue" minOccurs="0" maxOccurs="1" />
+			<element name="minHumidity"
+				type="a4eeuni:tRelativeHumidityValue" minOccurs="0" maxOccurs="1" />
+			<element name="maxHumidity"
+				type="a4eeuni:tRelativeHumidityValue" minOccurs="0" maxOccurs="1" />
+			<element name="minAirflow" type="a4eeuni:tVelocityValue"
+				minOccurs="0" maxOccurs="1" />
+			<element name="maxAirflow" type="a4eeuni:tVelocityValue"
+				minOccurs="0" maxOccurs="1" />
+			<element name="minLuminance"
+				type="a4eeuni:tIlluminanceValue" minOccurs="0" maxOccurs="1" />
+			<element name="maxLuminance"
+				type="a4eeuni:tIlluminanceValue" minOccurs="0" maxOccurs="1" />
+			<element name="minCO2"
+				type="a4eeuni:tConcentrationOfGasValue" maxOccurs="1"
+				minOccurs="0">
+			</element>
+			<element name="maxCO2"
+				type="a4eeuni:tConcentrationOfGasValue" maxOccurs="1"
+				minOccurs="0">
+			</element>
+		</sequence>
+	</complexType>
+	
+	
+		<complexType name="tEnvironmentValues">
+		<sequence>
+			<element name="temperature"
+				type="a4eeuni:tTemperatureValue" minOccurs="0" maxOccurs="1" />
+			
+			<element name="humidity"
+				type="a4eeuni:tRelativeHumidityValue" minOccurs="0" maxOccurs="1" />
+			
+			<element name="airflow" type="a4eeuni:tVelocityValue"
+				minOccurs="0" maxOccurs="1" />
+			
+			<element name="luminance"
+				type="a4eeuni:tIlluminanceValue" minOccurs="0" maxOccurs="1" />
+			
+			<element name="CO2"
+				type="a4eeuni:tConcentrationOfGasValue" maxOccurs="1"
+				minOccurs="0">
+			</element>
+			
+		</sequence>
+	</complexType>
+	
+	
+	<simpleType name="buildingTypeEnum">
+		<annotation>
+			<documentation>Use to specify the most predominant building use type.</documentation>
+		</annotation>
+		<restriction base="NMTOKEN">
+			<enumeration value="AutomotiveFacility"/>
+			<enumeration value="ConventionCenter"/>
+			<enumeration value="Courthouse"/>
+			<enumeration value="DiningBarLoungeOrLeisure"/>
+			<enumeration value="DiningCafeteriaFastFood"/>
+			<enumeration value="DiningFamily"/>
+			<enumeration value="Dormitory"/>
+			<enumeration value="ExerciseCenter"/>
+			<enumeration value="FireStation"/>
+			<enumeration value="Gymnasium"/>
+			<enumeration value="HospitalOrHealthcare"/>
+			<enumeration value="Hotel"/>
+			<enumeration value="Library"/>
+			<enumeration value="Manufacturing"/>
+			<enumeration value="Motel"/>
+			<enumeration value="MotionPictureTheatre"/>
+			<enumeration value="MultiFamily"/>
+			<enumeration value="Museum"/>
+			<enumeration value="Office"/>
+			<enumeration value="ParkingGarage"/>
+			<enumeration value="Penitentiary"/>
+			<enumeration value="PerformingArtsTheater"/>
+			<enumeration value="PoliceStation"/>
+			<enumeration value="PostOffice"/>
+			<enumeration value="ReligiousBuilding"/>
+			<enumeration value="Retail"/>
+			<enumeration value="SchoolOrUniversity"/>
+			<enumeration value="SingleFamily"/>
+			<enumeration value="SportsArena"/>
+			<enumeration value="TownHall"/>
+			<enumeration value="Transportation"/>
+			<enumeration value="Unknown">
+				<annotation>
+					<documentation>Enumeration value to be used when there is no building type information available.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Warehouse"/>
+			<enumeration value="Workshop"/>
+		</restriction>
+	</simpleType>
+	
+		<complexType name="tStationIdValue">
+		<sequence>
+			<element name="code" type="string" maxOccurs="1" minOccurs="1"></element>
+			<element name="unit" type="a4eeuni:stationIdTypeEnum" maxOccurs="1" minOccurs="1"></element>
+		</sequence>
+	</complexType>
+	
+	<simpleType name="stationIdTypeEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="WMO">
+				<annotation>
+					<documentation>A five-digit station identifier assigned by the World Meteorological Organization (WMO), used for international weather data exchange and station documentation.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="WBAN">
+				<annotation>
+					<documentation>Weather-Bureau-Army-Navy station id. A five-digit station identifier used at National Climatic Data Center (NCDC) for digital data storage and general station identification purposes.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="ICAO">
+				<annotation>
+					<documentation>A 4-letter indicator for geographical locations throughout the world, managed by the International Civil Aviation Organization (ICAO).</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="NWSLI">
+				<annotation>
+					<documentation>A 3- to 5-character alpha-numeric identifier assigned by the US National Weather Service (NWS), used for site identification in the NWS communications systems (e.g. AFOS, ROSA, SHEF, etc.).</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="FAACallSign">
+				<annotation>
+					<documentation>An alpha-numeric identifier of up to 4-characters managed by the USDT Federal Aviation Administration (FAA), used for site identification of airports, weather stations and other sites vital to navigation.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="COOP">
+				<annotation>
+					<documentation>A 6-digit number identifying a station in the NWS Cooperative Network.</documentation>
+				</annotation>
+			</enumeration>
+		</restriction>
+	</simpleType>
+
+	<complexType name="tFrequencyValue">
+		<sequence>
+			<element name="iterations" type="int" maxOccurs="1" minOccurs="1"></element>
+			<element name="duration" type="duration" maxOccurs="1" minOccurs="1"></element>
+		</sequence>
+	</complexType>
+	
+	<!--
+	 start of change request
+	-->
+	
+	<simpleType name="tPropertyTypeEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="string"/>
+			<enumeration value="anyURI"/>
+			<enumeration value="base64Binary"/>
+			<enumeration value="boolean"/>
+			<enumeration value="byte"/>
+			<enumeration value="date"/>
+			<enumeration value="dateTime"/>
+			<enumeration value="decimal"/>
+			<enumeration value="derivationControl"/>
+			<enumeration value="double"/>
+			<enumeration value="duration"/>
+			<enumeration value="ENTITIES"/>
+			<enumeration value="ENTITY"/>
+			<enumeration value="float"/>
+			<enumeration value="gDay"/>
+			<enumeration value="gMonth"/>
+			<enumeration value="gMonthDay"/>
+			<enumeration value="gYear"/>
+			<enumeration value="gYearMonth"/>
+			<enumeration value="hexBinary"/>
+			<enumeration value="ID"/>
+			<enumeration value="IDREF"/>
+			<enumeration value="IDREFS"/>
+			<enumeration value="int"/>
+			<enumeration value="integer"/>
+			<enumeration value="language"/>
+			<enumeration value="long"/>
+			<enumeration value="Name"/>
+			<enumeration value="NCName"/>
+			<enumeration value="negativeInteger"/>
+			<enumeration value="NMTOKEN"/>
+			<enumeration value="NMTOKENS"/>
+			<enumeration value="nonNegativeInteger"/>
+			<enumeration value="nonPositiveInteger"/>
+			<enumeration value="normalizedString"/>
+			<enumeration value="NOTATION"/>
+			<enumeration value="positiveInteger"/>
+			<enumeration value="QName"/>
+			<enumeration value="short"/>
+			<enumeration value="simpleDerivationSet"/>
+			<enumeration value="time"/>
+			<enumeration value="token"/>
+			<enumeration value="unsignedByte"/>
+			<enumeration value="unsignedInt"/>
+			<enumeration value="unsignedLong"/>
+			<enumeration value="unsignedShort"/>
+		</restriction>
+	</simpleType>
+	
+	<complexType name="tProperty">
+		<simpleContent>
+			<extension base="anySimpleType">
+				<attribute name="name" type="string"/>
+				<attribute name="type" type="a4eeuni:tPropertyTypeEnum"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	
+	<simpleType name="distributionTypeEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="Constant">
+				<annotation>
+					<documentation>This distribution always samples the provided (constant) value.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Beta">
+				<annotation>
+					<documentation>This continuous distribution takes as arguments: alpha and beta.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Binomial">
+				<annotation>
+					<documentation>This discrete distribution takes as arguments: trials and p.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Cauchy">
+				<annotation>
+					<documentation>This continuous distribution takes as arguments: median and scale.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="ChiSquared">
+				<annotation>
+					<documentation>This continuous distribution takes as argument: degreesOfFreedom.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Constant">
+				<annotation>
+					<documentation>This continuous distribution takes as arguments: alpha and beta.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="EnumeratedContinuous">
+				<annotation>
+					<documentation>This continuous distribution takes as arguments: pmf.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="EnumeratedDiscrete">
+				<annotation>
+					<documentation>This discrete distribution takes as arguments: pmf.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Exponential">
+				<annotation>
+					<documentation>This continuous distribution takes as argument: mean.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="F">
+				<annotation>
+					<documentation>This continuous distribution takes as arguments: numeratorDegreesOfFreedom and denominatorDegreesOfFreedom.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Gamma">
+				<annotation>
+					<documentation>This continuous distribution takes as arguments: shape and scale.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Geometric">
+				<annotation>
+					<documentation>This discrete distribution takes as argument: p.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Hypergeometric">
+				<annotation>
+					<documentation>This discrete distribution takes as arguments: populationSize, numberOfSuccesses and sampleSize.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Levy">
+				<annotation>
+					<documentation>This continuous distribution takes as arguments: mu and c.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="LogNormal">
+				<annotation>
+					<documentation>This continuous distribution takes as arguments: scale and shape.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Normal">
+				<annotation>
+					<documentation>This continuous distribution takes as arguments: mean and sd.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Pareto">
+				<annotation>
+					<documentation>This continuous distribution takes as arguments: scale and shape.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Pascal">
+				<annotation>
+					<documentation>This discrete distribution takes as arguments: r and p.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Poisson">
+				<annotation>
+					<documentation>This discrete distribution takes as arguments: alpha and beta.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="T">
+				<annotation>
+					<documentation>This continuous distribution takes as argument: denominatorDegreesOfFreedom.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Triangular">
+				<annotation>
+					<documentation>This continuous distribution takes as arguments: a, b and c.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="UniformContinuous">
+				<annotation>
+					<documentation>This continuous distribution takes as arguments: lower and upper.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="UniformDiscrete">
+				<annotation>
+					<documentation>This discrete distribution takes as arguments: lower and upper.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Weibull">
+				<annotation>
+					<documentation>This continuous distribution takes as arguments: alpha and beta.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Zipf">
+				<annotation>
+					<documentation>This discrete distribution takes as arguments: numberOfElements and exponent.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="Other">
+				<annotation>
+					<documentation>This distribution may take any argument, including: type.</documentation>
+				</annotation>
+			</enumeration>
+		</restriction>
+	</simpleType>
+	
+	<simpleType name="processValueRefEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="nextActivity">
+				<annotation>
+					<documentation>Distribution over an activity's likelihood per nextActivityRef. Requires activityRef attribute.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="waitingTime">
+				<annotation>
+					<documentation>Distribution over an activity's waiting time. Requires activityRef attribute.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="executionTime">
+				<annotation>
+					<documentation>Distribution over an activity's execution time. Requires activityRef attribute.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="transportTime">
+				<annotation>
+					<documentation>Distribution over an activity's transport time. Requires activityRef attribute.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="timeOfUse">
+				<annotation>
+					<documentation>Distribution over an activity's used equipment time of use. Requires activityRef and usedEquipmentRef attributes.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="concurrency">
+				<annotation>
+					<documentation>Distribution over an activity's or process time of exclusive usage where in terms of percent 0 percent means non-exclusive-utilization and 100 percent means utilization-dedicated to the given refs.</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="other">
+				<annotation>
+					<documentation>Distribution over a process value. Requires "otherRef" attribute.</documentation>
+				</annotation>
+			</enumeration>
+		</restriction>
+	</simpleType>
+	
+	<complexType name="tExtension">
+		<sequence>
+			<element name="properties" type="a4eeuni:tPropertySet" minOccurs="0" maxOccurs="unbounded"></element>
+		</sequence>
+		<attribute name="rootElementName" type="string"/>
+		<attribute name="referenceID" type="string"/>
+		<attribute name="version" type="string" use="optional"/>
+		<attribute name="application" type="string" use="optional"/>
+		<attribute name="scope" type="string" use="optional"/>
+	</complexType>
+	
+	<complexType name="tPropertySet">
+		<sequence>
+			<element name="property" type="a4eeuni:tProperty" maxOccurs="unbounded" minOccurs="0"/>
+		</sequence>
+		<attribute name="name" type="string"/>
+	</complexType>
+	
+	<complexType name="tDistribution">
+		<sequence>
+			<element name="property" type="a4eeuni:tProperty" maxOccurs="unbounded" minOccurs="0"/>
+		</sequence>
+		<attribute name="type" type="a4eeuni:distributionTypeEnum" />
+		<attribute name="otherType" type="string" use="optional" />
+		<attribute name="processRef" type="string" />
+		<attribute name="valueRef"
+			type="a4eeuni:processValueRefEnum" />
+		<attribute name="activityRef" type="string" use="optional" />
+		<attribute name="usedEquipmentRef" type="string" use="optional" />
+		<attribute name="usedSpaceTypeRef" type="string" use="optional" />
+		<attribute name="otherRef" type="string" use="optional" />
+	</complexType>
+
+	<!--
+	 end of change request
+	-->
+	
+	<complexType name="tLengthValue">
+		<sequence>
+			<element name="value" type="float" maxOccurs="1" minOccurs="1"></element>
+			<element name="unit" type="a4eeuni:lengthUnitEnum" maxOccurs="1" minOccurs="1"></element>
+		</sequence>
+	</complexType>
+	
+	<simpleType name="lengthUnitEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="Kilometers"/>
+			<enumeration value="Meters"/>
+			<enumeration value="Centimeters"/>
+			<enumeration value="Millimeters"/>
+			<enumeration value="Miles"/>
+			<enumeration value="Yards"/>
+			<enumeration value="Feet"/>
+			<enumeration value="Inches"/>
+		</restriction>
+	</simpleType>
+
+	<complexType name="tCurrentValue">
+		<sequence>
+			<element name="value" type="float" maxOccurs="1" minOccurs="1"></element>
+			<element name="unit" type="a4eeuni:CurrentUnitEnum" maxOccurs="1" minOccurs="1"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="tVoltageValue">
+		<sequence>
+			<element name="value" type="float" maxOccurs="1" minOccurs="1"></element>
+			<element name="unit" type="a4eeuni:VoltageUnitEnum" maxOccurs="1" minOccurs="1"></element>
+		</sequence>
+	</complexType>
+	
+	<simpleType name="VoltageUnitEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="Volts"/>
+			<enumeration value="KiloVolts"/>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="CurrentUnitEnum">
+		<restriction base="NMTOKEN">
+			<enumeration value="Ampere"/>
+			<enumeration value="milliAmpere"/>
+		</restriction>
+	</simpleType>
+	
+	
+	<complexType name="tPossitionValue">
+		<sequence>
+			<element name="x" type="a4eeuni:tLengthValue" maxOccurs="1" minOccurs="1"/>
+			<element name="y" type="a4eeuni:tLengthValue" maxOccurs="1" minOccurs="1"/>
+			<element name="z" type="a4eeuni:tLengthValue" maxOccurs="1" minOccurs="1"/>
+		</sequence>
+	</complexType>
+
+	<complexType name="tOccupantPositionValue">
+		<sequence>
+			<element name="occupantid" type="string" maxOccurs="1" minOccurs="1"/>
+			<element name="possition" type="a4eeuni:tPossitionValue" maxOccurs="1" minOccurs="1"/>
+		</sequence>
+	</complexType>
+
+	<complexType name="tTrajectoryPoint">
+		<sequence>
+			<element name="timeStamp" type="dateTime" maxOccurs="1"
+				minOccurs="1" />
+			<element name="possition" type="a4eeuni:tPossitionValue"
+				maxOccurs="1" minOccurs="1" />
+			<element name="spaceRef" type="string" maxOccurs="1" minOccurs="0"></element>
+		</sequence>
+	</complexType>
+	
+	<complexType name="tTrajectoryPointMini">
+		<attribute name="t" type="dateTime"></attribute>
+		<attribute name="x" type="float"></attribute>
+		<attribute name="y" type="float"></attribute>
+		<attribute name="z" type="float"></attribute>
+		<attribute name="s" type="string"></attribute>
+	</complexType>
+
+	<complexType name="tEnergyPerAreaValue">
+		<sequence>
+			<element name="value" type="float"></element>
+			<element name="unit" type="a4eeuni:energyPerAreaUnitEnum"></element>
+		</sequence>
+	</complexType>
+</schema>

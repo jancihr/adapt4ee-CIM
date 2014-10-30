@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<schema targetNamespace="http://www.adapt4ee.eu/2012/schema/bim/"
+	elementFormDefault="unqualified" attributeFormDefault="unqualified"
+	xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:a4eebim="http://www.adapt4ee.eu/2012/schema/bim/"
+	xmlns:a4eeDevice="http://www.adapt4ee.eu/2012/schema/device/"
+	xmlns:a4eeuni="http://www.adapt4ee.eu/2012/schema/units/">
+
+  <import schemaLocation="adapt4eeUnits.xsd" namespace="http://www.adapt4ee.eu/2012/schema/units/"></import>
+  <import schemaLocation="adapt4eeDevice.xsd" namespace="http://www.adapt4ee.eu/2012/schema/device/"></import>
+  <complexType name="tHVAC">
+    <sequence>
+      <element name="id" type="string" maxOccurs="1" minOccurs="1"></element>
+      <element name="consumption" type="a4eeuni:tEnergyValue" maxOccurs="1" minOccurs="0"></element>
+      <element name="spaceRef" type="string" maxOccurs="unbounded" minOccurs="0"></element>
+      <element name="sensorRef" type="string" maxOccurs="unbounded" minOccurs="0"></element>
+      <element name="emissions" type="a4eeuni:tEmissionValue" maxOccurs="1" minOccurs="0">
+        <annotation>
+          <documentation>kg CO2</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+
+
+  <complexType name="tSpace">
+    <annotation>
+      <documentation>tSpace is the mail representation of a space inside of the building. </documentation>
+    </annotation>
+    <sequence>
+      <element name="id" type="string" maxOccurs="1" minOccurs="1"></element>
+      <element name="gbXMLRef" type="string" maxOccurs="1" minOccurs="0"></element>
+      <element name="type" type="a4eeuni:spaceTypeEnum" maxOccurs="1" minOccurs="0"></element>
+      <element name="floorSurface" type="a4eeuni:tAreaValue" maxOccurs="1" minOccurs="0"></element>
+      <element name="volume" type="a4eeuni:tVolumeValue" maxOccurs="1" minOccurs="0"></element>
+      <element name="maxOccupancyCapacity" type="int" maxOccurs="1" minOccurs="0"></element>
+      <element name="occupancyAdjacentSpaceRef" type="string" maxOccurs="unbounded" minOccurs="0"></element>
+      <element name="floorRef" type="string" maxOccurs="unbounded" minOccurs="0"></element>
+      <element name="zoneRef" type="string" maxOccurs="unbounded" minOccurs="0"/>
+      <element name="equipments" maxOccurs="1" minOccurs="1">
+        <complexType>
+          <sequence>
+            <element name="EquipmentDevice" type="a4eebim:tEquipment" maxOccurs="unbounded" minOccurs="0"></element>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="lightings" maxOccurs="1" minOccurs="1">
+        <complexType>
+          <sequence>
+            <element name="LightingDevice" type="a4eebim:tLighting" maxOccurs="unbounded" minOccurs="0"></element>
+          </sequence>
+        </complexType>
+      </element>
+
+    </sequence>
+  </complexType>
+
+  <complexType name="tEquipmentTypeCharacteristics">
+    <annotation>
+      <documentation>Equipment type concept</documentation>
+    </annotation>
+    <sequence>
+      <element name="id" type="string" maxOccurs="1" minOccurs="1"></element>
+      <element name="equipmentTypeName" type="a4eeuni:intEquipTypeEnum" maxOccurs="1" minOccurs="1"></element>
+      <element name="energyConsumptionPerTime" type="a4eeuni:tEnergyValue" maxOccurs="1" minOccurs="0"></element>
+      <element name="heatProduction" type="a4eeuni:tEnergyValue" maxOccurs="1" minOccurs="0"></element>
+      <element name="timeOfSingleTaskUsage" type="time" maxOccurs="1" minOccurs="0"></element>
+    </sequence>
+  </complexType>
+
+  <complexType name="tLighting">
+    <sequence>
+      <element name="consumption" type="a4eeuni:tEnergyValue" maxOccurs="1" minOccurs="0">
+        <annotation>
+          <documentation>kWh</documentation>
+        </annotation>
+      </element>
+      <element name="sensorRef" type="string" maxOccurs="unbounded" minOccurs="0"></element>
+        <element name="id" type="string" maxOccurs="1" minOccurs="1"></element>
+    </sequence>
+  </complexType>
+
+
+  <complexType name="tBuilding">
+    <annotation>
+      <documentation></documentation>
+    </annotation>
+    <sequence>
+      <element name="id" type="string" maxOccurs="1" minOccurs="1"></element>
+      <element name="buildingAreaSize" type="a4eeuni:tAreaValue" maxOccurs="1" minOccurs="0">
+        <annotation>
+          <documentation>
+            Area size of the building
+          </documentation>
+        </annotation>
+      </element>
+      <element name="space" type="a4eebim:tSpace" maxOccurs="unbounded" minOccurs="0">
+        <annotation>
+          <documentation>
+            The basic concept representing a space inside of
+            the building. It can be a room, corridor or
+            other inernal space of a building
+          </documentation>
+        </annotation>
+      </element>
+      <element name="gbXMLRef" type="string" maxOccurs="1" minOccurs="0">
+        <annotation>
+          <documentation>
+            reference to the original Space in the gbXML
+          </documentation>
+        </annotation>
+      </element>
+      <element name="group" type="a4eebim:tGroupOfSpaces" maxOccurs="unbounded" minOccurs="0">
+        <annotation>
+          <documentation>
+            Group of spaces to hold any grou of spaces.
+          </documentation>
+        </annotation>
+      </element>
+      <element name="buildingType" type="a4eeuni:buildingTypeEnum" maxOccurs="1" minOccurs="0">
+        <annotation>
+          <documentation>Type of the building</documentation>
+        </annotation>
+      </element>
+      <element name="location" type="string" maxOccurs="1" minOccurs="0"></element>
+      <element name="zones" maxOccurs="1" minOccurs="0">
+        <complexType>
+          <sequence>
+            <element name="zone" type="string" maxOccurs="unbounded" minOccurs="0"></element>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="sensors" minOccurs="0" maxOccurs="1">
+        <complexType>
+          <sequence>
+            <element name="sensor" type="a4eeDevice:tSensor" maxOccurs="unbounded" minOccurs="0"></element>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="equipmentTypes" maxOccurs="1" minOccurs="1">
+        <complexType>
+          <sequence>
+            <element name="equipmentType" type="a4eebim:tEquipmentTypeCharacteristics" maxOccurs="unbounded" minOccurs="0"></element>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="HVACs" maxOccurs="1" minOccurs="1">
+        <complexType>
+          <sequence>
+            <element name="HVACDevice" type="a4eebim:tHVAC" maxOccurs="unbounded" minOccurs="0"></element>
+          </sequence>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+
+  <complexType name="tGroupOfSpaces">
+    <sequence>
+      <element name="spaceGroupName" type="string" maxOccurs="1" minOccurs="1"></element>
+      <element name="spaceRef" type="string" maxOccurs="unbounded" minOccurs="0"></element>
+    </sequence>
+  </complexType>
+
+  <complexType name="tEquipment">
+    <annotation>
+      <documentation>Concept describing the Equipment (devices used within business processes)</documentation>
+    </annotation>
+    <sequence>
+      <element name="id" type="string" maxOccurs="1" minOccurs="1"></element>
+      <element name="type" type="string" maxOccurs="1" minOccurs="1"></element>
+      <element name="position" type="a4eeuni:tPossitionValue" maxOccurs="1" minOccurs="0"></element>
+      <element name="sensorRef" type="string" maxOccurs="unbounded" minOccurs="0"></element>
+      <element name="gbXMLRef" type="string" maxOccurs="1" minOccurs="0"></element>
+    </sequence>
+  </complexType>
+</schema>

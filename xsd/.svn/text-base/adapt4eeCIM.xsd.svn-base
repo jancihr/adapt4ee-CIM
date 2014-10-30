@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.adapt4ee.eu/2012/schema/cim/"
+	elementFormDefault="unqualified" attributeFormDefault="unqualified"
+	xmlns="http://www.w3.org/2001/XMLSchema" xmlns:a4eecim="http://www.adapt4ee.eu/2012/schema/cim/"
+	xmlns:a4eeuni="http://www.adapt4ee.eu/2012/schema/units/"
+	xmlns:a4eebim="http://www.adapt4ee.eu/2012/schema/bim/" xmlns:a4eebpm="http://www.adapt4ee.eu/2012/schema/bpm/"
+	xmlns:a4eedev="http://www.adapt4ee.eu/2012/schema/device/"
+	xmlns:a4eeevent="http://www.adapt4ee.eu/2012/schema/event/"
+	xmlns:a4eekpi="http://www.adapt4ee.eu/2012/schema/kpi/">
+
+
+ 
+
+
+	<import schemaLocation="adapt4eeUnits.xsd"
+		namespace="http://www.adapt4ee.eu/2012/schema/units/">
+	</import>
+	<import schemaLocation="adapt4eeBIM.xsd" namespace="http://www.adapt4ee.eu/2012/schema/bim/">
+	</import>
+	<import schemaLocation="adapt4eeBPM.xsd" namespace="http://www.adapt4ee.eu/2012/schema/bpm/">
+	</import>
+	<import schemaLocation="adapt4eeDevice.xsd"
+		namespace="http://www.adapt4ee.eu/2012/schema/device/">
+	</import>
+	<import schemaLocation="adapt4eeEvent.xsd"
+		namespace="http://www.adapt4ee.eu/2012/schema/event/">
+	</import>
+	<import schemaLocation="adapt4eeKPI.xsd" namespace="http://www.adapt4ee.eu/2012/schema/kpi/"></import>
+	<complexType name="tTrainedTemplate">
+		<sequence>
+			<element name="id" type="string" maxOccurs="1" minOccurs="1"></element>
+			<element name="buildingType" type="a4eeuni:buildingTypeEnum"
+				maxOccurs="1" minOccurs="1">
+				<annotation>
+					<documentation>
+						The type of the building, for which the template was
+						prepared
+					</documentation>
+				</annotation>
+			</element>
+			<element name="roleTemplate" maxOccurs="unbounded" minOccurs="0">
+				<annotation>
+					<documentation>
+						For every role the average values of some parameters
+						are provided.
+					</documentation>
+				</annotation>
+				<complexType>
+					<sequence>
+						<element name="roleRef" type="string"></element>
+						<element name="clothing" type="a4eeuni:tPeopleClothingValue"></element>
+						<element name="metabolicRate" type="a4eeuni:tPeopleHeatGainValue"></element>
+					</sequence>
+				</complexType>
+			</element>
+			<element name="equipmentTemplate" maxOccurs="unbounded"
+				minOccurs="0" type="a4eebim:tEquipmentTypeCharacteristics">
+				<annotation>
+					<documentation>
+						For every equipment type, average values are
+						provided
+					</documentation>
+				</annotation>
+			</element>
+			<element name="spaceTemplate" maxOccurs="unbounded"
+				minOccurs="0">
+				<annotation>
+					<documentation>
+						For every space, average values are provided
+					</documentation>
+				</annotation>
+				<complexType>
+					<sequence>
+						<element name="spaceTypeRef" type="a4eeuni:spaceTypeEnum"
+							maxOccurs="1" minOccurs="0"></element>
+						<element name="equipment" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="amount" type="int"></element>
+									<element name="type" type="a4eeuni:intEquipTypeEnum"></element>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="maxOccupantLoad" type="a4eeuni:tPeopleNumberValue"
+							maxOccurs="1" minOccurs="0"></element>
+						<element name="dailyMeanOccupancy" minOccurs="0"
+							maxOccurs="unbounded">
+							<complexType>
+								<sequence>
+									<element name="occupantRole" type="a4eebpm:tRole"
+										minOccurs="0" maxOccurs="1" />
+									<element name="meanOccupancy" type="int" minOccurs="1"
+										maxOccurs="1" />
+								</sequence>
+							</complexType>
+						</element>
+						<element name="operatingEnvironmentValues" type="a4eeuni:tEnvironmentComfortValues" />
+					</sequence>
+				</complexType>
+			</element>
+			<element name="activity" type="a4eebpm:tSkeletonActivityType"
+				maxOccurs="unbounded" minOccurs="0"></element>
+			<element name="process" type="a4eebpm:tProcessType"
+				maxOccurs="unbounded" minOccurs="0"></element>
+			<!-- start of change request -->
+<element name="processTemplate" type="a4eeuni:tDistribution" maxOccurs="unbounded" minOccurs="0"></element>
+			<!-- end of change request -->
+		</sequence>
+	</complexType>
+	<!-- start of change request -->
+	<element name="Extensions">
+		 <complexType>
+			<annotation>
+				<documentation>
+					Structure holding all the extensions to be used by applications
+					that does not have to be conform a standard due to it's scope.
+					For example: data that does not have to be exchanged between 
+					different applications but will be persisted in the CIMIM.
+				</documentation>
+			</annotation>
+			<sequence>
+				<element name="extension" type="a4eeuni:tExtension" minOccurs="0" maxOccurs="unbounded">	
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+	<!-- end of change request -->
+	<element name="ASMInput" type="a4eecim:tTrainedTemplate">
+		<annotation>
+			<documentation>Input of the Agent Simulation module.</documentation>
+		</annotation>
+	</element>
+
+
+
+	<element name="MeasurementFile">
+		<annotation>
+			<documentation>Structure holdig all the data from the measurement
+				phase of the Adapt4ee
+			</documentation>
+		</annotation>
+		<complexType>
+			<sequence>
+				<element name="id" type="string" maxOccurs="1" minOccurs="1"></element>
+				<element name="events" maxOccurs="1" minOccurs="1">
+					<complexType>
+						<sequence>
+							<element name="event" type="a4eeevent:tEvent" maxOccurs="unbounded"
+								minOccurs="0"></element>
+						</sequence>
+					</complexType>
+				</element>
+				<element name="measurements" maxOccurs="1" minOccurs="1">
+					<complexType>
+						<sequence>
+							<element name="measurement" type="a4eedev:tSensorMeasurement"
+								maxOccurs="unbounded" minOccurs="0"></element>
+						</sequence>
+					</complexType>
+				</element>
+				<element name="processes" maxOccurs="1" minOccurs="1">
+					<complexType>
+						<sequence>
+							<element name="process" type="a4eebpm:tProcessType"
+								maxOccurs="unbounded" minOccurs="0"></element>
+						</sequence>
+					</complexType>
+				</element>
+				<element name="roles" maxOccurs="1" minOccurs="1">
+					<complexType>
+						<sequence>
+							<element name="role" type="a4eebpm:tRole" maxOccurs="unbounded"
+								minOccurs="0"></element>
+						</sequence>
+					</complexType>
+				</element>
+				<element name="building" type="a4eebim:tBuilding" maxOccurs="1"
+					minOccurs="1"></element>
+				<element name="gbXML" maxOccurs="1" minOccurs="1"></element>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="SimulationFile">
+		<annotation>
+			<documentation>XML containing all the aspects of the simulation
+				needed for a full persistency of the data using this file.
+			</documentation>
+		</annotation>
+		<complexType>
+			<sequence>
+				<element name="id" type="string" maxOccurs="1" minOccurs="1">
+				</element>
+				<element name="buildingType" type="a4eeuni:buildingTypeEnum"
+					maxOccurs="1" minOccurs="1">
+				</element>
+				<element name="trainingParameters" type="a4eecim:tTrainedTemplate"
+					maxOccurs="unbounded" minOccurs="1">
+				</element>
+				<element name="simulations" maxOccurs="1" minOccurs="1">
+					<complexType>
+						<sequence>
+							<element name="simulationCase" maxOccurs="unbounded"
+								minOccurs="0">
+								<complexType>
+
+									<sequence>
+										<element name="id" type="string" maxOccurs="1"
+											minOccurs="1">
+										</element>
+										<element name="gbXML" type="anyType" maxOccurs="1"
+											minOccurs="1">
+										</element>
+
+										<element name="simulationResult"
+											type="a4eekpi:tAgentBasedSimulationModuleOutput" maxOccurs="1"
+											minOccurs="1">
+										</element>
+
+
+
+
+
+										<element name="trainingParametersRef" type="string"
+											maxOccurs="1" minOccurs="0">
+										</element>
+
+
+
+										<element name="building" type="a4eebim:tBuilding"
+											maxOccurs="1" minOccurs="0">
+										</element>
+                    <element name="roles" maxOccurs="1" minOccurs="1">
+                      <complexType>
+                        <sequence>
+                          <element name="role" type="a4eebpm:tRole" maxOccurs="unbounded"
+                            minOccurs="0"></element>
+                        </sequence>
+                      </complexType>
+                    </element>
+                  </sequence>
+								</complexType>
+							</element>
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+
+
+
+
+
+
+
+
+	<element name="BPMImport">
+		<annotation>
+			<documentation>BPM imorting.</documentation>
+		</annotation>
+		<complexType>
+			<sequence>
+				<element name="process" type="a4eebpm:tProcessType"
+					maxOccurs="unbounded" minOccurs="1">
+					<annotation>
+						<documentation>one or more processes to import</documentation>
+					</annotation>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="EventsImport">
+		<annotation>
+			<documentation>import new events into the adapt4ee</documentation>
+		</annotation>
+		<complexType>
+			<sequence>
+				<element name="event" type="a4eeevent:tEvent" maxOccurs="unbounded"
+					minOccurs="1">
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="BuildingImport">
+		<annotation>
+			<documentation>import building information</documentation>
+		</annotation>
+		<complexType>
+			<sequence>
+				<element name="building" type="a4eebim:tBuilding" maxOccurs="1"
+					minOccurs="1">
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+
+	<element name="MeasurementsImport">
+		<annotation>
+			<documentation>Import of new measurements into the system
+			</documentation>
+		</annotation>
+		<complexType>
+			<sequence>
+				<element name="measurement" type="a4eedev:tSensorMeasurement"
+					maxOccurs="unbounded" minOccurs="0">
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+
+	<element name="DeviceDiscovered">
+		<annotation>
+			<documentation>discover a new device using LinkSmart</documentation>
+		</annotation>
+		<complexType>
+			<sequence>
+				<element name="sensor" type="a4eedev:tSensor" maxOccurs="1"
+					minOccurs="0">
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="ListOfMeasurementFileIDs">
+		<complexType>
+			<sequence>
+				<element name="id" type="string" maxOccurs="unbounded"
+					minOccurs="0"></element>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="ListOfEvents">
+		<complexType>
+			<sequence>
+				<element name="event" type="a4eeevent:tEvent" maxOccurs="unbounded"
+					minOccurs="0">
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="ListOfEquipments">
+		<complexType>
+			<sequence>
+				<element name="EquipmentDevice" type="a4eebim:tEquipment"
+					maxOccurs="unbounded" minOccurs="0">
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="ListOfSensors">
+		<complexType>
+			<sequence>
+				<element name="sensor" type="a4eedev:tSensor" maxOccurs="unbounded"
+					minOccurs="0">
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="ListOfProcesses">
+		<complexType>
+			<sequence>
+				<element name="process" type="a4eebpm:tProcessType"
+					maxOccurs="unbounded" minOccurs="0"></element>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="BuildingExport">
+		<complexType>
+			<sequence>
+				<element name="building" type="a4eebim:tBuilding" maxOccurs="1"
+					minOccurs="1"></element>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="ListOfZones">
+		<complexType>
+			<sequence>
+				<element name="zone" type="string" maxOccurs="unbounded"
+					minOccurs="0"></element>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="ListOfRoles">
+		<complexType>
+			<sequence>
+				<element name="role" type="a4eebpm:tRole" maxOccurs="unbounded"
+					minOccurs="0"></element>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="ListOfHVACs">
+		<complexType>
+			<sequence>
+				<element name="HVACDevice" type="a4eebim:tHVAC" maxOccurs="unbounded"
+					minOccurs="0"></element>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="ListOfLightings">
+		<complexType>
+			<sequence>
+				<element name="LightingDevice" type="a4eebim:tLighting"
+					maxOccurs="unbounded" minOccurs="0">
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="EventsStats">
+		<complexType>
+			<sequence>
+				<element name="minTime" type="dateTime" maxOccurs="1"
+					minOccurs="0">
+				</element>
+				<element name="maxTime" type="dateTime" maxOccurs="1"
+					minOccurs="0">
+				</element>
+				<element name="allEventsNumber" type="long" maxOccurs="1"
+					minOccurs="0">
+				</element>
+				<element name="eventNumbers" maxOccurs="1" minOccurs="0">
+					<complexType>
+						<sequence>
+							<element name="trajectories" maxOccurs="1" minOccurs="0" type="long" />
+
+
+							<element name="trajectoryPoints" maxOccurs="1" minOccurs="0" type="long" />
+							<element name="occupantMoved" maxOccurs="1" minOccurs="0" type="long" />
+							<element name="equipmentUsed" maxOccurs="1" minOccurs="0" type="long" />
+							<element name="spaceEnvironmentChange" maxOccurs="1"
+								minOccurs="0" type="long" />
+							<element name="externalEnvironmentChanged" maxOccurs="1"
+								minOccurs="0" type="long" />
+							<element name="HVACChange" maxOccurs="1" minOccurs="0" type="long" />
+							<element name="LightingChange" maxOccurs="1" minOccurs="0" type="long" />
+							<element name="SpaceOccupancy" maxOccurs="1" minOccurs="0" type="long" />
+							<element name="SpaceMovement" maxOccurs="1" minOccurs="0" type="long" />
+							<element name="SpaceOccupantPossitions" maxOccurs="1"
+								minOccurs="0" type="long" />
+							<element name="Current" maxOccurs="1" minOccurs="0" type="long" />
+							<element name="Voltage" maxOccurs="1" minOccurs="0" type="long" />
+							<element name="Energy" maxOccurs="1" minOccurs="0" type="long" />
+
+
+						</sequence>
+					</complexType>
+				</element>
+				<element name="eventTimes" maxOccurs="1" minOccurs="0">
+					<complexType>
+						<sequence>
+
+
+							<element name="OccupantTrajectoryTime" maxOccurs="1"
+								minOccurs="0">
+								<complexType>
+									<sequence>
+										<element name="minTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+										<element name="maxTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+
+									</sequence>
+								</complexType>
+							</element>
+							<element name="occupantMovedTime" maxOccurs="1"
+								minOccurs="0">
+								<complexType>
+									<sequence>
+										<element name="minTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+										<element name="maxTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+
+									</sequence>
+								</complexType>
+							</element>
+							<element name="equipmentUsedTime" maxOccurs="1"
+								minOccurs="0">
+								<complexType>
+									<sequence>
+										<element name="minTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+										<element name="maxTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+
+									</sequence>
+								</complexType>
+							</element>
+							<element name="spaceEnvironmentChangeTime" maxOccurs="1"
+								minOccurs="0">
+								<complexType>
+									<sequence>
+										<element name="minTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+										<element name="maxTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+
+									</sequence>
+								</complexType>
+							</element>
+							<element name="externalEnvironmentChangedTime" maxOccurs="1"
+								minOccurs="0">
+								<complexType>
+									<sequence>
+										<element name="minTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+										<element name="maxTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+
+									</sequence>
+								</complexType>
+							</element>
+							<element name="HVACChangeTime" maxOccurs="1" minOccurs="0">
+								<complexType>
+									<sequence>
+
+										<element name="minTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+										<element name="maxTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+									</sequence>
+								</complexType>
+							</element>
+							<element name="LightingChangeTime" maxOccurs="1"
+								minOccurs="0">
+								<complexType>
+									<sequence>
+										<element name="minTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+										<element name="maxTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+
+									</sequence>
+								</complexType>
+							</element>
+							<element name="SpaceOccupancyTime" maxOccurs="1"
+								minOccurs="0">
+								<complexType>
+									<sequence>
+										<element name="minTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+										<element name="maxTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+
+
+									</sequence>
+								</complexType>
+							</element>
+							<element name="SpaceMovementTime" maxOccurs="1"
+								minOccurs="0">
+								<complexType>
+									<sequence>
+										<element name="minTime" maxOccurs="1" minOccurs="0" type="dateTime"/>
+										<element name="maxTime" maxOccurs="1" minOccurs="0" type="dateTime"/>
+
+									</sequence>
+								</complexType>
+							</element>
+							<element name="SpaceOccupantPossitionsTime" maxOccurs="1"
+								minOccurs="0">
+								<complexType>
+									<sequence>
+										<element name="minTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+										<element name="maxTime" maxOccurs="1" minOccurs="0" type="dateTime" />
+
+									</sequence>
+								</complexType>
+							</element>
+
+							<element name="CurrentTime" maxOccurs="1" minOccurs="0">
+								<complexType>
+									<sequence>
+										<element name="minTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+										<element name="maxTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+
+									</sequence>
+								</complexType>
+							</element>
+							<element name="VoltageTime" maxOccurs="1" minOccurs="0">
+								<complexType>
+									<sequence>
+										<element name="minTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+										<element name="maxTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+
+									</sequence>
+								</complexType>
+							</element>
+							<element name="EnergyTime" maxOccurs="1" minOccurs="0">
+								<complexType>
+									<sequence>
+										<element name="minTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+										<element name="maxTime" maxOccurs="1" minOccurs="0"  type="dateTime"/>
+
+									</sequence>
+								</complexType>
+							</element>
+
+
+
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+	
+	
+	<element name="EventTraceImport">
+		<complexType>
+			<sequence>
+				<element name="eventTrace" type="a4eekpi:tEventTrace"
+					minOccurs="1" maxOccurs="1" />
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="ListOfOccupants">
+		<complexType>
+			<sequence>
+				<element name="occupant" maxOccurs="unbounded" minOccurs="0">
+					<complexType>
+						<sequence>
+							<element name="id" type="string"
+								maxOccurs="1" minOccurs="1">
+							</element>
+							<element name="time" type="dateTime"
+								maxOccurs="1" minOccurs="1">
+							</element>
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="EventTraceMinTime" type="dateTime"></element>
+
+	<element name="EventTraceMaxTime" type="dateTime"></element>
+
+	<element name="EventTraceCount" type="long"></element>
+
+	<element name="Properties">
+		<complexType>
+			<sequence>
+				<element name="property" type="a4eeuni:tProperty"
+					maxOccurs="unbounded" minOccurs="0">
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+	
+    <element name="PropertySets">
+    	<complexType>
+    		<sequence>
+    			<element name="properties"
+    				type="a4eeuni:tPropertySet" maxOccurs="unbounded" minOccurs="0">
+    			</element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="ExtensionFile">
+    	<complexType>
+    		<sequence>
+    			<element name="id" type="string" maxOccurs="1"
+    				minOccurs="1">
+    			</element>
+    			<element name="extension" type="a4eeuni:tExtension"
+    				maxOccurs="unbounded" minOccurs="0">
+    			</element>
+    		</sequence>
+    	</complexType>
+    </element>
+</schema>

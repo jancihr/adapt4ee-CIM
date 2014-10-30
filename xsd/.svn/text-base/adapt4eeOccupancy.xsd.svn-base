@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.adapt4ee.eu/2012/schema/occupancy/"
+	elementFormDefault="unqualified" attributeFormDefault="unqualified"
+	xmlns="http://www.w3.org/2001/XMLSchema" xmlns:a4eeocp="http://www.adapt4ee.eu/2012/schema/occupancy/"
+	xmlns:a4eeuni="http://www.adapt4ee.eu/2012/schema/units/">
+
+
+	<import schemaLocation="adapt4eeUnits.xsd"
+		namespace="http://www.adapt4ee.eu/2012/schema/units/"></import>
+	<complexType name="tOccupant">
+		<sequence>
+			<element name="id" type="string" maxOccurs="1" minOccurs="0">
+			</element>
+			<element name="occupantRoleRef" type="string" maxOccurs="unbounded"
+ 				minOccurs="0" />
+			<element name="occupantCharacteristics" minOccurs="1"
+				maxOccurs="1">
+				<complexType>
+					<sequence>
+						<element name="startWorkTime" type="time" />
+						<element name="endWorkTime" type="time" />
+						<element name="comfortPreference" type="a4eeuni:tEnvironmentComfortValues" />
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+
+
+</schema>
