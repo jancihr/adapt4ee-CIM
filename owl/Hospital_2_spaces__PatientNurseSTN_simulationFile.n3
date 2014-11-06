@@ -1,0 +1,1432 @@
+@prefix :        <http://www.srdc.com.tr/ontmalizer/instance#> .
+@prefix p1:      <http://www.adapt4ee.eu/2012/schema/cim/#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dtype:   <http://www.srdc.com.tr/ontmalizer#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+:INS8569058_tLengthValue_23
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "9.05524"^^xsd:float .
+
+:INS8569058_tEnergyValue_15
+      a       p1:tEnergyValue ;
+      p1:unit "KilowattHours"^^p1:energyUnitEnumDatatype ;
+      p1:value "2.3"^^xsd:float .
+
+:INS8569058_tLengthValue_11
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "8.48213"^^xsd:float .
+
+:INS8569058_SimulationFile_1
+      a       p1:SimulationFile ;
+      p1:buildingType "Office"^^p1:buildingTypeEnumDatatype ;
+      p1:id   "Hospital_2_spaces__PatientNurseSTN"^^xsd:string ;
+      p1:simulations :INS8569058_Anon_48_1 ;
+      p1:trainingParameters
+              :INS8569058_tTrainedTemplate_1 .
+
+:INS8569058_tLengthValue_47
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "11.1414"^^xsd:float .
+
+:INS8569058_tEquipment_3
+      a       p1:tEquipment ;
+      p1:id   "printer1"^^xsd:string ;
+      p1:position :INS8569058_tPossitionValue_3 ;
+      p1:type "printer"^^xsd:string .
+
+:INS8569058_tLengthValue_35
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "10.3849"^^xsd:float .
+
+:INS8569058_tPossitionValue_8
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_22 ;
+      p1:y    :INS8569058_tLengthValue_23 ;
+      p1:z    :INS8569058_tLengthValue_24 .
+
+:INS8569058_tLengthValue_59
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "9.5208"^^xsd:float .
+
+:INS8569058_Anon_16_1
+      a       p1:Anon_16 ;
+      p1:equipmentType :INS8569058_tEquipmentTypeCharacteristics_2 , :INS8569058_tEquipmentTypeCharacteristics_1 , :INS8569058_tEquipmentTypeCharacteristics_4 , :INS8569058_tEquipmentTypeCharacteristics_3 , :INS8569058_tEquipmentTypeCharacteristics_5 .
+
+:INS8569058_tSensor_9
+      a       p1:tSensor ;
+      p1:Measure "Relative Humidity"^^xsd:string ;
+      p1:id   "3589"^^xsd:string ;
+      p1:sensorNameID "%"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_15 ;
+      p1:sensorTypeRef "iPointH"^^xsd:string ;
+      p1:spaceRef "NURSE_STN_A"^^xsd:string .
+
+:INS8569058_tLengthValue_91
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0.664815"^^xsd:float .
+
+:INS8569058_tLengthValue_101
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "10.7058"^^xsd:float .
+
+:INS8569058_tTrainedTemplate_1
+      a       p1:tTrainedTemplate ;
+      p1:buildingType "Office"^^p1:buildingTypeEnumDatatype ;
+      p1:id   "null"^^xsd:string .
+
+:INS8569058_tOtherValue_1
+      a       p1:tOtherValue ;
+      p1:unit "KgPerKWh"^^xsd:string ;
+      p1:value "0.41"^^xsd:float .
+
+:INS8569058_tHVAC_1
+      a       p1:tHVAC ;
+      p1:consumption :INS8569058_tEnergyValue_17 ;
+      p1:emissions :INS8569058_tEmissionValue_6 ;
+      p1:id   "HV1"^^xsd:string ;
+      p1:spaceRef "NURSE_STN_A"^^xsd:string .
+
+:INS8569058_tPossitionValue_33
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_97 ;
+      p1:y    :INS8569058_tLengthValue_98 ;
+      p1:z    :INS8569058_tLengthValue_99 .
+
+:INS8569058_tPossitionValue_21
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_61 ;
+      p1:y    :INS8569058_tLengthValue_62 ;
+      p1:z    :INS8569058_tLengthValue_63 .
+
+:INS8569058_tEmissionValue_3
+      a       p1:tEmissionValue ;
+      p1:unit "KilogramsPerHour"^^p1:emissionUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_12
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_36
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_24
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tEquipment_4
+      a       p1:tEquipment ;
+      p1:id   "nurses_fridge"^^xsd:string ;
+      p1:position :INS8569058_tPossitionValue_4 ;
+      p1:type "fridge"^^xsd:string .
+
+:INS8569058_tPossitionValue_7
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_19 ;
+      p1:y    :INS8569058_tLengthValue_20 ;
+      p1:z    :INS8569058_tLengthValue_21 .
+
+:INS8569058_tLengthValue_48
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tUnitlessValue_9
+      a       p1:tUnitlessValue ;
+      p1:unit "Percent"^^p1:unitlessUnitEnumDatatype ;
+      p1:value "35"^^xsd:float .
+
+:INS8569058_tLengthValue_92
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "13.5485"^^xsd:float .
+
+:INS8569058_Anon_4_1
+      a       p1:Anon_4 ;
+      p1:AverageOvercrowdingFactor
+              :INS8569058_tUnitlessValue_7 ;
+      p1:AveragePMV :INS8569058_tUnitlessValue_8 ;
+      p1:AveragePPD :INS8569058_tUnitlessValue_9 .
+
+:INS8569058_tLengthValue_80
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "9.12402"^^xsd:float .
+
+:INS8569058_tLengthValue_100
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "7.47344"^^xsd:float .
+
+:INS8569058_tHVAC_2
+      a       p1:tHVAC ;
+      p1:consumption :INS8569058_tEnergyValue_18 ;
+      p1:emissions :INS8569058_tEmissionValue_7 ;
+      p1:id   "HV2"^^xsd:string ;
+      p1:spaceRef "PATIENT_ROOM_B"^^xsd:string .
+
+:INS8569058_tSimulatorStatistics_1
+      a       p1:tSimulatorStatistics .
+
+:INS8569058_Anon_9_2
+      a       p1:Anon_9 ;
+      p1:EquipmentDevice :INS8569058_tEquipment_5 , :INS8569058_tEquipment_6 , :INS8569058_tEquipment_4 .
+
+:INS8569058_tPossitionValue_34
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_100 ;
+      p1:y    :INS8569058_tLengthValue_101 ;
+      p1:z    :INS8569058_tLengthValue_102 .
+
+:INS8569058_tPossitionValue_22
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_64 ;
+      p1:y    :INS8569058_tLengthValue_65 ;
+      p1:z    :INS8569058_tLengthValue_66 .
+
+:INS8569058_tPossitionValue_10
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_28 ;
+      p1:y    :INS8569058_tLengthValue_29 ;
+      p1:z    :INS8569058_tLengthValue_30 .
+
+:INS8569058_tEnergyValue_14
+      a       p1:tEnergyValue ;
+      p1:unit "KilowattHours"^^p1:energyUnitEnumDatatype ;
+      p1:value "0.9"^^xsd:float .
+
+:INS8569058_tEmissionValue_2
+      a       p1:tEmissionValue ;
+      p1:unit "KilogramsPerHour"^^p1:emissionUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_Anon_10_1
+      a       p1:Anon_10 ;
+      p1:LightingDevice :INS8569058_tLighting_1 .
+
+:INS8569058_tEnergyValue_17
+      a       p1:tEnergyValue ;
+      p1:unit "KilowattHours"^^p1:energyUnitEnumDatatype ;
+      p1:value "5.4"^^xsd:float .
+
+:INS8569058_tLengthValue_25
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "2.20077"^^xsd:float .
+
+:INS8569058_tLengthValue_13
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0.366795"^^xsd:float .
+
+:INS8569058_tEquipment_1
+      a       p1:tEquipment ;
+      p1:id   "pc1"^^xsd:string ;
+      p1:position :INS8569058_tPossitionValue_1 ;
+      p1:type "workstation"^^xsd:string .
+
+:INS8569058_tLengthValue_49
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "3.1636"^^xsd:float .
+
+:INS8569058_tLengthValue_37
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "1.90275"^^xsd:float .
+
+:INS8569058_tLengthValue_81
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_93
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLighting_1
+      a       p1:tLighting ;
+      p1:consumption :INS8569058_tEnergyValue_5 ;
+      p1:id   "lights2"^^xsd:string .
+
+:INS8569058_tEmissionValue_5
+      a       p1:tEmissionValue ;
+      p1:unit "KilogramsPerHour"^^p1:emissionUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tRole_6
+      a       p1:tRole ;
+      p1:id   "Oncology Nurse 6"^^xsd:string ;
+      p1:roleName "Oncology Nurse"^^xsd:string .
+
+:INS8569058_tEnergyValue_9
+      a       p1:tEnergyValue ;
+      p1:unit "KilowattHours"^^p1:energyUnitEnumDatatype ;
+      p1:value "0.35"^^xsd:float .
+
+:INS8569058_tPossitionValue_31
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_91 ;
+      p1:y    :INS8569058_tLengthValue_92 ;
+      p1:z    :INS8569058_tLengthValue_93 .
+
+:INS8569058_Anon_10_2
+      a       p1:Anon_10 ;
+      p1:LightingDevice :INS8569058_tLighting_2 .
+
+:INS8569058_tEnergyValue_16
+      a       p1:tEnergyValue ;
+      p1:unit "KilowattHours"^^p1:energyUnitEnumDatatype ;
+      p1:value "1.2"^^xsd:float .
+
+:INS8569058_tPossitionValue_9
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_25 ;
+      p1:y    :INS8569058_tLengthValue_26 ;
+      p1:z    :INS8569058_tLengthValue_27 .
+
+:INS8569058_tLengthValue_14
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "13.388"^^xsd:float .
+
+:INS8569058_tLengthValue_38
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "10.2473"^^xsd:float .
+
+:INS8569058_tEquipment_2
+      a       p1:tEquipment ;
+      p1:id   "pc3"^^xsd:string ;
+      p1:position :INS8569058_tPossitionValue_2 ;
+      p1:type "workstation"^^xsd:string .
+
+:INS8569058_tLengthValue_26
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "9.14694"^^xsd:float .
+
+:INS8569058_tLengthValue_70
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "7.97778"^^xsd:float .
+
+:INS8569058_tLengthValue_94
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "6.64815"^^xsd:float .
+
+:INS8569058_tLengthValue_102
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_82
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "8.70071"^^xsd:float .
+
+:INS8569058_tLighting_2
+      a       p1:tLighting ;
+      p1:consumption :INS8569058_tEnergyValue_6 ;
+      p1:id   "lights1"^^xsd:string .
+
+:INS8569058_tAgentBasedSimulationModuleOutput_1
+      a       p1:tAgentBasedSimulationModuleOutput ;
+      p1:eventTrace :INS8569058_tEventTrace_1 ;
+      p1:keyPerformanceIndicator
+              :INS8569058_tKeyPerformanceIndicator_1 ;
+      p1:simulatorStatistics
+              :INS8569058_tSimulatorStatistics_1 .
+
+:INS8569058_tRole_5
+      a       p1:tRole ;
+      p1:id   "Oncology Nurse 5"^^xsd:string ;
+      p1:roleName "Oncology Nurse"^^xsd:string .
+
+:INS8569058_tEnergyPerAreaValue_1
+      a       p1:tEnergyPerAreaValue ;
+      p1:unit "KilowattHoursPerSquareMeter"^^p1:energyPerAreaUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tEmissionValue_4
+      a       p1:tEmissionValue ;
+      p1:unit "KilogramsPerHour"^^p1:emissionUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tPossitionValue_32
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_94 ;
+      p1:y    :INS8569058_tLengthValue_95 ;
+      p1:z    :INS8569058_tLengthValue_96 .
+
+:INS8569058_tEnergyValue_8
+      a       p1:tEnergyValue ;
+      p1:unit "KilowattHours"^^p1:energyUnitEnumDatatype ;
+      p1:value "0.3"^^xsd:float .
+
+:INS8569058_tPossitionValue_20
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_58 ;
+      p1:y    :INS8569058_tLengthValue_59 ;
+      p1:z    :INS8569058_tLengthValue_60 .
+
+:INS8569058_tUnitlessValue_6
+      a       p1:tUnitlessValue ;
+      p1:unit "Percent"^^p1:unitlessUnitEnumDatatype ;
+      p1:value "72"^^xsd:float .
+
+:INS8569058_tSensor_5
+      a       p1:tSensor ;
+      p1:Measure "Active Energy"^^xsd:string ;
+      p1:id   "3588"^^xsd:string ;
+      p1:sensorNameID "kWh"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_11 ;
+      p1:sensorTypeRef "EnergyMeter"^^xsd:string ;
+      p1:spaceRef "NURSE_STN_A"^^xsd:string .
+
+:INS8569058_tLengthValue_27
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_15
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tSensor_10
+      a       p1:tSensor ;
+      p1:Measure "Temperature"^^xsd:string ;
+      p1:id   "3590"^^xsd:string ;
+      p1:sensorNameID "C"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_16 ;
+      p1:sensorTypeRef "iPointT"^^xsd:string ;
+      p1:spaceRef "NURSE_STN_A"^^xsd:string .
+
+:INS8569058_tSensor_22
+      a       p1:tSensor ;
+      p1:Measure "CO2 Concentration"^^xsd:string ;
+      p1:id   "3800"^^xsd:string ;
+      p1:sensorNameID "ppm"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_28 ;
+      p1:sensorTypeRef "iPointCO2"^^xsd:string ;
+      p1:spaceRef "PATIENT_ROOM_B"^^xsd:string .
+
+:INS8569058_Anon_50_1
+      a       p1:Anon_50 ;
+      p1:role :INS8569058_tRole_5 , :INS8569058_tRole_6 , :INS8569058_tRole_3 , :INS8569058_tRole_4 , :INS8569058_tRole_1 , :INS8569058_tRole_2 .
+
+:INS8569058_tLengthValue_83
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "12.0114"^^xsd:float .
+
+:INS8569058_tLengthValue_71
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "10.339"^^xsd:float .
+
+:INS8569058_tLengthValue_95
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "13.5256"^^xsd:float .
+
+:INS8569058_tEmissionValue_7
+      a       p1:tEmissionValue ;
+      p1:unit "KilogramsPerHour"^^p1:emissionUnitEnumDatatype ;
+      p1:value "1.3"^^xsd:float .
+
+:INS8569058_tBuilding_1
+      a       p1:tBuilding ;
+      p1:HVACs :INS8569058_Anon_17_1 ;
+      p1:buildingType "HospitalOrHealthcare"^^p1:buildingTypeEnumDatatype ;
+      p1:equipmentTypes :INS8569058_Anon_16_1 ;
+      p1:id   "UNAV"^^xsd:string ;
+      p1:sensors :INS8569058_Anon_15_1 ;
+      p1:space :INS8569058_tSpace_2 , :INS8569058_tSpace_1 ;
+      p1:zones :INS8569058_Anon_14_1 .
+
+:INS8569058_tLengthValue_39
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tEnergyValue_7
+      a       p1:tEnergyValue ;
+      p1:unit "KilowattHours"^^p1:energyUnitEnumDatatype ;
+      p1:value "1.1"^^xsd:float .
+
+:INS8569058_tEnergyValue_18
+      a       p1:tEnergyValue ;
+      p1:unit "KilowattHours"^^p1:energyUnitEnumDatatype ;
+      p1:value "2.7"^^xsd:float .
+
+:INS8569058_tUnitlessValue_5
+      a       p1:tUnitlessValue ;
+      p1:unit "Percent"^^p1:unitlessUnitEnumDatatype ;
+      p1:value "83"^^xsd:float .
+
+:INS8569058_tLengthValue_16
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "6.67108"^^xsd:float .
+
+:INS8569058_tSensor_6
+      a       p1:tSensor ;
+      p1:Measure "Active Power (Lights)"^^xsd:string ;
+      p1:id   "3580"^^xsd:string ;
+      p1:sensorNameID "kW"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_12 ;
+      p1:sensorTypeRef "EnergyMeter"^^xsd:string ;
+      p1:spaceRef "NURSE_STN_A"^^xsd:string .
+
+:INS8569058_tSensor_11
+      a       p1:tSensor ;
+      p1:Measure "CO2 Concentration"^^xsd:string ;
+      p1:id   "3592"^^xsd:string ;
+      p1:sensorNameID "ppm"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_17 ;
+      p1:sensorTypeRef "iPointCO2"^^xsd:string ;
+      p1:spaceRef "NURSE_STN_A"^^xsd:string .
+
+:INS8569058_tSensor_23
+      a       p1:tSensor ;
+      p1:id   "Depth_6"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_29 ;
+      p1:sensorTypeRef "Kinect"^^xsd:string ;
+      p1:spaceRef "NURSE_STN_A"^^xsd:string .
+
+:INS8569058_tLengthValue_72
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_60
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_96
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_84
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tEmissionValue_6
+      a       p1:tEmissionValue ;
+      p1:unit "KilogramsPerHour"^^p1:emissionUnitEnumDatatype ;
+      p1:value "3"^^xsd:float .
+
+:INS8569058_tKeyPerformanceIndicator_1
+      a       p1:tKeyPerformanceIndicator ;
+      p1:EmissionsFactor :INS8569058_tOtherValue_1 ;
+      p1:businessKPI :INS8569058_Anon_2_1 ;
+      p1:comfortKPI :INS8569058_Anon_4_1 ;
+      p1:energyKPI :INS8569058_Anon_1_1 .
+
+:INS8569058_tLengthValue_28
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "2.84266"^^xsd:float .
+
+:INS8569058_tPossitionValue_30
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_88 ;
+      p1:y    :INS8569058_tLengthValue_89 ;
+      p1:z    :INS8569058_tLengthValue_90 .
+
+:INS8569058_tEnergyValue_6
+      a       p1:tEnergyValue ;
+      p1:unit "KilowattHours"^^p1:energyUnitEnumDatatype ;
+      p1:value "0.45"^^xsd:float .
+
+:INS8569058_tLengthValue_97
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "10.5453"^^xsd:float .
+
+:INS8569058_tUnitlessValue_8
+      a       p1:tUnitlessValue ;
+      p1:unit "Percent"^^p1:unitlessUnitEnumDatatype ;
+      p1:value "-1.22"^^xsd:float .
+
+:INS8569058_tSensor_7
+      a       p1:tSensor ;
+      p1:Measure "Active Energy (Lights)"^^xsd:string ;
+      p1:id   "3581"^^xsd:string ;
+      p1:sensorNameID "kWh"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_13 ;
+      p1:sensorTypeRef "EnergyMeter"^^xsd:string ;
+      p1:spaceRef "NURSE_STN_A"^^xsd:string .
+
+:INS8569058_tEquipmentTypeCharacteristics_4
+      a       p1:tEquipmentTypeCharacteristics ;
+      p1:energyConsumptionPerTime
+              :INS8569058_tEnergyValue_13 ;
+      p1:equipmentTypeName
+              "Computer"^^p1:intEquipTypeEnumDatatype ;
+      p1:heatProduction :INS8569058_tEnergyValue_14 ;
+      p1:id   "server"^^xsd:string .
+
+:INS8569058_tLengthValue_61
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "7.85524"^^xsd:float .
+
+:INS8569058_tLengthValue_85
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0.275096"^^xsd:float .
+
+:INS8569058_tLengthValue_73
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "8.59675"^^xsd:float .
+
+:INS8569058_tSensor_20
+      a       p1:tSensor ;
+      p1:Measure "Relative Humidity"^^xsd:string ;
+      p1:id   "3797"^^xsd:string ;
+      p1:sensorNameID "%"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_26 ;
+      p1:sensorTypeRef "iPointH"^^xsd:string ;
+      p1:spaceRef "PATIENT_ROOM_B"^^xsd:string .
+
+:INS8569058_tEnergyValue_5
+      a       p1:tEnergyValue ;
+      p1:unit "KilowattHours"^^p1:energyUnitEnumDatatype ;
+      p1:value "0.23"^^xsd:float .
+
+:INS8569058_tPossitionValue_19
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_55 ;
+      p1:y    :INS8569058_tLengthValue_56 ;
+      p1:z    :INS8569058_tLengthValue_57 .
+
+:INS8569058_Anon_9_1
+      a       p1:Anon_9 ;
+      p1:EquipmentDevice :INS8569058_tEquipment_3 , :INS8569058_tEquipment_1 , :INS8569058_tEquipment_2 .
+
+:INS8569058_tLengthValue_29
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "9.12402"^^xsd:float .
+
+:INS8569058_tLengthValue_17
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "11.2537"^^xsd:float .
+
+:INS8569058_tLengthValue_98
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "11.1414"^^xsd:float .
+
+:INS8569058_tLengthValue_86
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "8.32165"^^xsd:float .
+
+:INS8569058_tUnitlessValue_7
+      a       p1:tUnitlessValue ;
+      p1:unit "Percent"^^p1:unitlessUnitEnumDatatype ;
+      p1:value "65"^^xsd:float .
+
+:INS8569058_tSensor_21
+      a       p1:tSensor ;
+      p1:Measure "Temperature"^^xsd:string ;
+      p1:id   "3798"^^xsd:string ;
+      p1:sensorNameID "C"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_27 ;
+      p1:sensorTypeRef "iPointT"^^xsd:string ;
+      p1:spaceRef "PATIENT_ROOM_B"^^xsd:string .
+
+:INS8569058_tSensor_8
+      a       p1:tSensor ;
+      p1:Measure "Battery"^^xsd:string ;
+      p1:id   "3582"^^xsd:string ;
+      p1:sensorNameID "%"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_14 ;
+      p1:sensorTypeRef "EnergyMeter"^^xsd:string ;
+      p1:spaceRef "NURSE_STN_A"^^xsd:string .
+
+:INS8569058_tLengthValue_9
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_50
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "10.9809"^^xsd:float .
+
+:INS8569058_tEquipmentTypeCharacteristics_5
+      a       p1:tEquipmentTypeCharacteristics ;
+      p1:energyConsumptionPerTime
+              :INS8569058_tEnergyValue_15 ;
+      p1:equipmentTypeName
+              "GeneralKitchenEquip"^^p1:intEquipTypeEnumDatatype ;
+      p1:heatProduction :INS8569058_tEnergyValue_16 ;
+      p1:id   "waterCooler"^^xsd:string .
+
+:INS8569058_Anon_17_1
+      a       p1:Anon_17 ;
+      p1:HVACDevice :INS8569058_tHVAC_2 , :INS8569058_tHVAC_1 .
+
+:INS8569058_tLengthValue_74
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "10.041"^^xsd:float .
+
+:INS8569058_tLengthValue_62
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "13"^^xsd:float .
+
+:INS8569058_tEnergyValue_4
+      a       p1:tEnergyValue ;
+      p1:unit "KilowattHours"^^p1:energyUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_18
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_87
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_75
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tSensor_1
+      a       p1:tSensor ;
+      p1:Measure "Power Factor"^^xsd:string ;
+      p1:id   "3585"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_7 ;
+      p1:sensorTypeRef "EnergyMeter"^^xsd:string ;
+      p1:spaceRef "NURSE_STN_A"^^xsd:string .
+
+:INS8569058_tLengthValue_99
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tEquipmentTypeCharacteristics_2
+      a       p1:tEquipmentTypeCharacteristics ;
+      p1:energyConsumptionPerTime
+              :INS8569058_tEnergyValue_9 ;
+      p1:equipmentTypeName
+              "Copier"^^p1:intEquipTypeEnumDatatype ;
+      p1:heatProduction :INS8569058_tEnergyValue_10 ;
+      p1:id   "printer"^^xsd:string .
+
+:INS8569058_tLengthValue_8
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "8.02363"^^xsd:float .
+
+:INS8569058_tLengthValue_63
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_51
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tEnergyValue_3
+      a       p1:tEnergyValue ;
+      p1:unit "KilowattHours"^^p1:energyUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_Anon_48_1
+      a       p1:Anon_48 ;
+      p1:simulationCase :INS8569058_Anon_49_1 .
+
+:INS8569058_tSensor_14
+      a       p1:tSensor ;
+      p1:Measure "Frequency"^^xsd:string ;
+      p1:id   "3793"^^xsd:string ;
+      p1:sensorNameID "Hz"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_20 ;
+      p1:sensorTypeRef "EnergyMeter"^^xsd:string ;
+      p1:spaceRef "PATIENT_ROOM_B"^^xsd:string .
+
+:INS8569058_tPossitionValue_29
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_85 ;
+      p1:y    :INS8569058_tLengthValue_86 ;
+      p1:z    :INS8569058_tLengthValue_87 .
+
+:INS8569058_tPossitionValue_17
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_49 ;
+      p1:y    :INS8569058_tLengthValue_50 ;
+      p1:z    :INS8569058_tLengthValue_51 .
+
+:INS8569058_tSensor_26
+      a       p1:tSensor ;
+      p1:id   "Depth_9"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_32 ;
+      p1:sensorTypeRef "Kinect"^^xsd:string ;
+      p1:spaceRef "NURSE_STN_A"^^xsd:string .
+
+:INS8569058_tLengthValue_19
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0.848213"^^xsd:float .
+
+:INS8569058_tSpace_2
+      a       p1:tSpace ;
+      p1:equipments :INS8569058_Anon_9_2 ;
+      p1:id   "NURSE_STN_A"^^xsd:string ;
+      p1:lightings :INS8569058_Anon_10_2 ;
+      p1:type "ConferenceMeetingOrMultipurpose"^^p1:spaceTypeEnumDatatype ;
+      p1:zoneRef "1"^^xsd:string .
+
+:INS8569058_tUnitlessValue_2
+      a       p1:tUnitlessValue ;
+      p1:unit "Percent"^^p1:unitlessUnitEnumDatatype ;
+      p1:value "47"^^xsd:float .
+
+:INS8569058_tLengthValue_76
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "7.95486"^^xsd:float .
+
+:INS8569058_tLengthValue_64
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "8.72561"^^xsd:float .
+
+:INS8569058_tSensor_2
+      a       p1:tSensor ;
+      p1:Measure "V RMS"^^xsd:string ;
+      p1:id   "3584"^^xsd:string ;
+      p1:sensorNameID "V"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_8 ;
+      p1:sensorTypeRef "VoltageMeter"^^xsd:string ;
+      p1:spaceRef "NURSE_STN_A"^^xsd:string .
+
+:INS8569058_tLengthValue_88
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0.275096"^^xsd:float .
+
+:INS8569058_tEquipmentTypeCharacteristics_3
+      a       p1:tEquipmentTypeCharacteristics ;
+      p1:energyConsumptionPerTime
+              :INS8569058_tEnergyValue_11 ;
+      p1:equipmentTypeName
+              "Refrigerator"^^p1:intEquipTypeEnumDatatype ;
+      p1:heatProduction :INS8569058_tEnergyValue_12 ;
+      p1:id   "fridge"^^xsd:string .
+
+:INS8569058_tLengthValue_7
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "8.7343"^^xsd:float .
+
+:INS8569058_tLengthValue_52
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "10"^^xsd:float .
+
+:INS8569058_tLengthValue_40
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "2.56756"^^xsd:float .
+
+:INS8569058_tEnergyValue_2
+      a       p1:tEnergyValue ;
+      p1:unit "KilowattHours"^^p1:energyUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tPossitionValue_18
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_52 ;
+      p1:y    :INS8569058_tLengthValue_53 ;
+      p1:z    :INS8569058_tLengthValue_54 .
+
+:INS8569058_tSensor_15
+      a       p1:tSensor ;
+      p1:Measure "Active Power"^^xsd:string ;
+      p1:id   "3794"^^xsd:string ;
+      p1:sensorNameID "kW"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_21 ;
+      p1:sensorTypeRef "EnergyMeter"^^xsd:string ;
+      p1:spaceRef "PATIENT_ROOM_B"^^xsd:string .
+
+:INS8569058_tSensor_27
+      a       p1:tSensor ;
+      p1:id   "Depth_10"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_33 ;
+      p1:sensorTypeRef "Kinect"^^xsd:string ;
+      p1:spaceRef "PATIENT_ROOM_B"^^xsd:string .
+
+:INS8569058_tSpace_1
+      a       p1:tSpace ;
+      p1:equipments :INS8569058_Anon_9_1 ;
+      p1:id   "PATIENT_ROOM_B"^^xsd:string ;
+      p1:lightings :INS8569058_Anon_10_1 ;
+      p1:type "ConferenceMeetingOrMultipurpose"^^p1:spaceTypeEnumDatatype ;
+      p1:zoneRef "1"^^xsd:string .
+
+:INS8569058_tUnitlessValue_1
+      a       p1:tUnitlessValue ;
+      p1:unit "Percent"^^p1:unitlessUnitEnumDatatype ;
+      p1:value "28"^^xsd:float .
+
+:INS8569058_tUnitlessValue_4
+      a       p1:tUnitlessValue ;
+      p1:unit "Percent"^^p1:unitlessUnitEnumDatatype ;
+      p1:value "35"^^xsd:float .
+
+:INS8569058_tLengthValue_65
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "8.5185"^^xsd:float .
+
+:INS8569058_tLengthValue_53
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "13"^^xsd:float .
+
+:INS8569058_tLengthValue_89
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "13.3192"^^xsd:float .
+
+:INS8569058_tLengthValue_77
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "9.55959"^^xsd:float .
+
+:INS8569058_tSensor_3
+      a       p1:tSensor ;
+      p1:Measure "Frequency"^^xsd:string ;
+      p1:id   "3585a"^^xsd:string ;
+      p1:sensorNameID "Hz"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_9 ;
+      p1:sensorTypeRef "EnergyMeter"^^xsd:string ;
+      p1:spaceRef "NURSE_STN_A"^^xsd:string .
+
+:INS8569058_tSensor_12
+      a       p1:tSensor ;
+      p1:Measure "Power Factor"^^xsd:string ;
+      p1:id   "3791"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_18 ;
+      p1:sensorTypeRef "EnergyMeter"^^xsd:string ;
+      p1:spaceRef "PATIENT_ROOM_B"^^xsd:string .
+
+:INS8569058_tSensor_24
+      a       p1:tSensor ;
+      p1:id   "Depth_7"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_30 ;
+      p1:sensorTypeRef "Kinect"^^xsd:string ;
+      p1:spaceRef "NURSE_STN_A"^^xsd:string .
+
+:INS8569058_tLengthValue_6
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_41
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "10.1556"^^xsd:float .
+
+:INS8569058_tEnergyValue_1
+      a       p1:tEnergyValue ;
+      p1:unit "KilowattHours"^^p1:energyUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tPossitionValue_27
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_79 ;
+      p1:y    :INS8569058_tLengthValue_80 ;
+      p1:z    :INS8569058_tLengthValue_81 .
+
+:INS8569058_tPossitionValue_15
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_43 ;
+      p1:y    :INS8569058_tLengthValue_44 ;
+      p1:z    :INS8569058_tLengthValue_45 .
+
+:INS8569058_tPossitionValue_1
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_1 ;
+      p1:y    :INS8569058_tLengthValue_2 ;
+      p1:z    :INS8569058_tLengthValue_3 .
+
+:INS8569058_tLengthValue_54
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_42
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tUnitlessValue_3
+      a       p1:tUnitlessValue ;
+      p1:unit "Percent"^^p1:unitlessUnitEnumDatatype ;
+      p1:value "50"^^xsd:float .
+
+:INS8569058_tLengthValue_78
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_66
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tSensor_4
+      a       p1:tSensor ;
+      p1:Measure "Active Power"^^xsd:string ;
+      p1:id   "3586"^^xsd:string ;
+      p1:sensorNameID "Kw"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_10 ;
+      p1:sensorTypeRef "EnergyMeter"^^xsd:string ;
+      p1:spaceRef "NURSE_STN_A"^^xsd:string .
+
+:INS8569058_tEquipmentTypeCharacteristics_1
+      a       p1:tEquipmentTypeCharacteristics ;
+      p1:energyConsumptionPerTime
+              :INS8569058_tEnergyValue_7 ;
+      p1:equipmentTypeName
+              "Computer"^^p1:intEquipTypeEnumDatatype ;
+      p1:heatProduction :INS8569058_tEnergyValue_8 ;
+      p1:id   "workstation"^^xsd:string .
+
+:INS8569058_tSensor_13
+      a       p1:tSensor ;
+      p1:Measure "V RMS"^^xsd:string ;
+      p1:id   "3792"^^xsd:string ;
+      p1:sensorNameID "V"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_19 ;
+      p1:sensorTypeRef "VoltageMeter"^^xsd:string ;
+      p1:spaceRef "PATIENT_ROOM_B"^^xsd:string .
+
+:INS8569058_Anon_2_1
+      a       p1:Anon_2 ;
+      p1:AverageBuildingUsage
+              :INS8569058_tUnitlessValue_3 ;
+      p1:AverageBusinessProcessUtilisation
+              :INS8569058_tUnitlessValue_5 ;
+      p1:AverageEquipmentUsage
+              :INS8569058_tUnitlessValue_4 ;
+      p1:AverageProcessCycleTime
+              :INS8569058_tDurationValue_1 ;
+      p1:AverageRoleUtilisation
+              :INS8569058_tUnitlessValue_6 ;
+      p1:AverageWorkEfficiency
+              :INS8569058_tUnitlessValue_2 .
+
+:INS8569058_tLengthValue_5
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "12.9754"^^xsd:float .
+
+:INS8569058_tLengthValue_30
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tSensor_25
+      a       p1:tSensor ;
+      p1:id   "Depth_8"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_31 ;
+      p1:sensorTypeRef "Kinect"^^xsd:string ;
+      p1:spaceRef "NURSE_STN_A"^^xsd:string .
+
+:INS8569058_Anon_49_1
+      a       p1:Anon_49 ;
+      p1:building :INS8569058_tBuilding_1 ;
+      p1:id   "Session 1"^^xsd:string ;
+      p1:roles :INS8569058_Anon_50_1 ;
+      p1:simulationResult :INS8569058_tAgentBasedSimulationModuleOutput_1 .
+
+:INS8569058_tPossitionValue_28
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_82 ;
+      p1:y    :INS8569058_tLengthValue_83 ;
+      p1:z    :INS8569058_tLengthValue_84 .
+
+:INS8569058_tPossitionValue_16
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_46 ;
+      p1:y    :INS8569058_tLengthValue_47 ;
+      p1:z    :INS8569058_tLengthValue_48 .
+
+:INS8569058_tLengthValue_43
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "2.0403"^^xsd:float .
+
+:INS8569058_tLengthValue_31
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "3.6221"^^xsd:float .
+
+:INS8569058_tLengthValue_67
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "8.78015"^^xsd:float .
+
+:INS8569058_tLengthValue_55
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "10.5"^^xsd:float .
+
+:INS8569058_tLengthValue_79
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "8.94062"^^xsd:float .
+
+:INS8569058_tLengthValue_4
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "7.33589"^^xsd:float .
+
+:INS8569058_tSensor_18
+      a       p1:tSensor ;
+      p1:Measure "Active Energy (Lights)"^^xsd:string ;
+      p1:id   "3789"^^xsd:string ;
+      p1:sensorNameID "kWh"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_24 ;
+      p1:sensorTypeRef "EnergyMeter"^^xsd:string ;
+      p1:spaceRef "PATIENT_ROOM_B"^^xsd:string .
+
+:INS8569058_tRole_4
+      a       p1:tRole ;
+      p1:id   "Oncology Nurse 4"^^xsd:string ;
+      p1:roleName "Oncology Nurse"^^xsd:string .
+
+:INS8569058_tPossitionValue_25
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_73 ;
+      p1:y    :INS8569058_tLengthValue_74 ;
+      p1:z    :INS8569058_tLengthValue_75 .
+
+:INS8569058_tPossitionValue_13
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_37 ;
+      p1:y    :INS8569058_tLengthValue_38 ;
+      p1:z    :INS8569058_tLengthValue_39 .
+
+:INS8569058_tPossitionValue_3
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_7 ;
+      p1:y    :INS8569058_tLengthValue_8 ;
+      p1:z    :INS8569058_tLengthValue_9 .
+
+:INS8569058_tEnergyValue_11
+      a       p1:tEnergyValue ;
+      p1:unit "KilowattHours"^^p1:energyUnitEnumDatatype ;
+      p1:value "1.8"^^xsd:float .
+
+:INS8569058_tLengthValue_32
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "9.05524"^^xsd:float .
+
+:INS8569058_tLengthValue_3
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_20
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "9.12402"^^xsd:float .
+
+:INS8569058_tLengthValue_56
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "12.5544"^^xsd:float .
+
+:INS8569058_tLengthValue_44
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "11.2102"^^xsd:float .
+
+:INS8569058_tLengthValue_68
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "10.9121"^^xsd:float .
+
+:INS8569058_tRole_2
+      a       p1:tRole ;
+      p1:id   "Oncology Nurse 2"^^xsd:string ;
+      p1:roleName "Oncology Nurse"^^xsd:string .
+
+:INS8569058_Anon_15_1
+      a       p1:Anon_15 ;
+      p1:sensor :INS8569058_tSensor_1 , :INS8569058_tSensor_3 , :INS8569058_tSensor_5 , :INS8569058_tSensor_10 , :INS8569058_tSensor_7 , :INS8569058_tSensor_22 , :INS8569058_tSensor_12 , :INS8569058_tSensor_9 , :INS8569058_tSensor_24 , :INS8569058_tSensor_20 , :INS8569058_tSensor_18 , :INS8569058_tSensor_14 , :INS8569058_tSensor_26 , :INS8569058_tSensor_16 , :INS8569058_tSensor_28 , :INS8569058_tSensor_2 , :INS8569058_tSensor_4 , :INS8569058_tSensor_6 , :INS8569058_tSensor_21 , :INS8569058_tSensor_11 , :INS8569058_tSensor_8 , :INS8569058_tSensor_23 , :INS8569058_tSensor_13 , :INS8569058_tSensor_19 , :INS8569058_tSensor_25 , :INS8569058_tSensor_15 , :INS8569058_tSensor_27 , :INS8569058_tSensor_17 .
+
+:INS8569058_tSensor_19
+      a       p1:tSensor ;
+      p1:Measure "Battery"^^xsd:string ;
+      p1:id   "3790"^^xsd:string ;
+      p1:sensorNameID "%"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_25 ;
+      p1:sensorTypeRef "EnergyMeter"^^xsd:string ;
+      p1:spaceRef "PATIENT_ROOM_B"^^xsd:string .
+
+:INS8569058_tRole_3
+      a       p1:tRole ;
+      p1:id   "Oncology Nurse 3"^^xsd:string ;
+      p1:roleName "Oncology Nurse"^^xsd:string .
+
+:INS8569058_tPossitionValue_26
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_76 ;
+      p1:y    :INS8569058_tLengthValue_77 ;
+      p1:z    :INS8569058_tLengthValue_78 .
+
+:INS8569058_tEnergyValue_10
+      a       p1:tEnergyValue ;
+      p1:unit "KilowattHours"^^p1:energyUnitEnumDatatype ;
+      p1:value "0.1"^^xsd:float .
+
+:INS8569058_tPossitionValue_14
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_40 ;
+      p1:y    :INS8569058_tLengthValue_41 ;
+      p1:z    :INS8569058_tLengthValue_42 .
+
+:INS8569058_tPossitionValue_2
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_4 ;
+      p1:y    :INS8569058_tLengthValue_5 ;
+      p1:z    :INS8569058_tLengthValue_6 .
+
+:INS8569058_tDurationValue_1
+      a       p1:tDurationValue ;
+      p1:unit "Seconds"^^p1:timeUnitEnumDatatype ;
+      p1:value "88"^^xsd:float .
+
+:INS8569058_tLengthValue_21
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_2
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "13.2275"^^xsd:float .
+
+:INS8569058_tEquipment_5
+      a       p1:tEquipment ;
+      p1:id   "pc5"^^xsd:string ;
+      p1:position :INS8569058_tPossitionValue_5 ;
+      p1:type "workstation"^^xsd:string .
+
+:INS8569058_tLengthValue_45
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_33
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_69
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_57
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tPossitionValue_6
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_16 ;
+      p1:y    :INS8569058_tLengthValue_17 ;
+      p1:z    :INS8569058_tLengthValue_18 .
+
+:INS8569058_tRole_1
+      a       p1:tRole ;
+      p1:id   "Oncology Nurse 1"^^xsd:string ;
+      p1:roleName "Oncology Nurse"^^xsd:string .
+
+:INS8569058_Anon_1_1
+      a       p1:Anon_1 ;
+      p1:BuildingOperationalPerformance
+              :INS8569058_tUnitlessValue_1 ;
+      p1:TotalAnnualHVACEmissions
+              :INS8569058_tEmissionValue_5 ;
+      p1:TotalAnnualLightingEmissions
+              :INS8569058_tEmissionValue_3 ;
+      p1:TotalEmissions :INS8569058_tEmissionValue_1 ;
+      p1:TotalEnergyConsumption
+              :INS8569058_tEnergyValue_1 ;
+      p1:TotalEnergyConsumptionPerArea
+              :INS8569058_tEnergyPerAreaValue_1 ;
+      p1:TotalEquipmentEmissions
+              :INS8569058_tEmissionValue_2 ;
+      p1:TotalEquipmentEnergyConsumption
+              :INS8569058_tEnergyValue_2 ;
+      p1:TotalHVACEnergyConsumption
+              :INS8569058_tEnergyValue_4 ;
+      p1:TotalLightingEmissions
+              :INS8569058_tEmissionValue_4 ;
+      p1:TotalLightingEnergyConsumption
+              :INS8569058_tEnergyValue_3 .
+
+:INS8569058_Anon_14_1
+      a       p1:Anon_14 ;
+      p1:zone "1"^^xsd:string .
+
+:INS8569058_tSensor_16
+      a       p1:tSensor ;
+      p1:Measure "Active Energy"^^xsd:string ;
+      p1:id   "3796"^^xsd:string ;
+      p1:sensorNameID "kWh"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_22 ;
+      p1:sensorTypeRef "EnergyMeter"^^xsd:string ;
+      p1:spaceRef "PATIENT_ROOM_B"^^xsd:string .
+
+:INS8569058_tSensor_28
+      a       p1:tSensor ;
+      p1:id   "Depth_11"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_34 ;
+      p1:sensorTypeRef "Kinect"^^xsd:string ;
+      p1:spaceRef "PATIENT_ROOM_B"^^xsd:string .
+
+:INS8569058_tPossitionValue_5
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_13 ;
+      p1:y    :INS8569058_tLengthValue_14 ;
+      p1:z    :INS8569058_tLengthValue_15 .
+
+:INS8569058_tPossitionValue_23
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_67 ;
+      p1:y    :INS8569058_tLengthValue_68 ;
+      p1:z    :INS8569058_tLengthValue_69 .
+
+:INS8569058_tPossitionValue_11
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_31 ;
+      p1:y    :INS8569058_tLengthValue_32 ;
+      p1:z    :INS8569058_tLengthValue_33 .
+
+:INS8569058_tEnergyValue_13
+      a       p1:tEnergyValue ;
+      p1:unit "KilowattHours"^^p1:energyUnitEnumDatatype ;
+      p1:value "2.2"^^xsd:float .
+
+:INS8569058_tEventTrace_1
+      a       p1:tEventTrace .
+
+:INS8569058_tEmissionValue_1
+      a       p1:tEmissionValue ;
+      p1:unit "KilogramsPerHour"^^p1:emissionUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tLengthValue_10
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "5.1122"^^xsd:float .
+
+:INS8569058_tLengthValue_1
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "10.4536"^^xsd:float .
+
+:INS8569058_tLengthValue_34
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "1.35256"^^xsd:float .
+
+:INS8569058_tEquipment_6
+      a       p1:tEquipment ;
+      p1:id   "pc7"^^xsd:string ;
+      p1:position :INS8569058_tPossitionValue_6 ;
+      p1:type "workstation"^^xsd:string .
+
+:INS8569058_tLengthValue_22
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "1.71935"^^xsd:float .
+
+:INS8569058_tLengthValue_58
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "10.0466"^^xsd:float .
+
+:INS8569058_tLengthValue_46
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "2.68219"^^xsd:float .
+
+:INS8569058_tLengthValue_90
+      a       p1:tLengthValue ;
+      p1:unit "Meters"^^p1:lengthUnitEnumDatatype ;
+      p1:value "0"^^xsd:float .
+
+:INS8569058_tSensor_17
+      a       p1:tSensor ;
+      p1:Measure "Active Power (Lights)"^^xsd:string ;
+      p1:id   "3788"^^xsd:string ;
+      p1:sensorNameID "kW"^^xsd:string ;
+      p1:sensorPossition :INS8569058_tPossitionValue_23 ;
+      p1:sensorTypeRef "EnergyMeter"^^xsd:string ;
+      p1:spaceRef "PATIENT_ROOM_B"^^xsd:string .
+
+:INS8569058_tPossitionValue_4
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_10 ;
+      p1:y    :INS8569058_tLengthValue_11 ;
+      p1:z    :INS8569058_tLengthValue_12 .
+
+:INS8569058_tPossitionValue_24
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_70 ;
+      p1:y    :INS8569058_tLengthValue_71 ;
+      p1:z    :INS8569058_tLengthValue_72 .
+
+:INS8569058_tPossitionValue_12
+      a       p1:tPossitionValue ;
+      p1:x    :INS8569058_tLengthValue_34 ;
+      p1:y    :INS8569058_tLengthValue_35 ;
+      p1:z    :INS8569058_tLengthValue_36 .
+
+:INS8569058_tEnergyValue_12
+      a       p1:tEnergyValue ;
+      p1:unit "KilowattHours"^^p1:energyUnitEnumDatatype ;
+      p1:value "1.1"^^xsd:float .
